@@ -1,4 +1,4 @@
-package lingo_quest;
+package model;
 
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0

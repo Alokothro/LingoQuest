@@ -1,4 +1,4 @@
-package lingo_quest;
+package model;
 
 /**
  * Enumerates the different languages supported by the application for language learning activities.

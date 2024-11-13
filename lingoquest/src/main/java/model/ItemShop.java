@@ -1,4 +1,4 @@
-package lingo_quest;
+package model;
 
 import java.io.IOException;
 import java.text.ParseException;

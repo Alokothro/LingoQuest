@@ -1,4 +1,4 @@
-package lingo_quest;
+package model;
 /**
  * A utility class to create different types of questions based on the complexity of a word within a lesson.
  */

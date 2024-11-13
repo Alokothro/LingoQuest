@@ -1,4 +1,4 @@
-package lingo_quest;
+package model;
 
 import java.util.Random;
 
