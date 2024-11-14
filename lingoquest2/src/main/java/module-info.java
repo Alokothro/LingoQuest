@@ -1,7 +1,7 @@
-module lingoquest_package {
+module lingoquestpackage {
     requires javafx.controls;
     requires javafx.fxml;
 
-    opens lingoquest_package to javafx.fxml;
-    exports lingoquest_package;
+    opens lingoquestpackage to javafx.fxml;
+    exports lingoquestpackage;
 }

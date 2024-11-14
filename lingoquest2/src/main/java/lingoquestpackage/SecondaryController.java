@@ -1,4 +1,4 @@
-package lingoquest_package;
+package lingoquestpackage;
 
 import java.io.IOException;
 import javafx.fxml.FXML;

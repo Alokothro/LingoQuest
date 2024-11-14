@@ -1,4 +1,4 @@
-package lingoquest_package;
+package lingoquestpackage;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
