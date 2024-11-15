@@ -3,6 +3,7 @@ package lingoquestpackage.controllers;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import lingoquestpackage.models.*;
+import lingoquestpackage.narriator.Narriator;
 
 /**
  * @author cade
@@ -68,5 +69,10 @@ public class LoginSignupController {
         languageGame.createUser(username, password);
         messageLabel.setText("Account created successfully! You can now log in.");
         messageLabel.setTextFill(javafx.scene.paint.Color.GREEN);
+    }
+
+    @FXML
+    private void handleSpeak() {
+        Narriator.playSound("This is a test for amazon polly. Hola me llamo cade");
     }
 }

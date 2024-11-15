@@ -13,6 +13,7 @@
 
             <Button fx:id="loginButton" text="Login" onAction="#handleLogin" />
             <Button fx:id="signupButton" text="Signup" onAction="#handleSignup" />
+            <Button fx:id="speakButton" text="Speak" onAction="#handleSpeak" />
             
             <Label fx:id="messageLabel" text="" textFill="red" />
         </VBox>
