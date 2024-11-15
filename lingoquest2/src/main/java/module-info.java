@@ -19,8 +19,8 @@ module lingoquestpackage {
     opens lingoquestpackage.lingoquest to javafx.fxml;
     exports lingoquestpackage.lingoquest;
 
-    //opens lingoquestpackage.models to javafx.fxml;
-    //exports lingoquestpackage.models;
+    opens lingoquestpackage.models to javafx.fxml;
+    exports lingoquestpackage.models;
 
     opens lingoquestpackage.narriator to javafx.fxml;
     exports lingoquestpackage.narriator;

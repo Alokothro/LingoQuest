@@ -24,7 +24,6 @@ public class App extends Application {
     }
 
     public static void setRoot(String fxml) throws IOException {
-        Narriator.playSound("testing the narrorator!");
         scene.setRoot(loadFXML(fxml));
     }
 
