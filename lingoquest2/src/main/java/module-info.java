@@ -13,6 +13,15 @@ module lingoquestpackage {
     requires software.amazon.awssdk.awscore;
     requires software.amazon.eventstream;
 
-    opens lingoquestpackage to javafx.fxml;
-    exports lingoquestpackage;
+    opens lingoquestpackage.controllers to javafx.fxml;
+    exports lingoquestpackage.controllers;
+
+    opens lingoquestpackage.lingoquest to javafx.fxml;
+    exports lingoquestpackage.lingoquest;
+
+    //opens lingoquestpackage.models to javafx.fxml;
+    //exports lingoquestpackage.models;
+
+    opens lingoquestpackage.narriator to javafx.fxml;
+    exports lingoquestpackage.narriator;
 }

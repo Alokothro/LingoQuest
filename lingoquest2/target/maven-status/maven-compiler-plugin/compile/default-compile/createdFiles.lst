@@ -1,4 +1,7 @@
-lingoquestpackage/App.class
-lingoquestpackage/SecondaryController.class
-lingoquestpackage/PrimaryController.class
+lingoquestpackage/controllers/PrimaryController.class
+lingoquestpackage/lingoquest/App.class
 module-info.class
+lingoquestpackage/narriator/Narriator$1.class
+lingoquestpackage/controllers/SecondaryController.class
+lingoquestpackage/narriator/Narriator.class
+lingoquestpackage/narriator/VoiceList.class

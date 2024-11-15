@@ -1,4 +1,6 @@
 /Users/cadestocker/Desktop/Fall 24/247/Group Project/LingoQuest2/lingoquest2/src/main/java/module-info.java
-/Users/cadestocker/Desktop/Fall 24/247/Group Project/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/PrimaryController.java
-/Users/cadestocker/Desktop/Fall 24/247/Group Project/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/SecondaryController.java
-/Users/cadestocker/Desktop/Fall 24/247/Group Project/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/App.java
+/Users/cadestocker/Desktop/Fall 24/247/Group Project/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/narriator/Narriator.java
+/Users/cadestocker/Desktop/Fall 24/247/Group Project/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/lingoquest/App.java
+/Users/cadestocker/Desktop/Fall 24/247/Group Project/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/controllers/PrimaryController.java
+/Users/cadestocker/Desktop/Fall 24/247/Group Project/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/controllers/SecondaryController.java
+/Users/cadestocker/Desktop/Fall 24/247/Group Project/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/narriator/VoiceList.java
