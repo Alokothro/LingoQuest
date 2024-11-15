@@ -9,7 +9,7 @@ import lingoquestpackage.narriator.*;
  * The main class that drives the language learning game, handling user interactions, 
  * language sessions, and resource management.
  */
-class LanguageGame {
+public class LanguageGame {
     private Users userList;
     private User user;
     private ItemShop itemShop;
