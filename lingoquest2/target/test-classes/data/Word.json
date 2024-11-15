@@ -1,0 +1,277 @@
+{
+    "words": [
+        {
+            "language": "SPANISH",
+            "timesPresented": 4,
+            "word": "perro",
+            "timesCorrect": 3,
+            "userUnderstanding": 0.75
+        },
+        {
+            "language": "SPANISH",
+            "timesPresented": 8,
+            "word": "manzana",
+            "timesCorrect": 4,
+            "userUnderstanding": 0.5
+        },
+        {
+            "language": "SPANISH",
+            "timesPresented": 6,
+            "word": "gato",
+            "timesCorrect": 5,
+            "userUnderstanding": 0.83
+        },
+        {
+            "language": "SPANISH",
+            "timesPresented": 3,
+            "word": "casa",
+            "timesCorrect": 2,
+            "userUnderstanding": 0.67
+        },
+        {
+            "language": "SPANISH",
+            "timesPresented": 5,
+            "word": "agua",
+            "timesCorrect": 3,
+            "userUnderstanding": 0.6
+        },
+        {
+            "language": "SPANISH",
+            "timesPresented": 7,
+            "word": "mesa",
+            "timesCorrect": 6,
+            "userUnderstanding": 0.86
+        },
+        {
+            "language": "SPANISH",
+            "timesPresented": 5,
+            "word": "silla",
+            "timesCorrect": 4,
+            "userUnderstanding": 0.8
+        },
+        {
+            "language": "SPANISH",
+            "timesPresented": 6,
+            "word": "pan",
+            "timesCorrect": 4,
+            "userUnderstanding": 0.67
+        },
+        {
+            "language": "SPANISH",
+            "timesPresented": 3,
+            "word": "techo",
+            "timesCorrect": 3,
+            "userUnderstanding": 1.0
+        },
+        {
+            "language": "SPANISH",
+            "timesPresented": 4,
+            "word": "puerta",
+            "timesCorrect": 3,
+            "userUnderstanding": 0.75
+        },
+        {
+            "language": "SPANISH",
+            "timesPresented": 8,
+            "word": "hola",
+            "timesCorrect": 7,
+            "userUnderstanding": 0.88
+        },
+        {
+            "language": "SPANISH",
+            "timesPresented": 7,
+            "word": "adios",
+            "timesCorrect": 5,
+            "userUnderstanding": 0.71
+        },
+        {
+            "language": "SPANISH",
+            "timesPresented": 5,
+            "word": "buenos tardes",
+            "timesCorrect": 4,
+            "userUnderstanding": 0.8
+        },
+        {
+            "language": "SPANISH",
+            "timesPresented": 6,
+            "word": "sandia",
+            "timesCorrect": 5,
+            "userUnderstanding": 0.83
+        },
+        {
+            "language": "SPANISH",
+            "timesPresented": 4,
+            "word": "uva",
+            "timesCorrect": 3,
+            "userUnderstanding": 0.75
+        },
+        {
+            "language": "SPANISH",
+            "timesPresented": 6,
+            "word": "naranja",
+            "timesCorrect": 4,
+            "userUnderstanding": 0.67
+        },
+        {
+            "language": "SPANISH",
+            "timesPresented": 5,
+            "word": "fresa",
+            "timesCorrect": 4,
+            "userUnderstanding": 0.8
+        },
+        {
+            "language": "SPANISH",
+            "timesPresented": 6,
+            "word": "queso",
+            "timesCorrect": 5,
+            "userUnderstanding": 0.83
+        },
+        {
+            "language": "SPANISH",
+            "timesPresented": 4,
+            "word": "jamon",
+            "timesCorrect": 3,
+            "userUnderstanding": 0.75
+        },
+        {
+            "language": "SPANISH",
+            "timesPresented": 3,
+            "word": "pajaro",
+            "timesCorrect": 2,
+            "userUnderstanding": 0.67
+        },
+        {
+            "language": "SPANISH",
+            "timesPresented": 5,
+            "word": "ventana",
+            "timesCorrect": 4,
+            "userUnderstanding": 0.8
+        },
+        {
+            "language": "SPANISH",
+            "timesPresented": 6,
+            "word": "lampara",
+            "timesCorrect": 5,
+            "userUnderstanding": 0.83
+        },
+        {
+            "language": "SPANISH",
+            "timesPresented": 7,
+            "word": "cama",
+            "timesCorrect": 6,
+            "userUnderstanding": 0.86
+        },
+        {
+            "language": "SPANISH",
+            "timesPresented": 7,
+            "word": "conejo",
+            "timesCorrect": 6,
+            "userUnderstanding": 0.86
+        },
+        {
+            "language": "SPANISH",
+            "timesPresented": 8,
+            "word": "pez",
+            "timesCorrect": 7,
+            "userUnderstanding": 0.88
+        },
+        {
+            "language": "SPANISH",
+            "timesPresented": 9,
+            "word": "leon",
+            "timesCorrect": 6,
+            "userUnderstanding": 0.67
+        },
+        {
+            "language": "SPANISH",
+            "timesPresented": 10,
+            "word": "tigre",
+            "timesCorrect": 8,
+            "userUnderstanding": 0.8
+        },
+        {
+            "language": "SPANISH",
+            "timesPresented": 6,
+            "word": "oso",
+            "timesCorrect": 4,
+            "userUnderstanding": 0.67
+        },
+        {
+            "language": "SPANISH",
+            "timesPresented": 5,
+            "word": "elefante",
+            "timesCorrect": 3,
+            "userUnderstanding": 0.6
+        },
+        {
+            "language": "SPANISH",
+            "timesPresented": 7,
+            "word": "serpiente",
+            "timesCorrect": 6,
+            "userUnderstanding": 0.86
+        },
+        {
+            "language": "SPANISH",
+            "timesPresented": 4,
+            "word": "lobo",
+            "timesCorrect": 3,
+            "userUnderstanding": 0.75
+        },
+        {
+            "language": "SPANISH",
+            "timesPresented": 8,
+            "word": "zorro",
+            "timesCorrect": 5,
+            "userUnderstanding": 0.63
+        },
+        {
+            "language": "SPANISH",
+            "timesPresented": 6,
+            "word": "tortuga",
+            "timesCorrect": 4,
+            "userUnderstanding": 0.67
+        },
+        {
+            "language": "SPANISH",
+            "timesPresented": 7,
+            "word": "jirafa",
+            "timesCorrect": 6,
+            "userUnderstanding": 0.86
+        },
+        {
+            "language": "SPANISH",
+            "timesPresented": 5,
+            "word": "delfin",
+            "timesCorrect": 4,
+            "userUnderstanding": 0.8
+        },
+        {
+            "language": "SPANISH",
+            "timesPresented": 6,
+            "word": "aguila",
+            "timesCorrect": 5,
+            "userUnderstanding": 0.83
+        },
+        {
+            "language": "SPANISH",
+            "timesPresented": 8,
+            "word": "canguro",
+            "timesCorrect": 7,
+            "userUnderstanding": 0.88
+        },
+        {
+            "language": "SPANISH",
+            "timesPresented": 9,
+            "word": "raton",
+            "timesCorrect": 8,
+            "userUnderstanding": 0.89
+        },
+        {
+            "language": "SPANISH",
+            "timesPresented": 10,
+            "word": "foca",
+            "timesCorrect": 9,
+            "userUnderstanding": 0.9
+        }
+    ]
+}

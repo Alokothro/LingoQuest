@@ -1,0 +1,360 @@
+{
+  "Spanish": 
+    {
+      "languageID": "b2657c2b-56ef-45b1-a794-97eda7a32bd4",
+      "User": {
+        "userID": "123e4567-e89b-12d3-a456-426614174000"
+      },
+      "PlacementTest": "95de287a-d432-4c4f-baba-edfac664f74c",
+      "pointsEarned": 300,
+      "totalPoints": 1000,
+      "progress": 0.3,
+      "placementScore": 85,
+      "sections": [
+        {
+          "sectionName": "Food",
+          "lessons": [
+            {
+              "pointsEarned": 30,
+              "totalPoints": 50,
+              "coinValue": 15,
+              "lessonProgress": 0.6,
+              "topicDictionary": "",
+              "questions": [
+                {
+                  "questionType": "Matching",
+                  "question": "Match the following words with their translations:",
+                  "answers": [
+                    "watermelon",
+                    "grape",
+                    "orange",
+                    "strawberry"
+                  ],
+                  "answerChoices": ["naranja", "uva", "sandia", "fresa"],
+                  "correctAnswer": {
+                    "watermelon": "sandia",
+                    "grape": "uva",
+                    "orange": "naranja",
+                    "strawberry": "fresa"
+                  },
+                  "userAnswer": "",
+                  "pointValue": 20,
+                  "coinValue": 2,
+                  "media": {
+                    "name": "",
+                    "description":"",
+                    "fileName":""
+                  }
+                },
+                {
+                  "questionType": "MultipleChoice",
+                  "question": "The Spanish word for 'bread' is __________.",
+                  "answerChoices": ["pan", "queso", "jamon"],
+                  "correctAnswer": "pan",
+                  "userAnswer": "",
+                  "pointValue": 10,
+                  "coinValue": 1,
+                  "media": {
+                    "name": "bread song",
+                    "description":"song about bread",
+                    "fileName":"bread.mp3"
+                  }
+                }
+              ]
+            },
+            {
+              "pointsEarned": 20,
+              "totalPoints": 50,
+              "coinValue": 10,
+              "lessonProgress": 0.4,
+              "topicDictionary": "",
+              "questions": [
+                {
+                  "questionType": "MultipleChoice",
+                  "question": "The Spanish word for 'dog' is __________.",
+                  "answerChoices": ["gato", "perro", "pajaro"],
+                  "correctAnswer": "perro",
+                  "userAnswer": "",
+                  "pointValue": 10,
+                  "coinValue": 1,
+                  "media": {
+                    "name": "picturebook1",
+                    "description": "book about a dog who loves to eat cheese",
+                    "fileName": "TheCheesyDog.pdf"
+                  }
+                },
+                {
+                  "questionType": "FillInTheBlank",
+                  "question": "The Spanish word for 'cat' is __________.",
+                  "answerChoices": ["gato"],
+                  "correctAnswer": "gato",
+                  "userAnswer": "",
+                  "pointValue": 10,
+                  "coinValue": 2,
+                  "media": {
+                    "name": "",
+                    "description": "",
+                    "fileName": ""
+                  }
+                }
+              ]
+            }
+          ],
+          "userAccess": false,
+          "sectionProgress": 0.3,
+          "pointsEarned": 50,
+          "totalPoints": 150,
+          "coinValue": 15,
+          "sectionComplete": false
+        },
+        {
+          "sectionName": "Transportation",
+          "lessons": [
+            {
+              "pointsEarned": 35,
+              "totalPoints": 50,
+              "coinValue": 15,
+              "lessonProgress": 0.7,
+              "topicDictionary": "",
+              "questions": [
+                {
+                  "questionType": "MultipleChoice",
+                  "question": "The Spanish word for 'car' is __________.",
+                  "answerChoices": ["carro", "bicicleta", "avion"],
+                  "correctAnswer": "carro",
+                  "userAnswer": "",
+                  "pointValue": 15,
+                  "coinValue": 2,
+                  "media": {
+                    "name": "car_book",
+                    "description": "Book about cars",
+                    "fileName": "cars.pdf"
+                  }
+                },
+                {
+                  "questionType": "Matching",
+                  "question": "Match the following transportation modes with their Spanish translations:",
+                  "answers": ["bus", "train", "plane", "boat"],
+                  "answerChoices": ["autobus", "tren", "avion", "barco"],
+                  "correctAnswer": {
+                    "bus": "autobus",
+                    "train": "tren",
+                    "plane": "avion",
+                    "boat": "barco"
+                  },
+                  "userAnswer": "",
+                  "pointValue": 20,
+                  "coinValue": 3,
+                  "media": {
+                    "name": "",
+                    "description": "",
+                    "fileName": ""
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sectionName": "Colors",
+          "lessons": [
+            {
+              "pointsEarned": 45,
+              "totalPoints": 60,
+              "coinValue": 18,
+              "lessonProgress": 0.75,
+              "topicDictionary": "",
+              "questions": [
+                {
+                  "questionType": "Matching",
+                  "question": "Match the following colors with their translations:",
+                  "answers": ["red", "blue", "green", "yellow"],
+                  "answerChoices": ["rojo", "azul", "verde", "amarillo"],
+                  "correctAnswer": {
+                    "red": "rojo",
+                    "blue": "azul",
+                    "green": "verde",
+                    "yellow": "amarillo"
+                  },
+                  "userAnswer": "",
+                  "pointValue": 20,
+                  "coinValue": 2,
+                  "media": {
+                    "name": "colors_video",
+                    "description": "Video about colors",
+                    "fileName": "colors.mp4"
+                  }
+                },
+                {
+                  "questionType": "MultipleChoice",
+                  "question": "The Spanish word for 'black' is __________.",
+                  "answerChoices": ["blanco", "negro", "verde"],
+                  "correctAnswer": "negro",
+                  "userAnswer": "",
+                  "pointValue": 10,
+                  "coinValue": 1,
+                  "media": {
+                    "name": "",
+                    "description": "",
+                    "fileName": ""
+                  }
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "sectionName": "Animals",
+          "lessons": [
+            {
+              "pointsEarned": 40,
+              "totalPoints": 60,
+              "coinValue": 20,
+              "lessonProgress": 0.7,
+              "topicDictionary": "",
+              "questions": [
+                {
+                  "questionType": "Matching",
+                  "question": "Match the following animals with their Spanish translations:",
+                  "answers": ["dog", "cat", "horse", "rabbit"],
+                  "answerChoices": ["perro", "gato", "caballo", "conejo"],
+                  "correctAnswer": {
+                    "dog": "perro",
+                    "cat": "gato",
+                    "horse": "caballo",
+                    "rabbit": "conejo"
+                  },
+                  "userAnswer": "",
+                  "pointValue": 20,
+                  "coinValue": 2,
+                  "media": {
+                    "name": "animals_song",
+                    "description": "Song about animals",
+                    "fileName": "animals.mp3"
+                  }
+                },
+                {
+                  "questionType": "MultipleChoice",
+                  "question": "The Spanish word for 'bird' is __________.",
+                  "answerChoices": ["pajaro", "pez", "leon"],
+                  "correctAnswer": "pajaro",
+                  "userAnswer": "",
+                  "pointValue": 10,
+                  "coinValue": 1,
+                  "media": {
+                    "name": "",
+                    "description": "",
+                    "fileName": ""
+                  }
+                }
+              ]
+            }
+          ]
+        },
+    
+        {
+          "sectionName": "House",
+          "lessons": [
+            {
+              "pointsEarned": 25,
+              "totalPoints": 40,
+              "coinValue": 12,
+              "lessonProgress": 0.5,
+              "topicDictionary": "",
+              "questions": [
+                {
+                  "questionType": "MultipleChoice",
+                  "question": "The Spanish word for 'house' is __________.",
+                  "answerChoices": ["ventana", "casa", "puerta"],
+                  "correctAnswer": "casa",
+                  "userAnswer": "",
+                  "pointValue": 10,
+                  "coinValue": 1,
+                  "media": {
+                    "name": "",
+                    "description": "",
+                    "fileName": ""
+                  }
+                },
+                {
+                  "questionType": "FillInTheBlank",
+                  "question": "The Spanish word for 'roof' is __________.",
+                  "answerChoices": ["techo"],
+                  "correctAnswer": "techo",
+                  "userAnswer": "",
+                  "pointValue": 10,
+                  "coinValue": 2,
+                  "media": {
+                    "name": "",
+                    "description": "",
+                    "fileName": ""
+                  }
+                }
+              ]
+            },
+            {
+              "pointsEarned": 15,
+              "totalPoints": 30,
+              "coinValue": 8,
+              "lessonProgress": 0.3,
+              "topicDictionary": "",
+              "questions": [
+                {
+                  "questionType": "MultipleChoice",
+                  "question": "The Spanish word for 'chair' is __________.",
+                  "answerChoices": ["mesa", "silla", "cama"],
+                  "correctAnswer": "silla",
+                  "userAnswer": "",
+                  "pointValue": 10,
+                  "coinValue": 1,
+                  "media": {
+                    "name": "",
+                    "description": "",
+                    "fileName": ""
+                  }
+                },
+                {
+                  "questionType": "Matching",
+                  "question": "Match the following furniture items:",
+                  "answers": [
+                    "table",
+                    "lamp"
+                  ],
+                  "answerChoices": ["mesa", "lampara"],
+                  "correctAnswer": {
+                    "table": "mesa",
+                    "lamp": "lampara"
+                  },
+                  "userAnswer": "",
+                  "pointValue": 10,
+                  "coinValue": 1,
+                  "media": {
+                    "name": "Evil Llama",
+                    "description": "book about an evil llama that speaks spanish",
+                    "fileName": "evilLlama.pdf"
+                  }
+                }
+              ]
+            }
+          ],
+          "userAccess": true,
+          "sectionProgress": 0.5,
+          "pointsEarned": 100,
+          "totalPoints": 200,
+          "coinValue": 20,
+          "sectionComplete": false
+        }
+      ],
+      "dictionary": "",
+      "answerStreak": 7,
+      "languageName": "SPANISH",
+      "sectionsComplete": ["Section1"],
+      "sectionAccess": {
+        "Section1": true,
+        "Section2": false
+      }
+
+    }
+  
+}

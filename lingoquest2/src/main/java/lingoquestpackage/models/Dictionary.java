@@ -12,7 +12,7 @@ import java.util.UUID;
  * 10/22 We have changed the design of the Word class, meaning that dictionary
  * will now be restructured as an ArrayList of words
  */
-class Dictionary {
+public class Dictionary {
     private ArrayList<Word> words;
     private UUID dictionaryID;
     private int numberOfWords;

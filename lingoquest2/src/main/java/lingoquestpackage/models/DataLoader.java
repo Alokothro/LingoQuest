@@ -20,17 +20,17 @@ public class DataLoader {
     public final static Users userList = Users.getInstance();
     public final static LanguageManager languageManager = LanguageManager.getInstance();
     public static String userFileJunit = "/data/Users.json";
-    public static String userFile = "correct_structure/src/main/resources/data/Users.json";
+    public static String userFile = "/lingoquest2/src/main/java/lingoquestpackage/data/Users.json";
     public static String itemFileJunit = "/data/ItemShop.json";
-    public static String itemFile = "correct_structure/src/main/resources/data/ItemShop.json";
+    public static String itemFile = "/lingoquest2/src/main/java/lingoquestpackage/data/ItemShop.json";
     public static String placementFileJunit = "/data/PlacementTest.json";
-    public static String placementFile = "correct_structure/src/main/resources/data/PlacementTest.json";
+    public static String placementFile = "/lingoquest2/src/main/java/lingoquestpackage/data/PlacementTest.json";
     public static String wordFileJunit = "/data/Word.json";
-    public static String wordFile = "correct_structure/src/main/resources/data/Word.json";
+    public static String wordFile = "/lingoquest2/src/main/java/lingoquestpackage/data/Word.json";
     public static String dictionaryFileJunit = "/data/Dictionaries.json";
-    public static String dictionaryFile = "correct_structure/src/main/resources/data/Dictionaries.json";
+    public static String dictionaryFile = "/lingoquest2/src/main/java/lingoquestpackage/data/Dictionaries.json";
     public static String languageFileJunit = "/data/Languages2.json";
-    public static String languageFile = "correct_structure/src/main/resources/data/Languages2.json";
+    public static String languageFile = "/lingoquest2/src/main/java/lingoquestpackage/data/Languages2.json";
 
     public static boolean isJUnitTest() {
         for(StackTraceElement element : Thread.currentThread().getStackTrace()) {
