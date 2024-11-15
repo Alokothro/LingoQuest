@@ -1,0 +1,1405 @@
+{
+    "words":[
+        {
+            "language": "SPANISH",
+            "word": "Hola",
+            "wordInEnglish": "Hello",
+            "lessonUUID": "a5d8b523-68e9-46c0-ba96-63a244127868",
+            "wordUUID": "c3bec18f-fade-417f-9935-c2fa0c91a961"
+        },
+        {
+            "language": "SPANISH",
+            "word": "Adiós",
+            "wordInEnglish": "Goodbye",
+            "lessonUUID": "a5d8b523-68e9-46c0-ba96-63a244127868",
+            "wordUUID": "512b4044-6f8b-4dc7-95de-243ba1987711"
+        },
+        {
+            "language": "SPANISH",
+            "word": "Por favor",
+            "wordInEnglish": "Please",
+            "lessonUUID": "a5d8b523-68e9-46c0-ba96-63a244127868",
+            "wordUUID": "c1322ec5-79e8-4860-bc58-6e2b6e859734"
+        },
+        {
+            "language": "SPANISH",
+            "word": "Gracias",
+            "wordInEnglish": "Thank you",
+            "lessonUUID": "a5d8b523-68e9-46c0-ba96-63a244127868",
+            "wordUUID": "4acce212-06ab-4db8-85bb-41598540d558"
+        },
+        {
+            "language": "SPANISH",
+            "word": "Sí",
+            "wordInEnglish": "Yes",
+            "lessonUUID": "a5d8b523-68e9-46c0-ba96-63a244127868",
+            "wordUUID": "73e82d9b-9ae0-4896-a4c1-8523a7524723"
+        },
+        {
+            "language": "SPANISH",
+            "word": "No",
+            "wordInEnglish": "No",
+            "lessonUUID": "a5d8b523-68e9-46c0-ba96-63a244127868",
+            "wordUUID": "54f5593a-222f-45ac-9e9d-3614fb334fde"
+        },
+        {
+            "language": "SPANISH",
+            "word": "Bueno",
+            "wordInEnglish": "Good",
+            "lessonUUID": "a5d8b523-68e9-46c0-ba96-63a244127868",
+            "wordUUID": "e97446ff-40a6-4c72-81ee-e20437841e08"
+        },
+        {
+            "language": "SPANISH",
+            "word": "Malo",
+            "wordInEnglish": "Bad",
+            "lessonUUID": "a5d8b523-68e9-46c0-ba96-63a244127868",
+            "wordUUID": "a1f0f378-e752-4398-8d27-133743f77910"
+        },
+        {
+            "language": "SPANISH",
+            "word": "Hoy",
+            "wordInEnglish": "Today",
+            "lessonUUID": "a5d8b523-68e9-46c0-ba96-63a244127868",
+            "wordUUID": "69157ffe-e592-4dad-80e4-0e124df450de"
+        },
+        {
+            "language": "SPANISH",
+            "word": "Mañana",
+            "wordInEnglish": "Tomorrow",
+            "lessonUUID": "a5d8b523-68e9-46c0-ba96-63a244127868",
+            "wordUUID": "c5c814f3-f882-490a-a2d0-992268b34e68"
+        },
+        {
+            "language": "SPANISH",
+            "word": "Qué",
+            "wordInEnglish": "What",
+            "lessonUUID": "e91a45e3-8ae9-497f-9355-0c20ad8c21c7",
+            "wordUUID": "9f1469b3-1e84-4625-88a4-3b5060f1500b"
+        },
+        {
+            "language": "SPANISH",
+            "word": "Quién",
+            "wordInEnglish": "Who",
+            "lessonUUID": "e91a45e3-8ae9-497f-9355-0c20ad8c21c7",
+            "wordUUID": "5e514d15-487b-4be7-883f-933cbe2e08c9"
+        },
+        {
+            "language": "SPANISH",
+            "word": "Dónde",
+            "wordInEnglish": "Where",
+            "lessonUUID": "e91a45e3-8ae9-497f-9355-0c20ad8c21c7",
+            "wordUUID": "ba7f1f00-f8fa-4998-a40c-cb2b27de4690"
+        },
+        {
+            "language": "SPANISH",
+            "word": "Cuándo",
+            "wordInEnglish": "When",
+            "lessonUUID": "e91a45e3-8ae9-497f-9355-0c20ad8c21c7",
+            "wordUUID": "732de86e-c8c1-4fc5-b3ec-482453c0d96f"
+        },
+        {
+            "language": "SPANISH",
+            "word": "Por qué",
+            "wordInEnglish": "Why",
+            "lessonUUID": "e91a45e3-8ae9-497f-9355-0c20ad8c21c7",
+            "wordUUID": "b9e1973b-ec5e-42a3-982b-6b06be8d676a"
+        },
+        {
+            "language": "SPANISH",
+            "word": "Cómo",
+            "wordInEnglish": "How",
+            "lessonUUID": "e91a45e3-8ae9-497f-9355-0c20ad8c21c7",
+            "wordUUID": "a1b9e86d-3439-4b20-a1fd-d9534b31a929"
+        },
+        {
+            "language": "SPANISH",
+            "word": "Cuál",
+            "wordInEnglish": "Which",
+            "lessonUUID": "e91a45e3-8ae9-497f-9355-0c20ad8c21c7",
+            "wordUUID": "d142d5fe-f014-40e9-a5cb-2761e5a4a202"
+        },
+        {
+            "language": "SPANISH",
+            "word": "Cuánto",
+            "wordInEnglish": "How much",
+            "lessonUUID": "e91a45e3-8ae9-497f-9355-0c20ad8c21c7",
+            "wordUUID": "01e7cb00-e514-403f-b605-d5ebd3403562"
+        },
+        {
+            "language": "SPANISH",
+            "word": "Hora",
+            "wordInEnglish": "Time",
+            "lessonUUID": "e91a45e3-8ae9-497f-9355-0c20ad8c21c7",
+            "wordUUID": "26bbf227-dce9-4c83-a50e-905803cb579e"
+        },
+        {
+            "language": "SPANISH",
+            "word": "Ayuda",
+            "wordInEnglish": "Help",
+            "lessonUUID": "e91a45e3-8ae9-497f-9355-0c20ad8c21c7",
+            "wordUUID": "bbd1bfe9-91c8-4149-9445-6044e71563f6"
+        },
+        {
+            "language": "SPANISH",
+            "word": "Perdón",
+            "wordInEnglish": "Excuse",
+            "lessonUUID": "3a0fb015-15d0-4f7f-9d07-e610c0acacfd",
+            "wordUUID": "46b998da-b462-401e-9f2b-e180cde1b540"
+        },
+        {
+            "language": "SPANISH",
+            "word": "Lo siento",
+            "wordInEnglish": "Sorry",
+            "lessonUUID": "3a0fb015-15d0-4f7f-9d07-e610c0acacfd",
+            "wordUUID": "fa1f1a48-ccee-47cb-b601-7853d66ebaa2"
+        },
+        {
+            "language": "SPANISH",
+            "word": "Bienvenido",
+            "wordInEnglish": "Welcome",
+            "lessonUUID": "3a0fb015-15d0-4f7f-9d07-e610c0acacfd",
+            "wordUUID": "cf5563fc-f6e0-460f-a337-df3c727b8e98"
+        },
+        {
+            "language": "SPANISH",
+            "word": "Agradecer",
+            "wordInEnglish": "Thank",
+            "lessonUUID": "3a0fb015-15d0-4f7f-9d07-e610c0acacfd",
+            "wordUUID": "258a080e-7f27-4aa8-9879-12b66644c1ef"
+        },
+        {
+            "language": "SPANISH",
+            "word": "Ayudar",
+            "wordInEnglish": "Help",
+            "lessonUUID": "3a0fb015-15d0-4f7f-9d07-e610c0acacfd",
+            "wordUUID": "1275b993-05e7-4b6a-8f3b-69fe486ce4c6"
+        },
+        {
+            "language": "SPANISH",
+            "word": "Necesitar",
+            "wordInEnglish": "Need",
+            "lessonUUID": "3a0fb015-15d0-4f7f-9d07-e610c0acacfd",
+            "wordUUID": "658f9c89-2279-4b08-a512-2a4db92b2b64"
+        },
+        {
+            "language": "SPANISH",
+            "word": "Poder",
+            "wordInEnglish": "Can",
+            "lessonUUID": "3a0fb015-15d0-4f7f-9d07-e610c0acacfd",
+            "wordUUID": "23fddaa0-8d5f-455b-8989-4f7da24879e6"
+        },
+        {
+            "language": "SPANISH",
+            "word": "Repetir",
+            "wordInEnglish": "Repeat",
+            "lessonUUID": "3a0fb015-15d0-4f7f-9d07-e610c0acacfd",
+            "wordUUID": "a86e54d3-5a02-4eb4-b82e-d86fa3df6b65"
+        },
+        {
+            "language": "SPANISH",
+            "word": "Entender",
+            "wordInEnglish": "Understand",
+            "lessonUUID": "3a0fb015-15d0-4f7f-9d07-e610c0acacfd",
+            "wordUUID": "60544d5f-474f-42ff-bf83-cfd4b4c20eeb"
+        },
+        {
+            "language": "SPANISH",
+            "word": "Problema",
+            "wordInEnglish": "Problem",
+            "lessonUUID": "3a0fb015-15d0-4f7f-9d07-e610c0acacfd",
+            "wordUUID": "8c4f12ea-faa4-43d4-b240-17dc94a14736"
+        },
+        {
+            "language": "SPANISH",
+            "word": "Nombre",
+            "wordInEnglish": "Name",
+            "lessonUUID": "68b9a72a-5881-4c72-99ab-d7e6265c8179",
+            "wordUUID": "e8f6d8bc-393f-42f8-b5a2-9a9cb3f18c35"
+        },
+        {
+            "language": "SPANISH",
+            "word": "Edad",
+            "wordInEnglish": "Age",
+            "lessonUUID": "68b9a72a-5881-4c72-99ab-d7e6265c8179",
+            "wordUUID": "7bbca93b-509e-4822-a3db-90e2ba189d92"
+        },
+        {
+            "language": "SPANISH",
+            "word": "De",
+            "wordInEnglish": "From",
+            "lessonUUID": "68b9a72a-5881-4c72-99ab-d7e6265c8179",
+            "wordUUID": "e3da0b28-b947-47f7-9511-59d15b129d3e"
+        },
+        {
+            "language": "SPANISH",
+            "word": "Hablar",
+            "wordInEnglish": "Speak",
+            "lessonUUID": "68b9a72a-5881-4c72-99ab-d7e6265c8179",
+            "wordUUID": "cd6d2a98-fbbc-4ae6-bf77-290b5f8d96a5"
+        },
+        {
+            "language": "SPANISH",
+            "word": "Saber",
+            "wordInEnglish": "Know",
+            "lessonUUID": "68b9a72a-5881-4c72-99ab-d7e6265c8179",
+            "wordUUID": "5d6ab90b-9b83-4a67-930d-72a0d6ad2e95"
+        },
+        {
+            "language": "SPANISH",
+            "word": "Vivir",
+            "wordInEnglish": "Live",
+            "lessonUUID": "68b9a72a-5881-4c72-99ab-d7e6265c8179",
+            "wordUUID": "fc9d48f8-7994-4ff1-9e50-f4f23a3b48f2"
+        },
+        {
+            "language": "SPANISH",
+            "word": "Comer",
+            "wordInEnglish": "Eat",
+            "lessonUUID": "68b9a72a-5881-4c72-99ab-d7e6265c8179",
+            "wordUUID": "79d3990f-7d49-4cfb-b4ea-2579fcfa4b2f"
+        },
+        {
+            "language": "SPANISH",
+            "word": "Trabajar",
+            "wordInEnglish": "Work",
+            "lessonUUID": "68b9a72a-5881-4c72-99ab-d7e6265c8179",
+            "wordUUID": "94be47cc-1dbf-4030-b90a-c07a0e24f79a"
+        },
+        {
+            "language": "SPANISH",
+            "word": "Leer",
+            "wordInEnglish": "Read",
+            "lessonUUID": "68b9a72a-5881-4c72-99ab-d7e6265c8179",
+            "wordUUID": "8da228b0-e20d-44d6-924f-808c22a86e16"
+        },
+        {
+            "language": "SPANISH",
+            "word": "Escribir",
+            "wordInEnglish": "Write",
+            "lessonUUID": "68b9a72a-5881-4c72-99ab-d7e6265c8179",
+            "wordUUID": "850637fc-0ae2-4f97-b99e-957606ac44f4"
+        },
+
+        {
+            "language": "SPANISH",
+            "word": "Pastel",
+            "wordInEnglish": "Cake",
+            "lessonUUID": "45c9e6e1-e7c4-45ba-8fc5-c93f0075a88d",
+            "wordUUID": "f20eebc2-28cb-4824-9f14-97f0984a4c6d"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Helado",
+            "wordInEnglish": "Ice Cream",
+            "lessonUUID": "45c9e6e1-e7c4-45ba-8fc5-c93f0075a88d",
+            "wordUUID": "d52c327e-9997-4b84-b79b-8fa4f63f2915"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Galleta",
+            "wordInEnglish": "Cookie",
+            "lessonUUID": "45c9e6e1-e7c4-45ba-8fc5-c93f0075a88d",
+            "wordUUID": "36b2e3e2-2030-44f9-b353-c32f9a78e0c7"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Tarta",
+            "wordInEnglish": "Pie",
+            "lessonUUID": "45c9e6e1-e7c4-45ba-8fc5-c93f0075a88d",
+            "wordUUID": "8c875a2e-15b5-4aa0-9c6b-043e8343d34f"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Brownie",
+            "wordInEnglish": "Brownie",
+            "lessonUUID": "45c9e6e1-e7c4-45ba-8fc5-c93f0075a88d",
+            "wordUUID": "742a9444-f394-4449-ae7d-05f55b79fa1c"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Pudín",
+            "wordInEnglish": "Pudding",
+            "lessonUUID": "45c9e6e1-e7c4-45ba-8fc5-c93f0075a88d",
+            "wordUUID": "bc2a1f02-c853-4741-8524-c5a6e23b2238"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Rosquilla",
+            "wordInEnglish": "Donut",
+            "lessonUUID": "45c9e6e1-e7c4-45ba-8fc5-c93f0075a88d",
+            "wordUUID": "13b7fa24-0b46-45c0-b5b5-d00a0f87b95b"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Flan",
+            "wordInEnglish": "Custard",
+            "lessonUUID": "45c9e6e1-e7c4-45ba-8fc5-c93f0075a88d",
+            "wordUUID": "3656d6f0-99b4-4b44-b1a7-556bdb44920e"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Dulce",
+            "wordInEnglish": "Candy",
+            "lessonUUID": "45c9e6e1-e7c4-45ba-8fc5-c93f0075a88d",
+            "wordUUID": "e40443e1-1aa4-4b9e-9b68-165d9d57e1df"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Chocolate",
+            "wordInEnglish": "Chocolate",
+            "lessonUUID": "45c9e6e1-e7c4-45ba-8fc5-c93f0075a88d",
+            "wordUUID": "6598d7a3-b848-41b1-bc3c-d4b04744d5de"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Manzana",
+            "wordInEnglish": "Apple",
+            "lessonUUID": "cd00798a-9cb5-4cf7-bd26-118f6af23f77",
+            "wordUUID": "815f255d-9672-49b4-8cbb-f20a6b0cb24e"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Plátano",
+            "wordInEnglish": "Banana",
+            "lessonUUID": "cd00798a-9cb5-4cf7-bd26-118f6af23f77",
+            "wordUUID": "2a8ac8e0-0174-44f4-b7b6-5e9de3989baf"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Uva",
+            "wordInEnglish": "Grape",
+            "lessonUUID": "cd00798a-9cb5-4cf7-bd26-118f6af23f77",
+            "wordUUID": "5fa3a846-d6b3-4b28-90cf-027da8fcf60e"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Naranja",
+            "wordInEnglish": "Orange",
+            "lessonUUID": "cd00798a-9cb5-4cf7-bd26-118f6af23f77",
+            "wordUUID": "14e9f219-77df-4f80-8c87-e17243a49064"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Piña",
+            "wordInEnglish": "Pineapple",
+            "lessonUUID": "cd00798a-9cb5-4cf7-bd26-118f6af23f77",
+            "wordUUID": "2b9cc9ad-5fb3-4d29-9d19-89ba1b272b35"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Fresa",
+            "wordInEnglish": "Strawberry",
+            "lessonUUID": "cd00798a-9cb5-4cf7-bd26-118f6af23f77",
+            "wordUUID": "ff9f1d50-b434-4f7a-b4b4-89e9732fca2a"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Sandía",
+            "wordInEnglish": "Watermelon",
+            "lessonUUID": "cd00798a-9cb5-4cf7-bd26-118f6af23f77",
+            "wordUUID": "f8e1d0a4-d403-4db6-96d7-e37e82b96b24"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Durazno",
+            "wordInEnglish": "Peach",
+            "lessonUUID": "cd00798a-9cb5-4cf7-bd26-118f6af23f77",
+            "wordUUID": "f2dbd23b-fc2d-4d17-bb2c-b2eebc944bde"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Pera",
+            "wordInEnglish": "Pear",
+            "lessonUUID": "cd00798a-9cb5-4cf7-bd26-118f6af23f77",
+            "wordUUID": "f5122e45-9cf1-4960-86f9-3b9c5abbe33d"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Mango",
+            "wordInEnglish": "Mango",
+            "lessonUUID": "cd00798a-9cb5-4cf7-bd26-118f6af23f77",
+            "wordUUID": "e3f58b8c-86b4-47b1-abe4-d7846f5a1d8b"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Coche",
+            "wordInEnglish": "Car",
+            "lessonUUID": "654eb1dd-65b6-469d-939d-b8d4fddca9e4",
+            "wordUUID": "d6ace4e2-5fcb-425d-aea6-9b0322c8acf0"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Autobús",
+            "wordInEnglish": "Bus",
+            "lessonUUID": "654eb1dd-65b6-469d-939d-b8d4fddca9e4",
+            "wordUUID": "85206927-7270-45c6-b0b5-f88f23098219"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Bicicleta",
+            "wordInEnglish": "Bicycle",
+            "lessonUUID": "654eb1dd-65b6-469d-939d-b8d4fddca9e4",
+            "wordUUID": "1764783b-da6f-4770-9c21-5d9267eed68f"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Motocicleta",
+            "wordInEnglish": "Motorcycle",
+            "lessonUUID": "654eb1dd-65b6-469d-939d-b8d4fddca9e4",
+            "wordUUID": "6092844b-d274-4a70-8c45-22ae250ff907"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Taxi",
+            "wordInEnglish": "Taxi",
+            "lessonUUID": "654eb1dd-65b6-469d-939d-b8d4fddca9e4",
+            "wordUUID": "352020f7-3551-4e7d-b582-3b1d2a84cfe6"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Tren",
+            "wordInEnglish": "Train",
+            "lessonUUID": "654eb1dd-65b6-469d-939d-b8d4fddca9e4",
+            "wordUUID": "59e5e33d-82b8-4ff4-9184-94ecf63bdf6a"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Camión",
+            "wordInEnglish": "Truck",
+            "lessonUUID": "654eb1dd-65b6-469d-939d-b8d4fddca9e4",
+            "wordUUID": "b3ca3a39-5d91-4af2-b93f-e4d164d471b2"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Furgoneta",
+            "wordInEnglish": "Van",
+            "lessonUUID": "654eb1dd-65b6-469d-939d-b8d4fddca9e4",
+            "wordUUID": "90371491-2fbb-4370-9574-3208d88eb54f"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Metro",
+            "wordInEnglish": "Subway",
+            "lessonUUID": "654eb1dd-65b6-469d-939d-b8d4fddca9e4",
+            "wordUUID": "71300543-e5cf-4568-975e-8578907d63fe"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Patinete",
+            "wordInEnglish": "Scooter",
+            "lessonUUID": "654eb1dd-65b6-469d-939d-b8d4fddca9e4",
+            "wordUUID": "1df6d162-81e8-4b32-ba95-70864e5b1399"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Avión",
+            "wordInEnglish": "Airplane",
+            "lessonUUID": "743e1d8c-3961-4e53-9fb6-578cb4393fe2",
+            "wordUUID": "01332694-341f-4ce5-9d3d-f19621484907"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Helicóptero",
+            "wordInEnglish": "Helicopter",
+            "lessonUUID": "743e1d8c-3961-4e53-9fb6-578cb4393fe2",
+            "wordUUID": "aa9dbc31-d087-499d-89c1-e9838587b4e3"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Globo Aerostático",
+            "wordInEnglish": "Hot Air Balloon",
+            "lessonUUID": "743e1d8c-3961-4e53-9fb6-578cb4393fe2",
+            "wordUUID": "dcf342e1-030c-4e64-8579-013e5fd7896c"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Jet",
+            "wordInEnglish": "Jet",
+            "lessonUUID": "743e1d8c-3961-4e53-9fb6-578cb4393fe2",
+            "wordUUID": "2ebfdda3-8ba7-4c5c-ba02-acadb730c61b"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Planeador",
+            "wordInEnglish": "Glider",
+            "lessonUUID": "743e1d8c-3961-4e53-9fb6-578cb4393fe2",
+            "wordUUID": "2b75b5a4-f9dd-48eb-95d7-393b5f8c6ec0"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Aeropuerto",
+            "wordInEnglish": "Airport",
+            "lessonUUID": "743e1d8c-3961-4e53-9fb6-578cb4393fe2",
+            "wordUUID": "f7e61ee8-5176-4a5d-8612-338373edf619"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Vuelo",
+            "wordInEnglish": "Flight",
+            "lessonUUID": "743e1d8c-3961-4e53-9fb6-578cb4393fe2",
+            "wordUUID": "2eb9539a-59c0-4ee0-8b05-9197ae106548"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Piloto",
+            "wordInEnglish": "Pilot",
+            "lessonUUID": "743e1d8c-3961-4e53-9fb6-578cb4393fe2",
+            "wordUUID": "e50cf714-f672-4e42-b962-26c7bf495eb3"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Paracaídas",
+            "wordInEnglish": "Parachute",
+            "lessonUUID": "743e1d8c-3961-4e53-9fb6-578cb4393fe2",
+            "wordUUID": "df5e9941-44a3-4034-b405-9d21ccf1c58c"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Equipaje",
+            "wordInEnglish": "Baggage",
+            "lessonUUID": "743e1d8c-3961-4e53-9fb6-578cb4393fe2",
+            "wordUUID": "77cd93e8-c55d-403c-b89d-7e0aa96f3af8"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Barco",
+            "wordInEnglish": "Boat",
+            "lessonUUID": "27d3b8ea-9636-4f6f-aa4a-542a0ce8b82c",
+            "wordUUID": "642a9f7a-63be-4560-a1da-598e4ef296f6"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Embarcación",
+            "wordInEnglish": "Ship",
+            "lessonUUID": "27d3b8ea-9636-4f6f-aa4a-542a0ce8b82c",
+            "wordUUID": "7f2ce1c3-d10c-4101-9fae-2991c3bc8edd"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Ferry",
+            "wordInEnglish": "Ferry",
+            "lessonUUID": "27d3b8ea-9636-4f6f-aa4a-542a0ce8b82c",
+            "wordUUID": "51f4ee56-0a63-485b-acab-8568cdbc08c3"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Submarino",
+            "wordInEnglish": "Submarine",
+            "lessonUUID": "27d3b8ea-9636-4f6f-aa4a-542a0ce8b82c",
+            "wordUUID": "e529866d-4012-4344-a03f-f76211d5a09e"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Yate",
+            "wordInEnglish": "Yacht",
+            "lessonUUID": "27d3b8ea-9636-4f6f-aa4a-542a0ce8b82c",
+            "wordUUID": "177111b6-0f77-4f10-b9c1-a7a2817e23a2"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Canoa",
+            "wordInEnglish": "Canoe",
+            "lessonUUID": "27d3b8ea-9636-4f6f-aa4a-542a0ce8b82c",
+            "wordUUID": "3136d31f-8753-4391-8715-7fd7db828295"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Velero",
+            "wordInEnglish": "Sailboat",
+            "lessonUUID": "27d3b8ea-9636-4f6f-aa4a-542a0ce8b82c",
+            "wordUUID": "897aff92-5c63-4806-84d7-e7055dcd927f"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Puerto",
+            "wordInEnglish": "Port",
+            "lessonUUID": "27d3b8ea-9636-4f6f-aa4a-542a0ce8b82c",
+            "wordUUID": "fc6481eb-96f4-45f8-8b0e-cb902e9ff85c"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Capitán",
+            "wordInEnglish": "Captain",
+            "lessonUUID": "27d3b8ea-9636-4f6f-aa4a-542a0ce8b82c",
+            "wordUUID": "41545014-f29d-4de5-9a4e-8ac2ee1ffa25"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Bote Salvavidas",
+            "wordInEnglish": "Lifeboat",
+            "lessonUUID": "27d3b8ea-9636-4f6f-aa4a-542a0ce8b82c",
+            "wordUUID": "cad25f1e-4bec-4d4a-b1e3-1d06d2bdfc73"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Estación de tren",
+            "wordInEnglish": "Train Station",
+            "lessonUUID": "34d4128f-0ace-4bd4-a6a2-e72c84c3da7a",
+            "wordUUID": "286d5685-3764-4c14-90a4-562d522b52e3"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Estación de autobuses",
+            "wordInEnglish": "Bus Station",
+            "lessonUUID": "34d4128f-0ace-4bd4-a6a2-e72c84c3da7a",
+            "wordUUID": "e7538af1-97a7-4afc-9ac2-862361759d15"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Autopista",
+            "wordInEnglish": "Highway",
+            "lessonUUID": "34d4128f-0ace-4bd4-a6a2-e72c84c3da7a",
+            "wordUUID": "4639c188-f8e2-4e44-b783-a369270cdfaa"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Carretera",
+            "wordInEnglish": "Road",
+            "lessonUUID": "34d4128f-0ace-4bd4-a6a2-e72c84c3da7a",
+            "wordUUID": "aed0e535-ef45-4019-a673-88736d42497f"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Semáforo",
+            "wordInEnglish": "Traffic Light",
+            "lessonUUID": "34d4128f-0ace-4bd4-a6a2-e72c84c3da7a",
+            "wordUUID": "9ea7f7e1-0793-4fa4-b0e6-468d84aea078"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Paso de peatones",
+            "wordInEnglish": "Crosswalk",
+            "lessonUUID": "34d4128f-0ace-4bd4-a6a2-e72c84c3da7a",
+            "wordUUID": "5d49694c-8376-4be3-bbb5-d336268d00d3"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Peaje",
+            "wordInEnglish": "Toll",
+            "lessonUUID": "34d4128f-0ace-4bd4-a6a2-e72c84c3da7a",
+            "wordUUID": "db448fa7-657a-4eaf-8862-57b8ffba425c"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Licencia de conducir",
+            "wordInEnglish": "Driver's License",
+            "lessonUUID": "34d4128f-0ace-4bd4-a6a2-e72c84c3da7a",
+            "wordUUID": "38328e3e-ec55-43e7-8bd5-d285d2df81bc"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Estacionamiento",
+            "wordInEnglish": "Parking Lot",
+            "lessonUUID": "34d4128f-0ace-4bd4-a6a2-e72c84c3da7a",
+            "wordUUID": "91f35e61-27a6-4f17-a75c-0d6095e7b4f8"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Tráfico",
+            "wordInEnglish": "Traffic",
+            "lessonUUID": "34d4128f-0ace-4bd4-a6a2-e72c84c3da7a",
+            "wordUUID": "80d09e2b-beaa-4715-a754-985f680b02e5"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Tiburón",
+            "wordInEnglish": "Shark",
+            "lessonUUID": "cf62b3ec-1a19-4459-821e-b7547f3ef4e3",
+            "wordUUID": "a1a7b8b1-7a68-46d2-9f92-4e5be5c4715c"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Ballena",
+            "wordInEnglish": "Whale",
+            "lessonUUID": "cf62b3ec-1a19-4459-821e-b7547f3ef4e3",
+            "wordUUID": "93a1e3e6-52a4-40f4-89b5-25d5fbc6719a"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Delfín",
+            "wordInEnglish": "Dolphin",
+            "lessonUUID": "cf62b3ec-1a19-4459-821e-b7547f3ef4e3",
+            "wordUUID": "4b7829b1-f674-4b94-9c8e-195850ce3d2a"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Pulpo",
+            "wordInEnglish": "Octopus",
+            "lessonUUID": "cf62b3ec-1a19-4459-821e-b7547f3ef4e3",
+            "wordUUID": "d2c4f56f-0136-4e0f-8678-91f7b23c8a02"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Medusa",
+            "wordInEnglish": "Jellyfish",
+            "lessonUUID": "cf62b3ec-1a19-4459-821e-b7547f3ef4e3",
+            "wordUUID": "a1f73957-c0cb-41fd-b88d-47f2f8a7d7de"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Cangrejo",
+            "wordInEnglish": "Crab",
+            "lessonUUID": "cf62b3ec-1a19-4459-821e-b7547f3ef4e3",
+            "wordUUID": "83ffb8b3-8cfb-4e8d-890f-15a01416b7ab"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Langosta",
+            "wordInEnglish": "Lobster",
+            "lessonUUID": "cf62b3ec-1a19-4459-821e-b7547f3ef4e3",
+            "wordUUID": "9d5b78c2-93bb-4d88-9862-9a8548b6fc54"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Caballito de mar",
+            "wordInEnglish": "Seahorse",
+            "lessonUUID": "cf62b3ec-1a19-4459-821e-b7547f3ef4e3",
+            "wordUUID": "7b6193b7-df95-4989-bb68-4e94f0b91a3c"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Estrella de mar",
+            "wordInEnglish": "Starfish",
+            "lessonUUID": "cf62b3ec-1a19-4459-821e-b7547f3ef4e3",
+            "wordUUID": "0f14b12c-91b4-43a1-a599-2d2c2f0ecbf1"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Foca",
+            "wordInEnglish": "Seal",
+            "lessonUUID": "cf62b3ec-1a19-4459-821e-b7547f3ef4e3",
+            "wordUUID": "bb8ac202-fb60-4db4-b2fa-09e0ec965a67"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Hormiga",
+            "wordInEnglish": "Ant",
+            "lessonUUID": "3fc7a6b4-fc45-4d7f-8828-f18634b43b94",
+            "wordUUID": "5a9d69b7-3722-46a4-b155-3c28f57653f1"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Abeja",
+            "wordInEnglish": "Bee",
+            "lessonUUID": "3fc7a6b4-fc45-4d7f-8828-f18634b43b94",
+            "wordUUID": "272f78fb-f28a-4382-98b7-f531f47e0126"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Mariposa",
+            "wordInEnglish": "Butterfly",
+            "lessonUUID": "3fc7a6b4-fc45-4d7f-8828-f18634b43b94",
+            "wordUUID": "5fe6fe6f-0a2e-4fd5-b832-df7fd80f11e6"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Araña",
+            "wordInEnglish": "Spider",
+            "lessonUUID": "3fc7a6b4-fc45-4d7f-8828-f18634b43b94",
+            "wordUUID": "15c52c86-f50c-409b-a48b-68b3120a6a43"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Mosquito",
+            "wordInEnglish": "Mosquito",
+            "lessonUUID": "3fc7a6b4-fc45-4d7f-8828-f18634b43b94",
+            "wordUUID": "652abc19-08d3-4a86-99b0-d87b2f4c1e8b"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Mariquita",
+            "wordInEnglish": "Ladybug",
+            "lessonUUID": "3fc7a6b4-fc45-4d7f-8828-f18634b43b94",
+            "wordUUID": "7e4681c3-2b9b-45ff-8ba7-324002ae11b4"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Saltamontes",
+            "wordInEnglish": "Grasshopper",
+            "lessonUUID": "3fc7a6b4-fc45-4d7f-8828-f18634b43b94",
+            "wordUUID": "7489b8a9-4dff-429e-a541-3dd56550161f"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Oruga",
+            "wordInEnglish": "Caterpillar",
+            "lessonUUID": "3fc7a6b4-fc45-4d7f-8828-f18634b43b94",
+            "wordUUID": "92ba10a7-5db6-49fc-8fd9-15577bffb161"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Libélula",
+            "wordInEnglish": "Dragonfly",
+            "lessonUUID": "3fc7a6b4-fc45-4d7f-8828-f18634b43b94",
+            "wordUUID": "06db9a93-1f95-4562-bb0f-1287f5d5d2f9"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Mosca",
+            "wordInEnglish": "Fly",
+            "lessonUUID": "3fc7a6b4-fc45-4d7f-8828-f18634b43b94",
+            "wordUUID": "50a04a9a-36f9-4ec7-b43f-07a3e70d2e7b"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Águila",
+            "wordInEnglish": "Eagle",
+            "lessonUUID": "d7049a39-8396-49c0-86c8-503f824f1ac7",
+            "wordUUID": "1d30a4c5-f8f6-4534-8750-809f03a39668"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Búho",
+            "wordInEnglish": "Owl",
+            "lessonUUID": "d7049a39-8396-49c0-86c8-503f824f1ac7",
+            "wordUUID": "53bc1705-134f-4296-9755-b0cb346647c6"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Pingüino",
+            "wordInEnglish": "Penguin",
+            "lessonUUID": "d7049a39-8396-49c0-86c8-503f824f1ac7",
+            "wordUUID": "b6edfe29-4cf1-43b7-a3fe-129b16c3e8f9"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Gorrión",
+            "wordInEnglish": "Sparrow",
+            "lessonUUID": "d7049a39-8396-49c0-86c8-503f824f1ac7",
+            "wordUUID": "13c42cb3-563a-4053-87f5-e6a78e9a8b26"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Halcón",
+            "wordInEnglish": "Falcon",
+            "lessonUUID": "d7049a39-8396-49c0-86c8-503f824f1ac7",
+            "wordUUID": "5879d16e-9839-4a7f-bffb-fd8004f3d80f"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Flamenco",
+            "wordInEnglish": "Flamingo",
+            "lessonUUID": "d7049a39-8396-49c0-86c8-503f824f1ac7",
+            "wordUUID": "240dd947-0802-494a-90ae-31de606ad0e5"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Cuervo",
+            "wordInEnglish": "Crow",
+            "lessonUUID": "d7049a39-8396-49c0-86c8-503f824f1ac7",
+            "wordUUID": "1e574dff-b26e-4142-a742-7815407ef917"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Periquito",
+            "wordInEnglish": "Parakeet",
+            "lessonUUID": "d7049a39-8396-49c0-86c8-503f824f1ac7",
+            "wordUUID": "d36c8323-6d02-4a41-aea9-6e7864dc3ffb"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Golondrina",
+            "wordInEnglish": "Swallow",
+            "lessonUUID": "d7049a39-8396-49c0-86c8-503f824f1ac7",
+            "wordUUID": "2519b5ab-29da-4a18-bebd-b7f96cf37ec9"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Gaviota",
+            "wordInEnglish": "Seagull",
+            "lessonUUID": "d7049a39-8396-49c0-86c8-503f824f1ac7",
+            "wordUUID": "78124ff0-6b18-4507-931e-02f1a6c5c230"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Rojo",
+            "wordInEnglish": "Red",
+            "lessonUUID": "2983bcbf-d847-48a4-b4a1-8c5fdc0657c6",
+            "wordUUID": "5cb92bc4-88a8-45fe-8779-fc1b92d1e8e7"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Azul",
+            "wordInEnglish": "Blue",
+            "lessonUUID": "2983bcbf-d847-48a4-b4a1-8c5fdc0657c6",
+            "wordUUID": "098c9a2d-8727-4fa7-94ba-299fd00d6254"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Verde",
+            "wordInEnglish": "Green",
+            "lessonUUID": "2983bcbf-d847-48a4-b4a1-8c5fdc0657c6",
+            "wordUUID": "2d3219ef-634d-46f1-a121-1a2d960f6f16"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Amarillo",
+            "wordInEnglish": "Yellow",
+            "lessonUUID": "2983bcbf-d847-48a4-b4a1-8c5fdc0657c6",
+            "wordUUID": "787f126a-e92d-48f6-b422-342c731b0131"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Negro",
+            "wordInEnglish": "Black",
+            "lessonUUID": "2983bcbf-d847-48a4-b4a1-8c5fdc0657c6",
+            "wordUUID": "9bfc70d1-3a5b-47d0-a93e-3b6f0649b01d"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Blanco",
+            "wordInEnglish": "White",
+            "lessonUUID": "2983bcbf-d847-48a4-b4a1-8c5fdc0657c6",
+            "wordUUID": "f3043546-fde4-4b6b-9a07-7db55032b276"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Rosado",
+            "wordInEnglish": "Pink",
+            "lessonUUID": "2983bcbf-d847-48a4-b4a1-8c5fdc0657c6",
+            "wordUUID": "9a15cc2b-7e8c-46b0-9c54-24b19c62b933"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Morado",
+            "wordInEnglish": "Purple",
+            "lessonUUID": "2983bcbf-d847-48a4-b4a1-8c5fdc0657c6",
+            "wordUUID": "0c15c13b-d5f4-4f24-998d-fc848de454e6"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Marrón",
+            "wordInEnglish": "Brown",
+            "lessonUUID": "2983bcbf-d847-48a4-b4a1-8c5fdc0657c6",
+            "wordUUID": "ab15917b-f357-4f1b-90b9-dde9784258f8"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Gris",
+            "wordInEnglish": "Gray",
+            "lessonUUID": "2983bcbf-d847-48a4-b4a1-8c5fdc0657c6",
+            "wordUUID": "643ff9d4-6ff3-4965-a70f-7cf8be6a2d54"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Hola",
+            "wordInEnglish": "Hello",
+            "lessonUUID": "80af4997-6180-4e78-8ff7-d558def3c4f1",
+            "wordUUID": "c3bec18f-fade-417f-9935-c2fa0c91a961"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Adiós",
+            "wordInEnglish": "Goodbye",
+            "lessonUUID": "80af4997-6180-4e78-8ff7-d558def3c4f1",
+            "wordUUID": "512b4044-6f8b-4dc7-95de-243ba1987711"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Por favor",
+            "wordInEnglish": "Please",
+            "lessonUUID": "80af4997-6180-4e78-8ff7-d558def3c4f1",
+            "wordUUID": "c1322ec5-79e8-4860-bc58-6e2b6e859734"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Gracias",
+            "wordInEnglish": "Thank you",
+            "lessonUUID": "80af4997-6180-4e78-8ff7-d558def3c4f1",
+            "wordUUID": "4acce212-06ab-4db8-85bb-41598540d558"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Sí",
+            "wordInEnglish": "Yes",
+            "lessonUUID": "80af4997-6180-4e78-8ff7-d558def3c4f1",
+            "wordUUID": "73e82d9b-9ae0-4896-a4c1-8523a7524723"
+          },
+          {
+            "language": "SPANISH",
+            "word": "No",
+            "wordInEnglish": "No",
+            "lessonUUID": "80af4997-6180-4e78-8ff7-d558def3c4f1",
+            "wordUUID": "54f5593a-222f-45ac-9e9d-3614fb334fde"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Bueno",
+            "wordInEnglish": "Good",
+            "lessonUUID": "80af4997-6180-4e78-8ff7-d558def3c4f1",
+            "wordUUID": "e97446ff-40a6-4c72-81ee-e20437841e08"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Malo",
+            "wordInEnglish": "Bad",
+            "lessonUUID": "80af4997-6180-4e78-8ff7-d558def3c4f1",
+            "wordUUID": "a1f0f378-e752-4398-8d27-133743f77910"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Hoy",
+            "wordInEnglish": "Today",
+            "lessonUUID": "80af4997-6180-4e78-8ff7-d558def3c4f1",
+            "wordUUID": "69157ffe-e592-4dad-80e4-0e124df450de"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Mañana",
+            "wordInEnglish": "Tomorrow",
+            "lessonUUID": "80af4997-6180-4e78-8ff7-d558def3c4f1",
+            "wordUUID": "c5c814f3-f882-490a-a2d0-992268b34e68"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Qué",
+            "wordInEnglish": "What",
+            "lessonUUID": "1c7d649f-2093-4ec6-8d83-346330f5f96e",
+            "wordUUID": "9f1469b3-1e84-4625-88a4-3b5060f1500b"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Quién",
+            "wordInEnglish": "Who",
+            "lessonUUID": "1c7d649f-2093-4ec6-8d83-346330f5f96e",
+            "wordUUID": "5e514d15-487b-4be7-883f-933cbe2e08c9"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Dónde",
+            "wordInEnglish": "Where",
+            "lessonUUID": "1c7d649f-2093-4ec6-8d83-346330f5f96e",
+            "wordUUID": "ba7f1f00-f8fa-4998-a40c-cb2b27de4690"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Cuándo",
+            "wordInEnglish": "When",
+            "lessonUUID": "1c7d649f-2093-4ec6-8d83-346330f5f96e",
+            "wordUUID": "732de86e-c8c1-4fc5-b3ec-482453c0d96f"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Por qué",
+            "wordInEnglish": "Why",
+            "lessonUUID": "1c7d649f-2093-4ec6-8d83-346330f5f96e",
+            "wordUUID": "b9e1973b-ec5e-42a3-982b-6b06be8d676a"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Cómo",
+            "wordInEnglish": "How",
+            "lessonUUID": "1c7d649f-2093-4ec6-8d83-346330f5f96e",
+            "wordUUID": "a1b9e86d-3439-4b20-a1fd-d9534b31a929"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Cuál",
+            "wordInEnglish": "Which",
+            "lessonUUID": "1c7d649f-2093-4ec6-8d83-346330f5f96e",
+            "wordUUID": "d142d5fe-f014-40e9-a5cb-2761e5a4a202"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Cuánto",
+            "wordInEnglish": "How much",
+            "lessonUUID": "1c7d649f-2093-4ec6-8d83-346330f5f96e",
+            "wordUUID": "01e7cb00-e514-403f-b605-d5ebd3403562"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Hora",
+            "wordInEnglish": "Time",
+            "lessonUUID": "1c7d649f-2093-4ec6-8d83-346330f5f96e",
+            "wordUUID": "26bbf227-dce9-4c83-a50e-905803cb579e"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Ayuda",
+            "wordInEnglish": "Help",
+            "lessonUUID": "1c7d649f-2093-4ec6-8d83-346330f5f96e",
+            "wordUUID": "bbd1bfe9-91c8-4149-9445-6044e71563f6"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Perdón",
+            "wordInEnglish": "Excuse",
+            "lessonUUID": "5a8cb021-2ba8-4a47-808e-c35b4a437ed3",
+            "wordUUID": "46b998da-b462-401e-9f2b-e180cde1b540"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Lo siento",
+            "wordInEnglish": "Sorry",
+            "lessonUUID": "5a8cb021-2ba8-4a47-808e-c35b4a437ed3",
+            "wordUUID": "fa1f1a48-ccee-47cb-b601-7853d66ebaa2"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Bienvenido",
+            "wordInEnglish": "Welcome",
+            "lessonUUID": "5a8cb021-2ba8-4a47-808e-c35b4a437ed3",
+            "wordUUID": "cf5563fc-f6e0-460f-a337-df3c727b8e98"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Agradecer",
+            "wordInEnglish": "Thank",
+            "lessonUUID": "5a8cb021-2ba8-4a47-808e-c35b4a437ed3",
+            "wordUUID": "258a080e-7f27-4aa8-9879-12b66644c1ef"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Ayudar",
+            "wordInEnglish": "Help",
+            "lessonUUID": "5a8cb021-2ba8-4a47-808e-c35b4a437ed3",
+            "wordUUID": "1275b993-05e7-4b6a-8f3b-69fe486ce4c6"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Necesitar",
+            "wordInEnglish": "Need",
+            "lessonUUID": "5a8cb021-2ba8-4a47-808e-c35b4a437ed3",
+            "wordUUID": "658f9c89-2279-4b08-a512-2a4db92b2b64"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Poder",
+            "wordInEnglish": "Can",
+            "lessonUUID": "5a8cb021-2ba8-4a47-808e-c35b4a437ed3",
+            "wordUUID": "23fddaa0-8d5f-455b-8989-4f7da24879e6"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Repetir",
+            "wordInEnglish": "Repeat",
+            "lessonUUID": "5a8cb021-2ba8-4a47-808e-c35b4a437ed3",
+            "wordUUID": "a86e54d3-5a02-4eb4-b82e-d86fa3df6b65"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Entender",
+            "wordInEnglish": "Understand",
+            "lessonUUID": "5a8cb021-2ba8-4a47-808e-c35b4a437ed3",
+            "wordUUID": "60544d5f-474f-42ff-bf83-cfd4b4c20eeb"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Problema",
+            "wordInEnglish": "Problem",
+            "lessonUUID": "5a8cb021-2ba8-4a47-808e-c35b4a437ed3",
+            "wordUUID": "8c4f12ea-faa4-43d4-b240-17dc94a14736"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Nombre",
+            "wordInEnglish": "Name",
+            "lessonUUID": "08fe97dc-6c48-47a5-aad7-d5d77c5e1202",
+            "wordUUID": "e8f6d8bc-393f-42f8-b5a2-9a9cb3f18c35"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Edad",
+            "wordInEnglish": "Age",
+            "lessonUUID": "08fe97dc-6c48-47a5-aad7-d5d77c5e1202",
+            "wordUUID": "7bbca93b-509e-4822-a3db-90e2ba189d92"
+          },
+          {
+            "language": "SPANISH",
+            "word": "De",
+            "wordInEnglish": "From",
+            "lessonUUID": "08fe97dc-6c48-47a5-aad7-d5d77c5e1202",
+            "wordUUID": "e3da0b28-b947-47f7-9511-59d15b129d3e"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Hablar",
+            "wordInEnglish": "Speak",
+            "lessonUUID": "08fe97dc-6c48-47a5-aad7-d5d77c5e1202",
+            "wordUUID": "cd6d2a98-fbbc-4ae6-bf77-290b5f8d96a5"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Saber",
+            "wordInEnglish": "Know",
+            "lessonUUID": "08fe97dc-6c48-47a5-aad7-d5d77c5e1202",
+            "wordUUID": "5d6ab90b-9b83-4a67-930d-72a0d6ad2e95"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Vivir",
+            "wordInEnglish": "Live",
+            "lessonUUID": "08fe97dc-6c48-47a5-aad7-d5d77c5e1202",
+            "wordUUID": "fc9d48f8-7994-4ff1-9e50-f4f23a3b48f2"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Comer",
+            "wordInEnglish": "Eat",
+            "lessonUUID": "08fe97dc-6c48-47a5-aad7-d5d77c5e1202",
+            "wordUUID": "79d3990f-7d49-4cfb-b4ea-2579fcfa4b2f"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Trabajar",
+            "wordInEnglish": "Work",
+            "lessonUUID": "08fe97dc-6c48-47a5-aad7-d5d77c5e1202",
+            "wordUUID": "94be47cc-1dbf-4030-b90a-c07a0e24f79a"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Leer",
+            "wordInEnglish": "Read",
+            "lessonUUID": "08fe97dc-6c48-47a5-aad7-d5d77c5e1202",
+            "wordUUID": "8da228b0-e20d-44d6-924f-808c22a86e16"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Escribir",
+            "wordInEnglish": "Write",
+            "lessonUUID": "08fe97dc-6c48-47a5-aad7-d5d77c5e1202",
+            "wordUUID": "850637fc-0ae2-4f97-b99e-957606ac44f4"
+          },
+          {
+            "language": "SPANISH",
+            "word": "¿Cómo estás?",
+            "wordInEnglish": "How are you?",
+            "lessonUUID": "10bfc1ae-d03d-42fa-9158-768d412e5c9f",
+            "wordUUID": "b7ffbfa3-1455-4b42-81f8-29158d7fe0f3"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Mucho gusto",
+            "wordInEnglish": "Nice to meet you",
+            "lessonUUID": "10bfc1ae-d03d-42fa-9158-768d412e5c9f",
+            "wordUUID": "f234afcb-93bc-4d9b-9f95-3e7e95ae5cc9"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Me llamo...",
+            "wordInEnglish": "My name is...",
+            "lessonUUID": "10bfc1ae-d03d-42fa-9158-768d412e5c9f",
+            "wordUUID": "c98ad308-4537-4dbe-b5e8-7d45a81b908d"
+          },
+          {
+            "language": "SPANISH",
+            "word": "¿Cómo te llamas?",
+            "wordInEnglish": "What’s your name?",
+            "lessonUUID": "10bfc1ae-d03d-42fa-9158-768d412e5c9f",
+            "wordUUID": "e9588371-e7a2-43d2-9c85-4b1d1ef55ef6"
+          },
+          {
+            "language": "SPANISH",
+            "word": "¿Dónde está el hotel?",
+            "wordInEnglish": "Where is the hotel?",
+            "lessonUUID": "297acefa-854a-4de3-89af-d41d9351c647",
+            "wordUUID": "f45dbf38-2a8b-4d39-a71d-918c4a5c9d87"
+          },
+          {
+            "language": "SPANISH",
+            "word": "¿Cuánto cuesta el boleto?",
+            "wordInEnglish": "How much is the ticket?",
+            "lessonUUID": "297acefa-854a-4de3-89af-d41d9351c647",
+            "wordUUID": "ea4a1b63-dc1c-4e9e-b4f4-f42df55e4883"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Necesito un taxi",
+            "wordInEnglish": "I need a taxi",
+            "lessonUUID": "297acefa-854a-4de3-89af-d41d9351c647",
+            "wordUUID": "53918378-f206-47c6-b0eb-0c4e67987f06"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Gira a la izquierda/derecha",
+            "wordInEnglish": "Turn left/right",
+            "lessonUUID": "297acefa-854a-4de3-89af-d41d9351c647",
+            "wordUUID": "77662fb6-f2da-4d8a-91e1-6848f347b1d7"
+          },
+          {
+            "language": "SPANISH",
+            "word": "¿Cuánto cuesta esto?",
+            "wordInEnglish": "How much does this cost?",
+            "lessonUUID": "57fbc33d-d59b-4187-bcc5-4d3b40f61e69",
+            "wordUUID": "e8a524c8-564d-4dff-b67b-d2c48b9ba3ef"
+          },
+          {
+            "language": "SPANISH",
+            "word": "¿Aceptan tarjetas de crédito?",
+            "wordInEnglish": "Do you accept credit cards?",
+            "lessonUUID": "57fbc33d-d59b-4187-bcc5-4d3b40f61e69",
+            "wordUUID": "29e8c267-c5ff-4707-8675-117e824f611b"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Solo estoy mirando",
+            "wordInEnglish": "I’m just looking",
+            "lessonUUID": "57fbc33d-d59b-4187-bcc5-4d3b40f61e69",
+            "wordUUID": "eb11d177-59e5-4b18-83a9-32600a1f196b"
+          },
+          {
+            "language": "SPANISH",
+            "word": "¿Puedo obtener un recibo?",
+            "wordInEnglish": "Can I get a receipt?",
+            "lessonUUID": "57fbc33d-d59b-4187-bcc5-4d3b40f61e69",
+            "wordUUID": "4537a8db-dfa8-471e-8514-fb8c457a74e1"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Me gustaría pedir...",
+            "wordInEnglish": "I would like to order...",
+            "lessonUUID": "d03b5bc2-d66e-4a8b-870d-7e49dbff40e1",
+            "wordUUID": "f4707458-bf7a-4c3d-b617-df2c47e88dff"
+          },
+          {
+            "language": "SPANISH",
+            "word": "¿Puedo ver el menú?",
+            "wordInEnglish": "Can I see the menu?",
+            "lessonUUID": "d03b5bc2-d66e-4a8b-870d-7e49dbff40e1",
+            "wordUUID": "0a7325f5-1fa5-4e53-9e1d-df42e90fe74c"
+          },
+          {
+            "language": "SPANISH",
+            "word": "¿Es picante?",
+            "wordInEnglish": "Is this spicy?",
+            "lessonUUID": "d03b5bc2-d66e-4a8b-870d-7e49dbff40e1",
+            "wordUUID": "f5f36c17-5b5e-4f78-a6c3-653c64583a39"
+          },
+          {
+            "language": "SPANISH",
+            "word": "La cuenta, por favor",
+            "wordInEnglish": "The bill, please",
+            "lessonUUID": "d03b5bc2-d66e-4a8b-870d-7e49dbff40e1",
+            "wordUUID": "e2123f3c-7c48-41a4-9822-27fb9f09c295"
+          },
+          {
+            "language": "SPANISH",
+            "word": "¿A qué te dedicas?",
+            "wordInEnglish": "What do you do?",
+            "lessonUUID": "cb62e6d9-94e7-4f9a-8f07-d18e213e44d1",
+            "wordUUID": "498ed75a-4ab5-4112-91b5-02dcbb84f158"
+          },
+          {
+            "language": "SPANISH",
+            "word": "¿Te gustan los deportes?",
+            "wordInEnglish": "Do you like sports?",
+            "lessonUUID": "cb62e6d9-94e7-4f9a-8f07-d18e213e44d1",
+            "wordUUID": "a9c96e8b-6f9e-45a0-9342-0bff8480659f"
+          },
+          {
+            "language": "SPANISH",
+            "word": "Hace buen tiempo hoy",
+            "wordInEnglish": "The weather is nice today",
+            "lessonUUID": "cb62e6d9-94e7-4f9a-8f07-d18e213e44d1",
+            "wordUUID": "0a137b65-7c21-4721-b65c-6fdcce332c06"
+          },
+          {
+            "language": "SPANISH",
+            "word": "¿Cuáles son tus pasatiempos?",
+            "wordInEnglish": "What are your hobbies?",
+            "lessonUUID": "cb62e6d9-94e7-4f9a-8f07-d18e213e44d1",
+            "wordUUID": "cf157e83-02a0-45b8-bd84-fabbc6f53e75"
+          }
+    ]
+}

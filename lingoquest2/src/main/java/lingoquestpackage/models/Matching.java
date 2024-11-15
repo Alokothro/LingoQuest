@@ -61,10 +61,10 @@ public class Matching extends Question {
     @Override
     public String toString() {
         StringBuilder result = new StringBuilder();
-        result.append("Match the English word " + words.get(answerIndex).getEnglishVersion() + " to one of the following words\n");
-        for(int i = 0; i < words.size();i++) {
-            result.append(i+1).append(". ").append(words.get(i).getWordinLanguage()).append("\n");
-        }
+        //result.append("Match the English word " + words.get(answerIndex).getEnglishVersion() + " to one of the following words\n");
+        //for(int i = 0; i < words.size();i++) {
+        //    result.append(i+1).append(". ").append(words.get(i).getWordinLanguage()).append("\n");
+        //}
         //Collections.shuffle(words);
         /*for(int i = 0; i < words.size();i++) {
             //result.append(i+5).append(". ").append(words.get(i).getEnglishVersion()).append("\n");
@@ -79,5 +79,11 @@ public class Matching extends Question {
      * @param user The user object to which the game progress is attributed.
      * @return Always returns true in the current implementation.
      */
+
+    @Override
+    public boolean isCorrect(User user) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'isCorrect'");
+    }
    
 }
