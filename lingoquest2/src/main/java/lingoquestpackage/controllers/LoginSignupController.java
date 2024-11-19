@@ -73,6 +73,6 @@ public class LoginSignupController {
 
     @FXML
     private void handleSpeak() {
-        Narriator.playSound("This is a test for amazon polly. Hola me llamo cade");
+        Narriator.playSound("Hola Mundo");
     }
 }

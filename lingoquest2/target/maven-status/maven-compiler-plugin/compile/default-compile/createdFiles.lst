@@ -17,6 +17,7 @@ lingoquestpackage/models/Question.class
 lingoquestpackage/controllers/PrimaryController.class
 lingoquestpackage/models/Language.class
 lingoquestpackage/models/LanguageGame.class
+lingoquestpackage/controllers/LoginSignupController.class
 lingoquestpackage/models/ItemShop.class
 lingoquestpackage/models/DictionaryManager.class
 lingoquestpackage/models/Section.class
