@@ -1,6 +1,5 @@
 /Users/cadestocker/Desktop/Fall 24/247/Group Project/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/models/LeaderBoard.java
 /Users/cadestocker/Desktop/Fall 24/247/Group Project/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/controllers/PrimaryController.java
-/Users/cadestocker/Desktop/Fall 24/247/Group Project/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/controllers/LoginSignupController.java
 /Users/cadestocker/Desktop/Fall 24/247/Group Project/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/models/TrueOrFalse.java
 /Users/cadestocker/Desktop/Fall 24/247/Group Project/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/models/Matching.java
 /Users/cadestocker/Desktop/Fall 24/247/Group Project/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/models/Item.java
@@ -11,12 +10,14 @@
 /Users/cadestocker/Desktop/Fall 24/247/Group Project/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/models/Word.java
 /Users/cadestocker/Desktop/Fall 24/247/Group Project/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/models/LanguageGame.java
 /Users/cadestocker/Desktop/Fall 24/247/Group Project/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/models/ItemShop.java
+/Users/cadestocker/Desktop/Fall 24/247/Group Project/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/controllers/SignupController.java
 /Users/cadestocker/Desktop/Fall 24/247/Group Project/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/narriator/Narriator.java
 /Users/cadestocker/Desktop/Fall 24/247/Group Project/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/models/MultipleChoice.java
 /Users/cadestocker/Desktop/Fall 24/247/Group Project/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/models/User.java
 /Users/cadestocker/Desktop/Fall 24/247/Group Project/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/models/Users.java
 /Users/cadestocker/Desktop/Fall 24/247/Group Project/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/models/LanguageManager.java
 /Users/cadestocker/Desktop/Fall 24/247/Group Project/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/models/Languages.java
+/Users/cadestocker/Desktop/Fall 24/247/Group Project/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/controllers/LoginController.java
 /Users/cadestocker/Desktop/Fall 24/247/Group Project/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/models/DataWriter.java
 /Users/cadestocker/Desktop/Fall 24/247/Group Project/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/models/Question.java
 /Users/cadestocker/Desktop/Fall 24/247/Group Project/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/narriator/VoiceList.java

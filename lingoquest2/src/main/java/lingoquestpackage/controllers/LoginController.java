@@ -1,14 +1,17 @@
 package lingoquestpackage.controllers;
 
+import java.io.IOException;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import lingoquestpackage.lingoquest.App;
 import lingoquestpackage.models.*;
 import lingoquestpackage.narriator.Narriator;
 
 /**
  * @author cade
  */
-public class LoginSignupController {
+public class LoginController {
 
     @FXML
     private TextField usernameField;
@@ -19,18 +22,23 @@ public class LoginSignupController {
 
     private LanguageGame languageGame;
 
-    public LoginSignupController() {
+    public LoginController() {
         try {
-            this.languageGame = new LanguageGame(); // initialize backend
+            this.languageGame = LanguageGame.getInstance(); // initialize backend
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
     @FXML
+    private void goToCreateAccount() throws IOException {
+        App.setRoot("/lingoquestpackage/signup");
+    }
+
+    @FXML
     private void handleLogin() throws Exception {
         if(languageGame == null)
-            languageGame = new LanguageGame();
+            languageGame = LanguageGame.getInstance();
         String username = usernameField.getText().trim();
         String password = passwordField.getText().trim();
 
@@ -49,30 +57,5 @@ public class LoginSignupController {
         } else {
             messageLabel.setText("Invalid username or password.");
         }
-    }
-
-    @FXML
-    private void handleSignup() {
-        String username = usernameField.getText().trim();
-        String password = passwordField.getText().trim();
-
-        if (username.isEmpty() || password.isEmpty()) {
-            messageLabel.setText("Username and password cannot be empty.");
-            return;
-        }
-
-        if (password.length() < 6) {
-            messageLabel.setText("Password must be at least 6 characters long.");
-            return;
-        }
-
-        languageGame.createUser(username, password);
-        messageLabel.setText("Account created successfully! You can now log in.");
-        messageLabel.setTextFill(javafx.scene.paint.Color.GREEN);
-    }
-
-    @FXML
-    private void handleSpeak() {
-        Narriator.playSound("Hola Mundo");
     }
 }

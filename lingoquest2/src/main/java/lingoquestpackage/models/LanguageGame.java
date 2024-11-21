@@ -20,6 +20,12 @@ public class LanguageGame {
     private LeaderBoard leaderboard;
     private Word userAnswer;
     private QuestionCreator questionCreator;
+    public static LanguageGame languageGame;
+
+
+    // CHANGED TO SINGLETON IN ORDER FOR FRONT END TO WORK - CADE (NOVEMBER 20, 2024)
+
+
 
     /**
      * Initializes the game, setting up necessary components and loading all necessary data.
@@ -27,7 +33,7 @@ public class LanguageGame {
      * 
      * @throws Exception if an error occurs during initialization.
      */
-    public LanguageGame() throws Exception {
+    private LanguageGame() throws Exception {
         // Speak prints out a message to terminal when connected, so we call it here to display
         // it before our questions get displayed
         speak("");
@@ -38,6 +44,14 @@ public class LanguageGame {
         this.languageManager = LanguageManager.getInstance();
         this.questionCreator = new QuestionCreator();
         this.loadAll();
+    }
+
+    public static LanguageGame getInstance() throws Exception {
+        if(languageGame == null) {
+            return new LanguageGame();
+        } else {
+            return languageGame;
+        }
     }
 
     /**
