@@ -1,6 +1,8 @@
 package lingoquestpackage.controllers;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
@@ -25,9 +27,15 @@ public class LoginController {
     public LoginController() {
         try {
             this.languageGame = LanguageGame.getInstance(); // initialize backend
+            //messageLabel.setText("test!");
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    @FXML
+    public void initialize(URL url, ResourceBundle rb) {
+        //messageLabel.setText("test!");
     }
 
     @FXML
@@ -37,10 +45,14 @@ public class LoginController {
 
     @FXML
     private void handleLogin() throws Exception {
-        if(languageGame == null)
+        //messageLabel.setText("Inside of handleLogin");
+        if(languageGame == null) {
+            //messageLabel.setText("languageGameNull");
             languageGame = LanguageGame.getInstance();
+        }
         String username = usernameField.getText().trim();
         String password = passwordField.getText().trim();
+        messageLabel.setText(username);
 
         if (username.isEmpty() || password.isEmpty()) {
             messageLabel.setText("Username and password cannot be empty.");
@@ -52,10 +64,16 @@ public class LoginController {
         if (languageGame.hasCurrentUser()) {
             messageLabel.setText("Login successful!");
             messageLabel.setTextFill(javafx.scene.paint.Color.GREEN);
-            // Transition to the main application screen
-            // TODO: Load the main dashboard or next screen
+            // go to home screen
+            goToHome();
         } else {
             messageLabel.setText("Invalid username or password.");
+            //messageLabel.setText(username);
         }
+    }
+
+    @FXML
+    public void goToHome() throws IOException {
+        App.setRoot("/lingoquestpackage/home");
     }
 }
