@@ -2,10 +2,10 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
-
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lingoquestpackage.controllers.HomeController">
    <children>
@@ -36,13 +36,18 @@
                   <Insets left="5.0" top="30.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="89.0" text="Logout" onAction="#handleLogout">
+            <Button mnemonicParsing="false" onAction="#handleLogout" prefHeight="26.0" prefWidth="89.0" text="Logout">
                <VBox.margin>
                   <Insets left="5.0" top="30.0" />
                </VBox.margin>
             </Button>
          </children>
       </VBox>
-      <Pane layoutX="-6.0" layoutY="-6.0" prefHeight="66.0" prefWidth="614.0" />
+      <Pane layoutX="-6.0" layoutY="-6.0" prefHeight="66.0" prefWidth="614.0">
+         <children>
+            <Label fx:id="usernameField" layoutX="245.0" layoutY="25.0" prefHeight="17.0" prefWidth="83.0" />
+            <Label fx:id="coinLabel" layoutX="345.0" layoutY="25.0" prefHeight="17.0" prefWidth="83.0" />
+            <Label fx:id="answerStreak" layoutX="447.0" layoutY="24.0" prefHeight="17.0" prefWidth="127.0" />
+         </children></Pane>
    </children>
 </AnchorPane>

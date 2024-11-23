@@ -40,7 +40,7 @@ public class Users {
         // changed to a for-each loop - CADE
         for (User user : users) {
             if (user.getUsername().equals(username) && user.getPassword().equals(password)) {
-                System.out.println("Successfully Logged In, " + username+".");
+                //System.out.println("Successfully Logged In, " + username+".");
                 return user;
             }
         }

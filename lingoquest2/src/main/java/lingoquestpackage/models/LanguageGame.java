@@ -20,7 +20,7 @@ public class LanguageGame {
     private LeaderBoard leaderboard;
     private Word userAnswer;
     private QuestionCreator questionCreator;
-    public static LanguageGame languageGame;
+    private static LanguageGame languageGame;
 
 
     // CHANGED TO SINGLETON IN ORDER FOR FRONT END TO WORK - CADE (NOVEMBER 20, 2024)
@@ -47,11 +47,10 @@ public class LanguageGame {
     }
 
     public static LanguageGame getInstance() throws Exception {
-        if(languageGame == null) {
-            return new LanguageGame();
-        } else {
-            return languageGame;
+        if (languageGame == null) {
+            languageGame = new LanguageGame();
         }
+        return languageGame;
     }
 
     /**
@@ -299,7 +298,7 @@ public class LanguageGame {
             return;
         }
         this.user = userList.getUser(username, password);
-
+        System.out.println("Logged in: "+ username);
         // attempt to set topic words TODO move to individual class
         for (Language l : languageManager.getLanguages()) {
             for (Section sec : l.getSections()) {
@@ -379,7 +378,12 @@ public class LanguageGame {
     }
 
     public User getUser() {
-        return user;
+        if(this.user != null)
+            return user;
+        else {
+            System.out.println("User is null in languageGame");
+            return null;
+        }
     }
 
     public LanguageManager getLanguageManager() {
