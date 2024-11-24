@@ -6,9 +6,9 @@ import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
 import lingoquestpackage.lingoquest.App;
-import lingoquestpackage.models.*;
+import lingoquestpackage.models.LanguageGame;
+import lingoquestpackage.models.User;
 
 public class HomeController implements Initializable {
 
@@ -42,7 +42,7 @@ public class HomeController implements Initializable {
         // log the current user out
         languageGame.logout();
         // go back to login page
-        App.setRoot("lingoquestpackage/login");
+        App.setRoot("/lingoquestpackage/login");
     }
 
     @FXML

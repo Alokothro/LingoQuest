@@ -1,8 +1,6 @@
 package lingoquestpackage.models;
 
-import java.io.File;
 import java.io.FileWriter;
-import java.io.IOException;
 import java.net.URI;
 import java.util.ArrayList;
 import java.util.UUID;
@@ -20,17 +18,17 @@ public class DataWriter {
     private LanguageManager languageManager;
     //public static String userFile = "/data/Users.json";
     public static String userFileJunit = "/data/Users.json";
-    public static String userFile = "/lingoquest2/src/main/java/lingoquestpackage/data/Users.json";
+    public static String userFile = "lingoquest2/src/main/java/lingoquestpackage/data/Users.json";
     public static String itemFileJunit = "/data/ItemShop.json";
-    public static String itemFile = "/lingoquest2/src/main/java/lingoquestpackage/data/ItemShop.json";
+    public static String itemFile = "lingoquest2/src/main/java/lingoquestpackage/data/ItemShop.json";
     public static String placementFileJunit = "/data/PlacementTest.json";
-    public static String placementFile = "/lingoquest2/src/main/java/lingoquestpackage/data/PlacementTest.json";
+    public static String placementFile = "lingoquest2/src/main/java/lingoquestpackage/data/PlacementTest.json";
     public static String wordFileJunit = "/data/Word.json";
-    public static String wordFile = "/lingoquest2/src/main/java/lingoquestpackage/data/Word.json";
+    public static String wordFile = "lingoquest2/src/main/java/lingoquestpackage/data/Word.json";
     public static String dictionaryFileJunit = "/data/Dictionaries.json";
-    public static String dictionaryFile = "/lingoquest2/src/main/java/lingoquestpackage/data/Dictionaries.json";
+    public static String dictionaryFile = "lingoquest2/src/main/java/lingoquestpackage/data/Dictionaries.json";
     public static String languageFileJunit = "/data/Languages2.json";
-    public static String languageFile = "/lingoquest2/src/main/java/lingoquestpackage/data/Languages2.json";
+    public static String languageFile = "lingoquest2/src/main/java/lingoquestpackage/data/Languages2.json";
     public static String studySheetFile = "lingoquest2/src/main/java/lingoquestpackage/data/StudySheet/sheet.txt";
     public static String studySheetFileJunit = "/studySheet/sheet.txt";
 
