@@ -143,10 +143,9 @@ public class Users {
      * Save all users
      */
     public void saveUsers() {
-        for (User u : users) {
-            DataWriter.writeUsers(users, DataWriter.getUserFile());
-            return;
-        }
+        // removed incorrect for each loop
+        DataWriter.writeUsers(users, DataWriter.getUserFile());
+        return;
     }
 
     public void loadUsers() {

@@ -30,3 +30,4 @@ lingoquestpackage/models/DataWriter.class
 lingoquestpackage/models/MultipleChoice.class
 lingoquestpackage/models/User.class
 lingoquestpackage/models/PlacementTest.class
+lingoquestpackage/controllers/HomeController.class
