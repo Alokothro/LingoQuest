@@ -18,18 +18,18 @@ public class DataWriter {
     private LanguageManager languageManager;
     //public static String userFile = "/data/Users.json";
     public static String userFileJunit = "/data/Users.json";
-    public static String userFile = "lingoquest2/src/main/java/lingoquestpackage/data/Users.json";
+    public static String userFile = "lingoquest2/src/main/resources/lingoquestpackage/data/Users.json";
     public static String itemFileJunit = "/data/ItemShop.json";
-    public static String itemFile = "lingoquest2/src/main/java/lingoquestpackage/data/ItemShop.json";
+    public static String itemFile = "lingoquest2/src/main/resources/lingoquestpackage/data/ItemShop.json";
     public static String placementFileJunit = "/data/PlacementTest.json";
-    public static String placementFile = "lingoquest2/src/main/java/lingoquestpackage/data/PlacementTest.json";
+    public static String placementFile = "lingoquest2/src/main/resources/lingoquestpackage/data/PlacementTest.json";
     public static String wordFileJunit = "/data/Word.json";
-    public static String wordFile = "lingoquest2/src/main/java/lingoquestpackage/data/Word.json";
+    public static String wordFile = "lingoquest2/src/main/resources/lingoquestpackage/data/Word.json";
     public static String dictionaryFileJunit = "/data/Dictionaries.json";
-    public static String dictionaryFile = "lingoquest2/src/main/java/lingoquestpackage/data/Dictionaries.json";
+    public static String dictionaryFile = "lingoquest2/src/main/resources/lingoquestpackage/data/Dictionaries.json";
     public static String languageFileJunit = "/data/Languages2.json";
-    public static String languageFile = "lingoquest2/src/main/java/lingoquestpackage/data/Languages2.json";
-    public static String studySheetFile = "lingoquest2/src/main/java/lingoquestpackage/data/StudySheet/sheet.txt";
+    public static String languageFile = "lingoquest2/src/main/resources/lingoquestpackage/data/Languages2.json";
+    public static String studySheetFile = "lingoquest2/src/main/resources/lingoquestpackage/data/StudySheet/sheet.txt";
     public static String studySheetFileJunit = "/studySheet/sheet.txt";
 
     /**
@@ -224,7 +224,7 @@ public class DataWriter {
         // version 3
 
         try {
-            String path = getFileWritingPath(userFile, userFileJunit);
+            String path = getFileWritingPath(wordFile, wordFileJunit);
             FileWriter writer = new FileWriter(path);
 
             writer.write(root.toJSONString());
@@ -303,7 +303,7 @@ public class DataWriter {
             }*/
 
             try {
-                String path = getFileWritingPath(userFile, userFileJunit);
+                String path = getFileWritingPath(itemFile, itemFileJunit);
                 FileWriter writer = new FileWriter(path);
     
                 writer.write(root.toJSONString());
@@ -348,7 +348,7 @@ public class DataWriter {
             e.printStackTrace();
         }*/
         try {
-            String path = getFileWritingPath(userFile, userFileJunit);
+            String path = getFileWritingPath(languageFile, languageFileJunit);
             FileWriter writer = new FileWriter(path);
 
             writer.write(root.toJSONString());
@@ -456,7 +456,7 @@ public class DataWriter {
             e.printStackTrace();
         }*/
         try {
-            String path = getFileWritingPath(userFile, userFileJunit);
+            String path = getFileWritingPath(dictionaryFile, dictionaryFileJunit);
             FileWriter writer = new FileWriter(path);
 
             writer.write(root.toJSONString());

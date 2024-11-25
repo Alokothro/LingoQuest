@@ -145,6 +145,7 @@ public class Users {
     public void saveUsers() {
         // removed incorrect for each loop
         DataWriter.writeUsers(users, DataWriter.getUserFile());
+        System.out.println(users.get(0));
         return;
     }
 
