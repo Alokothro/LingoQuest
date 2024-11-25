@@ -12,7 +12,7 @@ import lingoquestpackage.lingoquest.App;
 import lingoquestpackage.models.LanguageGame;
 import lingoquestpackage.models.User;
 
-public class HomeController implements Initializable {
+public class PracticeController implements Initializable {
 
     private User user;
     private LanguageGame languageGame;
@@ -29,35 +29,13 @@ public class HomeController implements Initializable {
     @FXML
     private ProgressBar languageCompletion;
 
-    // constructor
-    public HomeController() {
+    public PracticeController() {
         try {
             this.languageGame = LanguageGame.getInstance(); // initialize backend
             this.user = languageGame.getUser();
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
-
-    // navigation buttons
-    @FXML
-    public void goToProfile() throws IOException {
-        App.setRoot("/lingoquestpackage/profile");
-    }
-
-    @FXML
-    public void goToPractice() throws IOException {
-        App.setRoot("/lingoquestpackage/practice");
-    }
-
-    @FXML
-    public void goToLeaderboard() throws IOException {
-        App.setRoot("/lingoquestpackage/leaderboard");
-    }
-
-    @FXML
-    public void goToShop() throws IOException {
-        App.setRoot("/lingoquestpackage/shop");
     }
 
     @FXML
@@ -72,7 +50,6 @@ public class HomeController implements Initializable {
         App.setRoot("/lingoquestpackage/login");
     }
 
-    // initialize the data
     @FXML
     public void initialize(URL url, ResourceBundle rb) {
         if(languageGame == null) {
@@ -84,10 +61,27 @@ public class HomeController implements Initializable {
                 e.printStackTrace();
             }
         }
-        // set the text on the top to hold the current user's username
-        usernameField.setText(user.getUsername());
-        coinLabel.setText("Coins: "+ user.getCoinBalance());
-        answerStreak.setText("Answer Streak: " + user.getCurrentLanguage().getAnswerStreak());
-        languageCompletion.setProgress(user.getCurrentLanguageProgress());
+    }
+
+    // navigation buttons
+    @FXML
+    public void goToProfile() throws IOException {
+        App.setRoot("/lingoquestpackage/profile");
+    }
+
+    @FXML
+    public void goToLeaderboard() throws IOException {
+        App.setRoot("/lingoquestpackage/leaderboard");
+    }
+
+    @FXML
+    public void goToShop() throws IOException {
+        App.setRoot("/lingoquestpackage/shop");
+    }
+
+    @FXML
+    public void goToHome() throws IOException {
+        App.setRoot("/lingoquestpackage/home");
     }
 }
+

@@ -5,6 +5,7 @@
 /Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/models/Languages.java
 /Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/controllers/SignupController.java
 /Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/module-info.java
+/Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/controllers/ProfileController.java
 /Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/lingoquest/App.java
 /Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/models/PlacementTest.java
 /Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/models/Word.java
@@ -15,6 +16,7 @@
 /Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/models/Users.java
 /Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/models/Section.java
 /Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/models/Language.java
+/Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/controllers/PracticeController.java
 /Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/models/DataLoader.java
 /Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/models/ItemShop.java
 /Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/models/QuestionCreator.java
@@ -24,7 +26,9 @@
 /Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/models/LanguageGame.java
 /Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/models/Lesson.java
 /Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/models/LanguageManager.java
+/Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/controllers/LeaderboardController.java
 /Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/narriator/VoiceList.java
+/Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/controllers/ShopController.java
 /Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/models/Item.java
 /Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/models/Question.java
 /Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/controllers/HomeController.java

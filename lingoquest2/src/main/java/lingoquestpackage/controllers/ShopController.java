@@ -12,7 +12,7 @@ import lingoquestpackage.lingoquest.App;
 import lingoquestpackage.models.LanguageGame;
 import lingoquestpackage.models.User;
 
-public class HomeController implements Initializable {
+public class ShopController implements Initializable {
 
     private User user;
     private LanguageGame languageGame;
@@ -30,7 +30,7 @@ public class HomeController implements Initializable {
     private ProgressBar languageCompletion;
 
     // constructor
-    public HomeController() {
+    public ShopController() {
         try {
             this.languageGame = LanguageGame.getInstance(); // initialize backend
             this.user = languageGame.getUser();
@@ -56,8 +56,8 @@ public class HomeController implements Initializable {
     }
 
     @FXML
-    public void goToShop() throws IOException {
-        App.setRoot("/lingoquestpackage/shop");
+    public void goToHome() throws IOException {
+        App.setRoot("/lingoquestpackage/home");
     }
 
     @FXML

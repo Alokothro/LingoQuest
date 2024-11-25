@@ -6,6 +6,7 @@ lingoquestpackage/models/TrueOrFalse.class
 lingoquestpackage/models/Languages.class
 lingoquestpackage/models/QuestionCreator.class
 lingoquestpackage/narriator/Narriator.class
+lingoquestpackage/controllers/PracticeController.class
 lingoquestpackage/models/DictionaryManager.class
 lingoquestpackage/models/Section.class
 lingoquestpackage/models/Matching.class
@@ -17,7 +18,9 @@ lingoquestpackage/models/DataLoader.class
 lingoquestpackage/narriator/Narriator$1.class
 lingoquestpackage/controllers/SignupController.class
 lingoquestpackage/models/FillInTheBlank.class
+lingoquestpackage/controllers/ShopController.class
 lingoquestpackage/models/LeaderBoard.class
+lingoquestpackage/controllers/ProfileController.class
 lingoquestpackage/models/Users.class
 module-info.class
 lingoquestpackage/models/Item.class
@@ -27,6 +30,7 @@ lingoquestpackage/controllers/PrimaryController.class
 lingoquestpackage/models/Language.class
 lingoquestpackage/models/LanguageGame.class
 lingoquestpackage/models/ItemShop.class
+lingoquestpackage/controllers/LeaderboardController.class
 lingoquestpackage/lingoquest/App.class
 lingoquestpackage/models/Lesson.class
 lingoquestpackage/models/PlacementTest.class
