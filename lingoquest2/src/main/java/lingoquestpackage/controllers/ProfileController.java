@@ -1,11 +1,10 @@
 package lingoquestpackage.controllers;
 
 import java.io.IOException;
-import java.net.URL;
-import java.util.ResourceBundle;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.control.ProgressBar;
 import lingoquestpackage.lingoquest.App;
 import lingoquestpackage.models.LanguageGame;
 import lingoquestpackage.models.User;
@@ -27,6 +26,30 @@ public class ProfileController {
     @FXML
     private Label coinLabel;
 
+    @FXML
+    private Label usernameLabel2;
+
+    @FXML
+    private Label friendLabel;
+
+    @FXML
+    private Label coinsEarnedLabel;
+
+    @FXML
+    private Label pointLabel;
+
+    @FXML
+    private Label answerStreak2;
+
+    @FXML
+    private Label currentLanguage;
+
+    @FXML
+    private Label progressLabel;
+
+    @FXML
+    private ProgressBar progressBar;
+
     public ProfileController() {
         try {
             this.languageGame = LanguageGame.getInstance(); // initialize backend
@@ -37,20 +60,35 @@ public class ProfileController {
     }
 
     @FXML
-    public void initialize(URL url, ResourceBundle rb) {
+    public void initialize() {
+        // set languagemanager and user
         if(languageGame == null) {
             try {
                 languageGame = LanguageGame.getInstance();
-                this.user = languageGame.getUser();
             } catch (Exception e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         }
-        // set the text on the top to hold the current user's username
+
+        if(this.user == null) {
+            this.user = languageGame.getUser();
+        }
+
+        // set the text on the top banner
         usernameField.setText(user.getUsername());
         coinLabel.setText("Coins: "+ user.getCoinBalance());
         answerStreak.setText("Answer Streak: " + user.getCurrentLanguage().getAnswerStreak());
+
+        // set the labels for the page
+        usernameLabel2.setText(user.getUsername());
+        friendLabel.setText("Friends: " + user.getFriendsList().size());
+        coinsEarnedLabel.setText("Coins Earned: " + user.getCoinsEarned());
+        pointLabel.setText("Points: " + user.getCurrentLanguage().getPointsEarned());
+        answerStreak2.setText("Answer Streak: " + user.getCurrentLanguage().getAnswerStreak());
+        currentLanguage.setText("Current Language: " + user.getCurrentLanguage().getLanguageName());
+        progressLabel.setText("Progress: " + user.getCurrentLanguageProgress() + "%");
+        progressBar.setProgress(user.getCurrentLanguageProgress());
     }
 
     @FXML

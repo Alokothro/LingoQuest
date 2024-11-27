@@ -7,8 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 
-
-<BorderPane id="overall" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="442.0" prefWidth="664.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane id="overall" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="442.0" prefWidth="664.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lingoquestpackage.controllers.LoginController">
    <top>
       <AnchorPane id="header" prefHeight="108.0" prefWidth="664.0" stylesheets="@login.css" BorderPane.alignment="CENTER">
          <children>
@@ -26,10 +25,11 @@
                   <Label layoutX="149.0" layoutY="68.0" text="Login" textFill="WHITE" />
                   <Label layoutX="34.0" layoutY="108.0" text="Username" textFill="WHITE" />
                   <Label layoutX="34.0" layoutY="158.0" text="Password" textFill="WHITE" />
-                  <PasswordField layoutX="104.0" layoutY="154.0" promptText="Password" />
-                  <PasswordField layoutX="105.0" layoutY="104.0" promptText="Username" />
-                  <Button id="loginAccountButton" layoutX="79.0" layoutY="208.0" mnemonicParsing="false" text="Login" />
-                  <Button id="createAccountButton" layoutX="164.0" layoutY="208.0" mnemonicParsing="false" text="Create Account" />
+                  <PasswordField fx:id="passwordField" layoutX="104.0" layoutY="154.0" promptText="Password" />
+                  <PasswordField fx:id="usernameField" layoutX="105.0" layoutY="104.0" promptText="Username" />
+                  <Button id="loginAccountButton" fx:id="loginButton" layoutX="79.0" layoutY="208.0" mnemonicParsing="false" onAction="#handleLogin" text="Login" />
+                  <Button id="createAccountButton" layoutX="164.0" layoutY="208.0" mnemonicParsing="false" onAction="#goToCreateAccount" text="Create Account" />
+                  <Label fx:id="messageLabel" layoutX="150.0" layoutY="269.0" />
                </children>
             </AnchorPane>
          </items>
