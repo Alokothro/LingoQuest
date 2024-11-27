@@ -1,0 +1,41 @@
+#overall {
+    fx-background-color: #002642;
+
+}
+.login-side {
+    fx-background-color: #002642;
+}
+
+#imageSide {
+    -fx-background-image: url('lingoquest2/src/main/resources/lingoquestpackage/data/images/lingo.jpg');
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+#createAccountButton {
+    -fx-background-color: #002642;
+    -fx-text-fill: white;
+    -fx-border-color: white;
+    -fx-padding: 10px;
+    -fx-border-radius: 2px;
+}
+#loginAccountButton {
+    -fx-background-color: #002642;
+    -fx-text-fill: white;
+    -fx-border-color: white;
+    -fx-padding: 10px;
+    -fx-border-radius: 2px;
+}
+#header {
+    -fx-background-color: #002642;
+}
+#lingoQuestHeader {
+    -fx-text-fill: #fabd00;
+    -fx-font-size: 30px;
+    -fx-family: 'Arial';	
+}
+#loginCreateAccountButton {
+    -fx-background-color: #002642;
+    -fx-text-fill: #fabd00;
+    -fx-font-size: 20px;
+}

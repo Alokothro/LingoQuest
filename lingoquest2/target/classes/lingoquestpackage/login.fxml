@@ -4,32 +4,35 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.SplitPane?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.BorderPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lingoquestpackage.controllers.LoginController">
-   <children>
-      <SplitPane dividerPositions="0.3403010033444816" layoutX="-8.0" layoutY="-15.0" prefHeight="416.0" prefWidth="613.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-        <items>
-            <ImageView fitHeight="405.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="389.0">
+
+<BorderPane id="overall" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="442.0" prefWidth="664.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <AnchorPane id="header" prefHeight="108.0" prefWidth="664.0" stylesheets="@login.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label id="lingoQuestHeader" layoutX="53.0" layoutY="32.0" text="LingoQuest" />
+            <Button id="loginCreateAccountButton" layoutX="418.0" layoutY="32.0" mnemonicParsing="false" stylesheets="@login.css" text="Login/Create Account" />
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <SplitPane dividerPositions="0.5" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <items>
+            <AnchorPane id="imageSide" prefHeight="200.0" prefWidth="200.0" stylesheets="@login.css" />
+          <AnchorPane id="login-side" minHeight="0.0" minWidth="0.0" prefHeight="332.0" prefWidth="354.0" style="-fx-background-color: #002642;" stylesheets="@login.css">
                <children>
-                  <TextField fx:id="usernameField" layoutX="117.0" layoutY="141.0" prefHeight="26.0" prefWidth="154.0" promptText="Username" />
-                  <Button layoutX="167.0" layoutY="253.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="26.0" prefWidth="55.5" text="Login" />
-                  <Text layoutX="162.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login">
-                     <font>
-                        <Font size="29.0" />
-                     </font>
-                  </Text>
-                  <Button layoutX="142.0" layoutY="297.0" mnemonicParsing="false" onAction="#goToCreateAccount" text="Create Account" />
-                  <Label fx:id="messageLabel" layoutX="144.0" layoutY="221.0" prefHeight="17.0" prefWidth="103.0" />
-                  <PasswordField fx:id="passwordField" layoutX="116.0" layoutY="187.0" prefHeight="26.0" prefWidth="154.0" promptText="Password" />
+                  <Label layoutX="149.0" layoutY="68.0" text="Login" textFill="WHITE" />
+                  <Label layoutX="34.0" layoutY="108.0" text="Username" textFill="WHITE" />
+                  <Label layoutX="34.0" layoutY="158.0" text="Password" textFill="WHITE" />
+                  <PasswordField layoutX="104.0" layoutY="154.0" promptText="Password" />
+                  <PasswordField layoutX="105.0" layoutY="104.0" promptText="Username" />
+                  <Button id="loginAccountButton" layoutX="79.0" layoutY="208.0" mnemonicParsing="false" text="Login" />
+                  <Button id="createAccountButton" layoutX="164.0" layoutY="208.0" mnemonicParsing="false" text="Create Account" />
                </children>
             </AnchorPane>
-        </items>
+         </items>
       </SplitPane>
-   </children>
-</AnchorPane>
+   </center>
+</BorderPane>
