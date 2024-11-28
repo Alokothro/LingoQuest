@@ -3,6 +3,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
@@ -49,5 +50,13 @@
             <Label fx:id="coinLabel" layoutX="345.0" layoutY="25.0" prefHeight="17.0" prefWidth="83.0" />
             <Label fx:id="answerStreak" layoutX="447.0" layoutY="24.0" prefHeight="17.0" prefWidth="127.0" />
          </children></Pane>
+      <Label fx:id="usernameLabel2" layoutX="132.0" layoutY="109.0" prefHeight="17.0" prefWidth="133.0" />
+      <Label fx:id="friendLabel" layoutX="135.0" layoutY="126.0" prefHeight="17.0" prefWidth="127.0" />
+      <Label fx:id="coinsEarnedLabel" layoutX="150.0" layoutY="143.0" prefHeight="17.0" prefWidth="133.0" />
+      <Label fx:id="pointLabel" layoutX="150.0" layoutY="192.0" prefHeight="17.0" prefWidth="142.0" />
+      <Label fx:id="answerStreak2" layoutX="150.0" layoutY="235.0" prefHeight="17.0" prefWidth="152.0" />
+      <Label fx:id="currentLanguage" layoutX="135.0" layoutY="282.0" prefHeight="17.0" prefWidth="142.0" />
+      <Label fx:id="progressLabel" layoutX="150.0" layoutY="323.0" prefHeight="17.0" prefWidth="127.0" />
+      <ProgressBar fx:id="progressBar" layoutX="121.0" layoutY="358.0" prefHeight="20.0" prefWidth="133.0" progress="0.0" />
    </children>
 </AnchorPane>
