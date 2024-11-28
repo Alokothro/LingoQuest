@@ -14,6 +14,7 @@ lingoquestpackage/models/LanguageManager.class
 lingoquestpackage/models/DataWriter.class
 lingoquestpackage/models/MultipleChoice.class
 lingoquestpackage/models/User.class
+lingoquestpackage/controllers/FriendsController.class
 lingoquestpackage/models/DataLoader.class
 lingoquestpackage/narriator/Narriator$1.class
 lingoquestpackage/controllers/SignupController.class
