@@ -1,5 +1,9 @@
 #overall {
+    -fx-background-color: #969191;
+}
+#header {
     -fx-background-color: #002642;
+    
 }
 #sideMenu {
     -fx-background-color: #002642;
@@ -27,4 +31,21 @@
 #logoutButton {
     -fx-background-color: #fabd00;
     -fx-padding: 10px;
+}
+#lingoQuestHeader {
+    -fx-text-fill: #fabd00;
+    -fx-font-size: 30px;
+    -fx-family: 'Arial';	
+}
+#username {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 15px;
+}
+#coins {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 15px;
+}
+#answerStreak {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 15px;
 }
