@@ -1,9 +1,12 @@
 package lingoquestpackage.controllers;
 
+import java.io.IOException;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import lingoquestpackage.lingoquest.App;
 import lingoquestpackage.models.LanguageGame;
 
 public class SignupController {
@@ -28,7 +31,7 @@ public class SignupController {
 
 
     @FXML
-    private void handleSignup() {
+    private void handleSignup() throws IOException {
         String username = usernameField.getText().trim();
         String password = passwordField.getText().trim();
 
@@ -43,7 +46,13 @@ public class SignupController {
         }
 
         languageGame.createUser(username, password);
-        messageLabel.setText("Account created successfully! You can now log in.");
+        messageLabel.setText("Account created successfully!");
         messageLabel.setTextFill(javafx.scene.paint.Color.GREEN);
+        App.setRoot("/lingoquestpackage/home");
+    }
+
+    @FXML
+    private void goToLogin() throws IOException {
+        App.setRoot("/lingoquestpackage/login");
     }
 }

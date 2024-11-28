@@ -3,20 +3,17 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ProgressBar?>
-<?import javafx.scene.control.ScrollBar?>
-<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.shape.Rectangle?>
-<?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lingoquestpackage.controllers.HomeController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lingoquestpackage.controllers.FriendsController">
    <children>
       <VBox layoutX="-4.0" layoutY="-11.0" prefHeight="412.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="89.0" text="Home">
+            <Button mnemonicParsing="false" onAction="#goToHome" prefHeight="26.0" prefWidth="89.0" text="Home">
                <VBox.margin>
                   <Insets left="5.0" top="70.0" />
                </VBox.margin>
@@ -48,21 +45,17 @@
             </Button>
          </children>
       </VBox>
-      <Pane fx:id="goToFriends" layoutX="-6.0" layoutY="-6.0" prefHeight="66.0" prefWidth="614.0">
+      <Pane layoutX="-6.0" layoutY="-6.0" prefHeight="66.0" prefWidth="614.0">
          <children>
             <Label fx:id="usernameField" layoutX="245.0" layoutY="25.0" prefHeight="17.0" prefWidth="83.0" />
             <Label fx:id="coinLabel" layoutX="345.0" layoutY="25.0" prefHeight="17.0" prefWidth="83.0" />
             <Label fx:id="answerStreak" layoutX="447.0" layoutY="24.0" prefHeight="17.0" prefWidth="127.0" />
          </children></Pane>
-      <ProgressBar fx:id="languageCompletion" layoutX="388.0" layoutY="333.0" prefHeight="20.0" prefWidth="120.0" progress="0.0" />
-      <Text layoutX="386.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Language Completion" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="94.0" layoutX="458.0" layoutY="57.0" stroke="BLACK" strokeType="INSIDE" width="117.0" />
-      <Button layoutX="488.0" layoutY="220.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="83.0" text="Equip Items" />
-      <Button fx:id="friendButton" layoutX="488.0" layoutY="254.0" mnemonicParsing="false" onAction="#goToFriends" prefHeight="25.0" prefWidth="83.0" text="Friends" />
-      <ScrollPane fx:id="scrollPane" layoutX="132.0" layoutY="67.0" prefHeight="313.0" prefWidth="200.0">
-         <content>
-            <ScrollBar orientation="VERTICAL" prefHeight="311.0" prefWidth="15.0" />
-         </content>
-      </ScrollPane>
+      <TableView fx:id="table" layoutX="204.0" layoutY="76.0" prefHeight="310.0" prefWidth="339.0">
+        <columns>
+          <TableColumn prefWidth="173.0" text="Username" />
+          <TableColumn minWidth="0.0" prefWidth="165.0" text="Coins Earned" />
+        </columns>
+      </TableView>
    </children>
 </AnchorPane>

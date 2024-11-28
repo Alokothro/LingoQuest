@@ -1,8 +1,11 @@
 package lingoquestpackage.controllers;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
 import lingoquestpackage.lingoquest.App;
@@ -12,7 +15,7 @@ import lingoquestpackage.models.User;
 /**
  * @author cade
  */
-public class ProfileController {
+public class ProfileController implements Initializable{
 
     private User user;
     private LanguageGame languageGame;
@@ -60,7 +63,7 @@ public class ProfileController {
     }
 
     @FXML
-    public void initialize() {
+    public void initialize(URL url, ResourceBundle rb) {
         // set languagemanager and user
         if(languageGame == null) {
             try {
@@ -124,4 +127,5 @@ public class ProfileController {
     public void goToShop() throws IOException {
         App.setRoot("/lingoquestpackage/shop");
     }
+
 }

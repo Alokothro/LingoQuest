@@ -3,8 +3,8 @@ package lingoquestpackage.models;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.UUID;
-import java.util.HashMap;
-import lingoquestpackage.narriator.*;
+
+import lingoquestpackage.narriator.Narriator;
 /**
  * The main class that drives the language learning game, handling user interactions, 
  * language sessions, and resource management.
@@ -21,6 +21,7 @@ public class LanguageGame {
     private Word userAnswer;
     private QuestionCreator questionCreator;
     private static LanguageGame languageGame;
+    private ArrayList<Section> sections;
 
 
     // CHANGED TO SINGLETON IN ORDER FOR FRONT END TO WORK - CADE (NOVEMBER 20, 2024)
@@ -299,6 +300,15 @@ public class LanguageGame {
         }
         this.user = userList.getUser(username, password);
         System.out.println("Logged in: "+ username);
+
+        if(this.user.getCurrentLanguage() != null) {
+            // set the current language in the language manager
+            languageManager.setCurrentLanguage(this.user.getCurrentLanguage());
+            // make that the current language in this class, too
+            this.setCurrentLanguage(user.currentLanguage);
+            // pick a language to get sections from
+            
+        }
         // attempt to set topic words TODO move to individual class
         for (Language l : languageManager.getLanguages()) {
             for (Section sec : l.getSections()) {
@@ -356,13 +366,19 @@ public class LanguageGame {
         return null;
     }
 
-    public ArrayList<Section> getAvailableSections() {
-        return null;
+    //public ArrayList<Section> getAvailableSections() {
+    //    
+    //}
+
+    public ArrayList<Section> getAllSections() {
+        this.sections = this.currentLanguage.getAvailableSections();
+        return this.sections;
     }
 
     public ArrayList<Lesson> getAvailableLessons() {
         return null;
     }
+
 
     /**
      * Sets the user answer
@@ -405,6 +421,8 @@ public class LanguageGame {
     public void pickALanguageByUUID(UUID languageUUID) {
         user.setCurrentLangauge(languageManager.getInstance().getLanguageByID(languageUUID));
     }
+
+
     /**
      * Generates a study sheet for the user based on words they are less familiar with.
      * This method targets words where the user's understanding is below 50%.

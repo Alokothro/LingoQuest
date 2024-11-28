@@ -54,6 +54,19 @@ public class Lesson {
             this.getTotalPoints();
         }
     }
+
+    /**
+     * @author cade
+     * @return whether progress is 100%
+     */
+    public boolean isCompleted() {
+        if(this.lessonProgress >= 1)
+            return true;
+        else
+            return false;
+    }
+
+
     /**
      * Updates the lesson's progress by calculating the ratio of points earned to total points.
      * Progress is updated based on the words' individual points contributing to the lesson's total points.

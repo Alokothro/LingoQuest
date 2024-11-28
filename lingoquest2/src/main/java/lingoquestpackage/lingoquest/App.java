@@ -1,14 +1,13 @@
 package lingoquestpackage.lingoquest;
 
+import java.io.IOException;
+
 import javafx.application.Application;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-
-import java.io.IOException;
-import lingoquestpackage.narriator.*;
+import lingoquestpackage.models.LanguageGame;
 
 /**
  * JavaFX App
@@ -18,10 +17,11 @@ public class App extends Application {
     private static Scene scene;
 
     @Override
-    public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("/lingoquestpackage/login"), 640, 480);
+    public void start(Stage stage) throws Exception {
+        LanguageGame.getInstance().login("TTomacka", "Password1234");
+        scene = new Scene(loadFXML("/lingoquestpackage/home"), 640, 480);
         stage.setScene(scene);
-        stage.setTitle("LingoQuest - Login");
+        stage.setTitle("LingoQuest");
         stage.show();
     }
 

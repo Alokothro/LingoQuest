@@ -361,12 +361,12 @@ public class Language {
      * @return arraylist of sections that are available
      */
     public ArrayList<Section> getAvailableSections() {
-        ArrayList<Section> sections = new ArrayList();
-        for (Section sec : this.sections) {
+        //ArrayList<Section> sections = new ArrayList();
+        /*for (Section sec : this.sections) {
             if (this.sectionAccess.get(sec)) {
                 sections.add(sec);
             }
-        }
-        return sections;
+        }*/
+        return this.sections;
     }
 }
