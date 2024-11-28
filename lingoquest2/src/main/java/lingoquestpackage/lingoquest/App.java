@@ -19,7 +19,7 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         LanguageGame.getInstance().login("TTomacka", "Password1234");
-        scene = new Scene(loadFXML("/lingoquestpackage/home"), 640, 480);
+        scene = new Scene(loadFXML("/lingoquestpackage/defaultQuestion"), 640, 480);
         stage.setScene(scene);
         stage.setTitle("LingoQuest");
         stage.show();
