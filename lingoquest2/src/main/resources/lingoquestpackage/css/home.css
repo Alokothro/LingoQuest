@@ -8,6 +8,7 @@
 #sideMenu {
     -fx-background-color: #002642;
 }
+/* Side Menu */
 #homeButton {
     -fx-background-color: #fabd00;
    -fx-padding: 10px;
@@ -48,4 +49,29 @@
 #answerStreak {
     -fx-text-fill: #ffffff;
     -fx-font-size: 15px;
+}
+
+#equipItemsButton {
+    -fx-background-color: #169873;
+    -fx-text-fill: black;
+    -fx-border-color: black;
+    -fx-padding: 10px;
+    -fx-border-radius: 2px;
+}
+#rightSidePracticeButton {
+    -fx-background-color: #169873;
+    -fx-text-fill: black;
+    -fx-border-color: black;
+    -fx-padding: 10px;
+    -fx-border-radius: 2px;
+}
+#friendsButton {
+    -fx-background-color: #169873;
+    -fx-text-fill: black;
+    -fx-border-color: black;
+    -fx-padding: 10px;
+    -fx-border-radius: 2px;
+}
+#totalProgress{
+    -fx-padding: 10px;
 }
