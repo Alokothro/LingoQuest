@@ -11,7 +11,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.shape.Rectangle?>
-<?import javafx.scene.text.Text?>
 
 <AnchorPane id="overall" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="455.0" prefWidth="600.0" stylesheets="@css/home.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lingoquestpackage.controllers.HomeController">
    <children>
@@ -51,22 +50,27 @@
             </Button>
          </children>
       </VBox>
-      <Pane fx:id="goToFriends" layoutX="-6.0" layoutY="-6.0" prefHeight="66.0" prefWidth="614.0">
+      <Pane id="header" fx:id="goToFriends" layoutX="-6.0" layoutY="-6.0" prefHeight="66.0" prefWidth="614.0">
          <children>
-            <Label id="lingoQuestHeader" fx:id="usernameField" layoutX="24.0" layoutY="12.0" prefHeight="45.0" prefWidth="174.0" text="LingoQuest" />
+            <Label id="lingoQuestHeader" fx:id="usernameField" layoutX="24.0" layoutY="12.0" prefHeight="45.0" prefWidth="174.0" stylesheets="@css/home.css" text="LingoQuest" />
             <Label id="username" fx:id="coinLabel" layoutX="224.0" layoutY="23.0" prefHeight="17.0" prefWidth="83.0" text="Username" />
             <Label id="coins" fx:id="answerStreak" layoutX="324.0" layoutY="24.0" prefHeight="17.0" prefWidth="127.0" text="Coins:" />
             <Label id="answerStreak" layoutX="430.0" layoutY="23.0" text="Answer Streak:" />
          </children></Pane>
-      <ProgressBar fx:id="languageCompletion" layoutX="388.0" layoutY="333.0" prefHeight="20.0" prefWidth="120.0" progress="0.0" />
-      <Text layoutX="386.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Language Completion" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="94.0" layoutX="458.0" layoutY="57.0" stroke="BLACK" strokeType="INSIDE" width="117.0" />
-      <Button layoutX="488.0" layoutY="220.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="83.0" text="Equip Items" />
-      <Button fx:id="friendButton" layoutX="488.0" layoutY="254.0" mnemonicParsing="false" onAction="#goToFriends" prefHeight="25.0" prefWidth="83.0" text="Friends" />
-      <ScrollPane fx:id="scrollPane" layoutX="132.0" layoutY="67.0" prefHeight="313.0" prefWidth="200.0">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fabd00" height="94.0" layoutX="479.0" layoutY="91.0" stroke="BLACK" strokeType="INSIDE" width="117.0" />
+      <Button id="equipItemsButton" layoutX="482.0" layoutY="279.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="98.0" text="Equip Items" />
+      <Button id="friendsButton" fx:id="friendButton" layoutX="482.0" layoutY="380.0" mnemonicParsing="false" onAction="#goToFriends" prefHeight="39.0" prefWidth="98.0" text="Friends" />
+      <ScrollPane fx:id="scrollPane" layoutX="100.0" layoutY="59.0" prefHeight="754.0" prefWidth="200.0">
          <content>
-            <ScrollBar orientation="VERTICAL" prefHeight="311.0" prefWidth="15.0" />
+            <ScrollBar orientation="VERTICAL" prefHeight="394.0" prefWidth="15.0" />
          </content>
       </ScrollPane>
+      <Label layoutX="492.0" layoutY="99.0" text="Word of the Day:" />
+      <Label id="wordOfTheDay" layoutX="508.0" layoutY="134.0" text="Hola - Hello" />
+      <Button id="rightSidePracticeButton" layoutX="482.0" layoutY="330.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="98.0" text="Practice" />
+      <Label layoutX="352.0" layoutY="75.0" text="Welcome Back" />
+      <ProgressBar layoutX="306.0" layoutY="118.0" prefHeight="18.0" prefWidth="170.0" progress="0.0" />
+      <Label id="welcomeBackUsername" layoutX="366.0" layoutY="93.0" text="username" />
+      <Label id="languageProgress" layoutX="360.0" layoutY="149.0" text="70% complete" />
    </children>
 </AnchorPane>
