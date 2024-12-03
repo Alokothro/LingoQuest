@@ -11,7 +11,7 @@
 
 <BorderPane id="overall" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@login.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lingoquestpackage.controllers.SignupController">
    <top>
-      <AnchorPane id="header" prefHeight="64.0" prefWidth="600.0" stylesheets="@login.css" BorderPane.alignment="CENTER">
+      <AnchorPane id="header" prefHeight="64.0" prefWidth="600.0" stylesheets="@css/login.css" BorderPane.alignment="CENTER">
          <children>
             <Button id="loginCreateAccountButton" layoutX="358.0" layoutY="10.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="242.0" text="Login/Create Account" />
             <Label id="lingoQuestHeader" layoutX="39.0" layoutY="11.0" text="LingoQuest" />
@@ -21,15 +21,19 @@
    <center>
       <SplitPane dividerPositions="0.5" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <items>
-            <AnchorPane id="imageSide" prefHeight="200.0" prefWidth="200.0" />
+            <AnchorPane id="imageSide" prefHeight="200.0" prefWidth="200.0">
+               <stylesheets>
+                  <URL value="@css/login.css" />
+                  <URL value="@css/login.css" />
+               </stylesheets></AnchorPane>
             <AnchorPane id="loginSide" prefHeight="333.0" prefWidth="348.0" style="-fx-background-color: #002642;">
                <children>
-                  <Button id="createAccountButton" layoutX="55.0" layoutY="185.0" mnemonicParsing="false" onAction="#handleSignup" text="Create Account" />
+                  <Button id="createAccountButton" layoutX="55.0" layoutY="185.0" mnemonicParsing="false" onAction="#handleSignup" stylesheets="@css/login.css" text="Create Account" />
                   <Label layoutX="29.0" layoutY="85.0" style="-fx-text-fill: ffffff;" text="Username" />
                   <Label layoutX="31.0" layoutY="130.0" style="-fx-text-fill: ffffff;" text="Password" />
                   <PasswordField fx:id="passwordField" layoutX="107.0" layoutY="126.0" promptText="Password" />
                   <Label layoutX="107.0" layoutY="40.0" style="-fx-text-fill: ffffff;" text="Create Account" />
-                  <Button id="loginAccountButton" layoutX="204.0" layoutY="185.0" mnemonicParsing="false" onAction="#goToLogin" text="Login" />
+                  <Button id="loginAccountButton" layoutX="204.0" layoutY="185.0" mnemonicParsing="false" onAction="#goToLogin" stylesheets="@css/login.css" text="Login" />
                   <Label fx:id="messageLabel" layoutX="142.0" layoutY="159.0" prefHeight="17.0" prefWidth="73.0" />
                   <TextField fx:id="usernameField" layoutX="107.0" layoutY="81.0" promptText="Username" />
                </children>
