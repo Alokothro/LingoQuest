@@ -118,10 +118,13 @@ public class User {
         if(this.userDictionary != null) {
             double sum = 0.0;
             for(Word w : this.userDictionary.getWords()) {
-                sum += w.getPoints();
+                sum += (double) w.getPoints();
             }
-            System.out.println(sum + " " + this.userDictionary.getNumberOfWords());
-            return sum / (double)this.userDictionary.getNumberOfWords();
+            System.out.println("test in getlangprogress\n\n" + sum + " " + this.userDictionary.getNumberOfWords());
+
+            double ret =  sum / ((double)this.userDictionary.getNumberOfWords() * 10.0);
+            System.out.println("returning " + ret);
+            return ret;
         }
         //System.out.println("null dictionary");
         return 0.0;

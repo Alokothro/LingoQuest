@@ -105,7 +105,10 @@ public class HomeController implements Initializable {
         usernameField.setText(user.getUsername());
         coinLabel.setText("Coins: "+ user.getCoinBalance());
         answerStreak.setText("Answer Streak: " + user.getCurrentLanguage().getAnswerStreak());
-        languageCompletion.setProgress(user.getCurrentLanguageProgress());
+        double progress = user.getCurrentLanguageProgress();
+        if(progress > 0.0) {
+            languageCompletion.setProgress(progress);
+        }
 
 
         // Root container

@@ -176,7 +176,7 @@ public class Dictionary {
      * @return The number of word translations stored in the dictionary.
      */
     public int getNumberOfWords() {
-        return numberOfWords;
+        return this.words.size();
     }
 
     /**
