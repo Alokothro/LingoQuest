@@ -10,14 +10,10 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableView;
 import lingoquestpackage.lingoquest.App;
-import lingoquestpackage.models.FillInTheBlank;
 import lingoquestpackage.models.LanguageGame;
-import lingoquestpackage.models.Matching;
-import lingoquestpackage.models.MultipleChoice;
-import lingoquestpackage.models.TrueOrFalse;
 import lingoquestpackage.models.User;
 
-public class QuestionController implements Initializable {
+public class TrueOrFalseController implements Initializable {
 
     private User user;
     private LanguageGame languageGame;
@@ -46,7 +42,7 @@ public class QuestionController implements Initializable {
 
 
     // constructor
-    public QuestionController() {
+    public TrueOrFalseController() {
         try {
             this.languageGame = LanguageGame.getInstance(); // initialize backend
             this.user = languageGame.getUser();
@@ -117,7 +113,7 @@ public class QuestionController implements Initializable {
             System.out.println("current lesson is null in questionController");
             // go back to home page
             try {
-                goToHome();
+                App.setRoot("/lingoquestpackage/home");
             } catch (IOException e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
@@ -125,75 +121,6 @@ public class QuestionController implements Initializable {
             return;
         }
 
-        // question # cannot be negative
-        if(languageGame.getCurrentQuestionNumber() < 0) {
-            System.out.println("negative question number");
-            return;
-        }
-
-        // set the text of the button based on the current question number
-        if(languageGame.getCurrentQuestionNumber() == 0) {
-            nextButton.setText("Begin");
-        }
-        // if its a positive number and is less than the # of questions desired
-        else if(languageGame.getCurrentQuestionNumber() > 0 && languageGame.getCurrentQuestionNumber() < numberOfQuestions) {
-            nextButton.setText("Next");
-        }
-        // else it must be >= # of questions
-        else {
-            nextButton.setText("Exit");
-        }
-
-        // set the label to display the current question
-        lessonName.setText(this.user.getCurrentLesson().getLessonName());
-    }
-
-    public void handleNextButton() throws IOException {
-        // button's action depends on current state
-        switch(nextButton.getText()) {
-            case "Begin": {
-                // if beginning, then call this cleanup method
-                languageGame.prepareForQuestions();
-                this.makeQuestion(numberOfQuestions);
-                break;
-            }
-            case "Next": {
-                this.makeQuestion(numberOfQuestions);
-                break;
-            }
-            case "Exit": {
-                App.setRoot("/lingoquestpackage/home");
-                break;
-            }
-        }
-    }
-
-    /**
-     * @author cade
-     * @param number of questions desired
-     */
-    public void makeQuestion(int number) {
-        try {
-            // param is the total # of questions, returns boolean of whether question was
-            // created (won't be created if we've already answered more than total # we wanted
-            if(languageGame.getQuestions(number)) {
-                //System.out.println("question made");
-                if(this.user.getCurrentLesson().getCurrentQuestion() instanceof Matching) {
-                    App.setRoot("/lingoquestpackage/matching");
-                }
-                if(this.user.getCurrentLesson().getCurrentQuestion() instanceof TrueOrFalse) {
-                    App.setRoot("/lingoquestpackage/trueOrFalse");
-                }
-                if(this.user.getCurrentLesson().getCurrentQuestion() instanceof FillInTheBlank) {
-                    App.setRoot("/lingoquestpackage/fillInBlank");
-                }
-                if(this.user.getCurrentLesson().getCurrentQuestion() instanceof MultipleChoice) {
-                    App.setRoot("/lingoquestpackage/multipleChoice");
-                }
-            }
-        //}
-        } catch(IOException e) {
-            e.printStackTrace();
-        }
+        
     }
 }

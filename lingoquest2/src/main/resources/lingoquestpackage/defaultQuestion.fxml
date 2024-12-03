@@ -50,5 +50,7 @@
             <Label id="coins" fx:id="answerStreak" layoutX="295.0" layoutY="25.0" prefHeight="17.0" prefWidth="127.0" text="Coins:" />
             <Label id="answerStreak" layoutX="400.0" layoutY="26.0" text="Answer Streak" />
          </children></Pane>
+      <Button fx:id="nextButton" layoutX="253.0" layoutY="214.0" mnemonicParsing="false" onAction="#handleNextButton" prefHeight="26.0" prefWidth="103.0" />
+      <Label fx:id="lessonName" layoutX="226.0" layoutY="132.0" prefHeight="17.0" prefWidth="157.0" />
    </children>
 </AnchorPane>

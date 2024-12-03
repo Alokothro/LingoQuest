@@ -57,6 +57,39 @@ public class Lesson {
 
     /**
      * @author cade
+     * returns all words
+     */
+    public ArrayList<Word> getAllWords() {
+        return this.topicWords;
+    }
+
+    /**
+     * @author cade
+     * @return the current question
+     */
+    public Question getCurrentQuestion() {
+        if(this.currentQuestion == null) {
+            System.out.println("NULL QUESTION \n\n\n\n");
+        }
+        return this.currentQuestion;
+    }
+
+    /**
+     * @author cade
+     * @param q question
+     * safer way to set the current question
+     */
+    public void setCurrentQuestion(Question q) {
+        // only assign if the parameter isn't null
+        if(q != null) {
+            this.currentQuestion = q;
+        }
+        else
+            System.out.println("Null question sent to setCurrentQuestion in lesson");
+    }
+
+    /**
+     * @author cade
      * @return whether progress is 100%
      */
     public boolean isCompleted() {

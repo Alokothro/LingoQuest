@@ -1,6 +1,5 @@
 package lingoquestpackage.models;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -48,6 +47,12 @@ public class MultipleChoice extends Question {
             }
         }
         return -1;
+    }
+
+    // made this for the front end so that the page can be
+    // setup depending on the question type
+    public String getType() {
+        return "Multiple Choice";
     }
 
     /**

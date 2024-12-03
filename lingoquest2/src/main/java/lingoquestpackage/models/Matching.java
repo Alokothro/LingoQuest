@@ -37,6 +37,12 @@ public class Matching extends Question {
         return shuffledChoices;
     }
 
+    // made this for the front end so that the page can be
+    // setup depending on the question type
+    public String getType() {
+        return "Matching";
+    }
+
 
     public void setUserAnswer(Word userAnswer) {
         this.userAnswer = userAnswer;

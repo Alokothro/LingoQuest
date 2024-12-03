@@ -170,6 +170,8 @@ public class Language {
      * @param id
      */
     public void setUserID(UUID id) {
+        if(id == null)
+            return;
         this.userID = id;
     }
 
@@ -187,6 +189,18 @@ public class Language {
      */
     public void setPointsEarned(int points) {
         this.pointsEarned = points;
+    }
+
+    /**
+     * @author cade
+     * @param user
+     * set the user and user id for the language
+     */
+    public void setUser(User u) {
+        if(u == null || u.getUUID() == null)
+            return;
+        this.user = u;
+        this.userID = u.getUUID();
     }
 
     /**
@@ -367,6 +381,7 @@ public class Language {
                 sections.add(sec);
             }
         }*/
+        // changed to just return all
         return this.sections;
     }
 }

@@ -107,13 +107,13 @@ public class Users {
      * @return True if the user is created and added to userlist. False if the user
      *         has invalid credentials.
      */
-    public boolean createUser(String username, String password) {
+    public User createUser(String username, String password) {
         User user = new User();
         if (user.setUsername(username) && user.setPassword(password)) {
             users.add(user);
-            return true;
+            return user;
         } else {
-            return false;
+            return null;
         }
     }
 
@@ -144,8 +144,11 @@ public class Users {
      */
     public void saveUsers() {
         // removed incorrect for each loop
+        for(User u : this.users) {
+            System.out.println("Test in users:saveusers "+ u.toString());
+        }
         DataWriter.writeUsers(users, DataWriter.getUserFile());
-        System.out.println(users.get(0));
+        //System.out.println(users.get(0));
         return;
     }
 

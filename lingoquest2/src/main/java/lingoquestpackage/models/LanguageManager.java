@@ -1,7 +1,10 @@
 package lingoquestpackage.models;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.UUID;
+
+import org.json.simple.parser.ParseException;
 /**
  * Manages languages, sections, and lessons within a language learning application.
  * Implements Singleton pattern to ensure only one instance of this manager exists.
@@ -93,9 +96,36 @@ public class LanguageManager {
      */
     // Method to add a language
     public void addLanguage(Language language) {
-        if(language != null)
+        if(language != null && languages.contains(language) == false)
             languages.add(language);
     }
+
+    // centralized way to make languages - cade december 2
+    public Language createLanguage(User u) throws IOException, ParseException {
+        // make sure user isn't null
+        if(u == null)
+            return null;
+        
+        // make the object and add it to the singlton list
+        Language l = new Language();
+        // assign the user
+        l.setUser(u);
+        //l.setUserID(u.getUUID());
+
+        // get the sections
+        l.setSections(DataLoader.loadSections());
+        for(Section s : l.getSections()) {
+            //System.out.println(s.toString());
+            for(Lesson lesson : s.getAllLessons()) {
+                // set language id in each lesson
+                lesson.setLanguageID(l.getLanguageID());
+            }
+        }
+        // add to singleton list
+        this.addLanguage(l);
+        return l;
+    }
+
     /**
      * Loads languages from a data source.
      * 

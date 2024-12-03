@@ -40,6 +40,12 @@ public class TrueOrFalse extends Question {
         }
     }
 
+    // made this for the front end so that the page can be
+    // setup depending on the question type
+    public String getType() {
+        return "True Or False";
+    }
+
     /**
      * Sets the user's answer for this question.
      *

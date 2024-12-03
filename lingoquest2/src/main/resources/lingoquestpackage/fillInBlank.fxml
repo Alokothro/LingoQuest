@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane id="overall" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="454.0" prefWidth="608.0" stylesheets="@css/fillInTheBlank.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lingoquestpackage.controllers.QuestionController">
+<AnchorPane id="overall" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="454.0" prefWidth="608.0" stylesheets="@css/fillInTheBlank.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lingoquestpackage.controllers.FillInTheBlankController">
    <children>
       <VBox id="sideMenu" layoutX="-2.0" layoutY="-11.0" prefHeight="454.0" prefWidth="103.0" stylesheets="@css/fillInTheBlank.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="507.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -53,7 +53,7 @@
             <Label id="answerStreak" layoutX="400.0" layoutY="26.0" text="Answer Streak" />
          </children></Pane>
       <Label id="progressText" layoutX="238.0" layoutY="99.0" text="Lesson Progress" />
-      <ProgressBar id="progressBar" layoutX="189.0" layoutY="127.0" prefHeight="45.0" prefWidth="252.0" progress="0.0" />
+      <ProgressBar id="progressBar" fx:id="lessonProgress" layoutX="189.0" layoutY="127.0" prefHeight="45.0" prefWidth="252.0" progress="0.0" />
       <Label id="question" layoutX="179.0" layoutY="220.0" text="The Spanish word for car is ____" />
       <TextField layoutX="222.0" layoutY="331.0" prefHeight="42.0" prefWidth="155.0" promptText="Please Enter" />
       <Button id="submitButton" layoutX="371.0" layoutY="332.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="64.0" text="Submit" />

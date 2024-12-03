@@ -59,6 +59,16 @@ public class Word {
         this.wordUUID = wordUUID;
     }
 
+    public Word cloneWord() {
+        Word w = new Word();
+        w.setEnglishVersion(this.englishVersion);
+        w.setLanguage(this.language);
+        w.setWord(this.word);
+        w.setLessonID(this.lessonUUID);
+        // assign all the non numeric variables
+        return w;
+    }
+
     public int getPoints() {
         return this.points;
     }

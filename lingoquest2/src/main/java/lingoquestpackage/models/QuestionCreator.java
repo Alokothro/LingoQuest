@@ -22,6 +22,10 @@ public class QuestionCreator {
      * @throws IllegalArgumentException If the word's point value does not match any expected thresholds.
      */
     public Question createQuestion(Lesson lesson) {
+        if(lesson == null) {
+            System.out.println("Null lesson in questioncreator");
+            return null;
+        }
         Word word = lesson.getRandomWord();  // Retrieve a random word from the lesson.
         // attempt to fix issue with practicelowunderstanding
         if(word == null) {

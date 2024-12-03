@@ -133,9 +133,13 @@ public class DictionaryManager {
     public Dictionary duplicateDictionary(UUID id) {
         Dictionary ret = new Dictionary();
         if (id != null && getDictionaryByID(id) != null) {
+
             for (Word w : getDictionaryByID(id).getWords()) {
-                ret.addWord(w);
+                // clone the word then add it
+                // attempt to make sure data isn't assigned to newly created words
+                ret.addWord(w.cloneWord());
             }
+            // add to the list of dictionaries
             dictionaries.add(ret);
             //System.out.println("\n\n\nTEST added dictionary\n\n\n");
             return ret;

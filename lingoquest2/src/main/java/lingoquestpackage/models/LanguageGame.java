@@ -1,8 +1,11 @@
 package lingoquestpackage.models;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.UUID;
+
+import org.json.simple.parser.ParseException;
 
 import lingoquestpackage.narriator.Narriator;
 /**
@@ -22,6 +25,9 @@ public class LanguageGame {
     private QuestionCreator questionCreator;
     private static LanguageGame languageGame;
     private ArrayList<Section> sections;
+    private int currentQuestionNumber;
+    // going to use this for a progress screen - cade december 1, 2024
+    private ArrayList<Question> lessonQuestions;
 
 
     // CHANGED TO SINGLETON IN ORDER FOR FRONT END TO WORK - CADE (NOVEMBER 20, 2024)
@@ -44,6 +50,10 @@ public class LanguageGame {
         this.itemShop = ItemShop.getInstance();
         this.languageManager = LanguageManager.getInstance();
         this.questionCreator = new QuestionCreator();
+        // start at question 0
+        this.currentQuestionNumber = 0;
+        // initialize as an arraylist
+        this.lessonQuestions = new ArrayList<>();
         this.loadAll();
     }
 
@@ -52,6 +62,14 @@ public class LanguageGame {
             languageGame = new LanguageGame();
         }
         return languageGame;
+    }
+
+    /**
+     * @author cade
+     * @return the number of the current question
+     */
+    public int getCurrentQuestionNumber() {
+        return this.currentQuestionNumber;
     }
 
     /**
@@ -160,8 +178,10 @@ public class LanguageGame {
      * 
      * @param username The desired username.
      * @param password The desired password.
-     */
-    public void createUser(String username, String password) {
+          * @throws ParseException 
+          * @throws IOException 
+          */
+         public void createUser(String username, String password) throws IOException, ParseException {
         if (this.user != null) {
             System.out.println("Someone is already logged in");
             return;
@@ -170,13 +190,31 @@ public class LanguageGame {
             System.out.println("Username already exists.");
             return;
         }
-        User createdUser = new User(username, password);
-        this.user = createdUser;
-        userList.createUser(username, password);
+
+        // problem section
+        //User createdUser = new User(username, password);
+        //userList.createUser(username, password);
+
+        // this should work
+        // user created in facade was being made as a separate object than the
+        // user created in users
+        this.user = userList.createUser(username, password);
+        
+
+
+
 
         //this.startLanguage(Languages.SPANISH);
         // attempt to fix bug with practice low understanding
-        this.user.setCurrentLangauge(this.startLanguage(Languages.SPANISH));
+
+
+        //BUG
+        //this.user.setCurrentLangauge(this.startLanguage(Languages.SPANISH));
+        // ATTEMPT TO SOLVE:
+        this.startLanguage(Languages.SPANISH);
+
+
+        System.out.println("\n\n\n current lang: " + this.user.getCurrentLanguage().getLanguageID());
 
         System.out.println("Successfully Created Account");
     }
@@ -243,24 +281,33 @@ public class LanguageGame {
      * @author cade
      * @param lang
      * @return
+     * @throws ParseException 
+     * @throws IOException 
      */
-    public Language startLanguage(Languages lang) {
+    public Language startLanguage(Languages lang) throws IOException, ParseException {
         // make sure there's a user logged in
         if (this.getUser() == null) {
             System.out.println("Cannot start language without user.");
             return null;
         }
-        Language l = new Language();
+        //Language l = new Language();
         // add the new language to the singleton
-        languageManager.addLanguage(l);
+        //languageManager.addLanguage(l);
+
+        // adding user's info will now be handled in languagemanager
+        Language l = languageManager.createLanguage(this.user);
+
+
         // put the user's id into the language
-        l.setUserID(this.getUser().getUUID());
+        //l.setUserID(this.getUser().getUUID());
         // put the language's id into user
         this.getUser().addLanguage(l);
         this.getUser().setCurrentLangauge(l);
         // make a duplicate of spanish dictionary to track the user's progress
         this.getUser().setUserDictionary(DictionaryManager.getInstance().duplicateDictionary(DictionaryManager.getInstance().getSpanishDictionary()));
+        // set the language's dictionary to be the user's dictionary
         l.setDictionary(this.user.getUserDictionaryID());
+        // leaving this here to be safe, but should be done within set dictionary method
         l.setDictionaryID(this.user.getUserDictionaryID());
         // return the language
         // set the type of language it is (this assigns the master dictionary to the
@@ -324,7 +371,15 @@ public class LanguageGame {
      * Saves the users and sets the user to null
      */
     public void logout() {
+        if(this.user == null) {
+            System.out.println("Nobody is logged in");
+        } else {
+            System.out.println("\n\n\nLogging out:\n" + this.user.toString());
+        }
         //System.out.println("in logout");
+        //for(User u : this.userList.getUsers()) {
+        //    System.out.println("TEST\n\n\n\n" + u.toString());
+        //}
         this.userList.saveUsers();
         this.dictionaryMan.saveDictionary();
         this.languageManager.saveLanguages();
@@ -454,18 +509,79 @@ public class LanguageGame {
      */
     public void pickALesson(UUID lessonUUID) {
         user.currentLesson = languageManager.getLessonByID(lessonUUID, user);
-        
+        //System.out.println("test\n\n\nthe current lesson is null:" + (user.currentLesson == null));
         System.out.println("You switched to lesson " + user.currentLesson.getLessonName());
     }
+
+   /**
+    * @author cade
+    * helper method to clean up before starting a lesson
+    */
+    public void prepareForQuestions() {
+        // start at question 0
+        this.resetQuestionNumber();
+        // make sure to start with no questions in the array
+        this.lessonQuestions.clear();
+    }
+
+    /**
+     * @author cade
+     * @param current
+     * @param total
+     * this will be the iterator for getting questions
+     */
+    public boolean getQuestions(int total) {
+        // don't run if we're already at the total requested questions
+        if(this.currentQuestionNumber >= total) {
+            // question won't be created, return negative
+            return false;
+        }
+        
+        // make a new question and assign it as the current question
+        this.getAQuestion();
+        // question has been created, return positive
+        return true;
+    }
+
+    public void resetQuestionNumber() {
+        this.currentQuestionNumber = 0;
+    }
+
     /**
      * Generates and displays a question from the current lesson.
      */
     public void getAQuestion() {
+        // create a question from the current loaded lesson
         Question question = questionCreator.createQuestion(user.currentLesson);
-        user.currentLesson.currentQuestion = question;
-        System.out.println(question.toString());
-        speak(question.toString());
+
+        // make sure that the question exists (isn't null)
+        if(question == null)
+            return;
+
+        System.out.println("question exists");
+
+        // old test to see if the lesson was loaded
+        //System.out.println("Current lesson is null:" + user.currentLesson == null);
+
+        // assign the created question as the "current question" in th user's current lesson
+        //user.currentLesson.currentQuestion = question; // refactored
+        this.user.getCurrentLesson().setCurrentQuestion(question);
+
+        // no longer need to print, handle in GUI
+        //System.out.println(question.toString());
+
+        // advance to next question number
+        this.currentQuestionNumber ++;
+
+        // save to the lesson's questions
+        this.lessonQuestions.add(question);
+
+        // will now handle speaking within the actual question
+        //speak(question.toString());
     }
+
+    
+
     /**
      * Collects the user's answer from the console and checks if it is correct.
      * @param k The scanner to read the user's input.

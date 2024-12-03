@@ -7,7 +7,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import lingoquestpackage.models.LanguageGame;
 
 /**
  * JavaFX App
@@ -18,8 +17,8 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        LanguageGame.getInstance().login("TTomacka", "Password1234");
-        scene = new Scene(loadFXML("/lingoquestpackage/defaultQuestion"), 640, 480);
+        //LanguageGame.getInstance().login("TTomacka", "Password1234");
+        scene = new Scene(loadFXML("/lingoquestpackage/login"), 640, 480);
         stage.setScene(scene);
         stage.setTitle("LingoQuest");
         stage.show();

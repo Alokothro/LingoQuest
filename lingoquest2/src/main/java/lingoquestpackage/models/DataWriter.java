@@ -156,8 +156,11 @@ public class DataWriter {
         JSONObject userJson = new JSONObject();
         // this should put these variables in order but isn't
         userJson.put("userID", user.getUUID().toString());
-        if (user.getCurrentLanguage() != null)
+        if (user.getCurrentLanguage() != null) {
             userJson.put("currentLanguageID", user.getCurrentLanguageID().toString());
+        } else {
+            System.out.println("\n\nUsers current language in serialize user datawriter is null\n\n");
+        }
         userJson.put("username", user.getUsername());
         userJson.put("password", user.getPassword());
         userJson.put("coinsEarned", user.getCoinsEarned());
@@ -380,12 +383,14 @@ public class DataWriter {
         root.put("PlacementTest", "c8d23cf7-c643-4988-ab6c-8f0fff97b934");
         JSONArray sections = new JSONArray();
 
-        for (Object s : l.getSections()) {
+        //for (Object s : l.getSections()) {
             //System.out.println(s.getClass().getName());
-        }
+        //}
 
         for (Section s : l.getSections()) {
+            //System.out.println(l.getUser().toString() + "\n\nIN DATAWRITER 391\n\n");
             sections.add(serializeSection(s));
+            System.out.println("\n\nSaving "+s.getName());
         }
         root.put("sections", sections);
         return root;

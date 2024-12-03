@@ -101,6 +101,7 @@ public class HomeController implements Initializable {
             }
         }
         // set the text on the top to hold the current user's username
+        System.out.println(user.toString());
         usernameField.setText(user.getUsername());
         coinLabel.setText("Coins: "+ user.getCoinBalance());
         answerStreak.setText("Answer Streak: " + user.getCurrentLanguage().getAnswerStreak());
@@ -115,7 +116,7 @@ public class HomeController implements Initializable {
         scrollPane.setContent(root);
         scrollPane.setFitToWidth(true);
 
-        // Mock data
+        // get the sections
         List<Section> sections = languageGame.getAllSections();
 
         // Populate sections and lessons
@@ -142,12 +143,26 @@ public class HomeController implements Initializable {
                         (lesson.isCompleted() ? "-fx-background-color: green;" : "-fx-background-color: black;") +
                         "-fx-text-fill: white;");
 
-                // Click event for starting a lesson
+                // click event for starting a lesson
                 lessonButton.setOnAction(e -> {
+                    // for test, print out lesson being started (name of lesson clicked on)
                     System.out.println("Starting: " + lesson.getLessonName());
+                    // use the section of the clicked on lesson to move to that section
                     languageGame.pickASection(section.getID());
+                    //System.out.println("section id:" + section.getID());
+                    // load in the lesson to facade
                     languageGame.pickALesson(lesson.getLessonID());
+                    //System.out.println("lesson id:" + lesson.getLessonID());
                     System.out.println("Going to " + lesson.getLessonName());
+                    try {
+                        // make sure variables are at starting values for questions
+                        languageGame.prepareForQuestions();
+                        // move to the default question fxml, will handle the rest from there
+                        App.setRoot("/lingoquestpackage/defaultQuestion");
+                    } catch (IOException e1) {
+                        // TODO Auto-generated catch block
+                        e1.printStackTrace();
+                    }
                 });
 
                 lessonBox.getChildren().add(lessonButton);

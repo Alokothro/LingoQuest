@@ -31,6 +31,8 @@ public class DataLoader {
     public static String dictionaryFile = "lingoquest2/src/main/resources/lingoquestpackage/data/Dictionaries.json";
     public static String languageFileJunit = "/data/Languages2.json";
     public static String languageFile = "lingoquest2/src/main/resources/lingoquestpackage/data/Languages2.json";
+    public static String sectionFile = "lingoquest2/src/main/resources/lingoquestpackage/data/Sections.json";
+    public static String sectionFileJunit = "/data/Sections.json";
 
     public static boolean isJUnitTest() {
         for(StackTraceElement element : Thread.currentThread().getStackTrace()) {
@@ -140,10 +142,20 @@ public class DataLoader {
         //InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
         //BufferedReader reader = new BufferedReader(inputStreamReader);
         BufferedReader reader = getReaderFromFile(userFile, userFileJunit);
+        String firstLine = reader.readLine();
+        if(firstLine == null || firstLine.trim().isEmpty()) {
+            System.out.println("\n\nreading empty file USERS");
+            return users;
+        } else {
+            reader.close();
+            reader = getReaderFromFile(userFile, userFileJunit);
+        }
+
         JSONObject jsonObject = (JSONObject) new JSONParser().parse(reader);
         // get the array from the object
         JSONArray usersArray = (JSONArray) jsonObject.get("users");
-
+        if(usersArray.isEmpty())
+            return null;
         // Parse the JSON file
         //JSONObject jsonObject = (JSONObject) jsonParser.parse(new FileReader(file));
 
@@ -180,11 +192,11 @@ public class DataLoader {
 
             // Languages are stored in json as UUID
             // Language should then be loaded in from the Languages json file by its UUID
-            String currentLanguage = (String) userJson.get("currentLanguage");
+            //String currentLanguage = (String) userJson.get("currentLanguage");
 
             // Create and configure User object
             User user = createUser(userID, username, password, coinsEarned, coinBalance, friendsList,
-                    items, null, languages, currentLanguage, dictionaryID);
+                    items, null, languages, currentLanguageID, dictionaryID);
 
             // Set the word of the day
             user.setWordOfTheDay(wordObject);
@@ -331,8 +343,19 @@ public class DataLoader {
         //InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
         //BufferedReader reader = new BufferedReader(inputStreamReader);
         BufferedReader reader = getReaderFromFile(itemFile, itemFileJunit);
+        String firstLine = reader.readLine();
+        if(firstLine == null || firstLine.trim().isEmpty()) {
+            System.out.println("\n\nreading empty file ITEMS");
+            return items;
+        } else {
+            reader.close();
+            reader = getReaderFromFile(itemFile, itemFileJunit);
+        }
+
         JSONObject root = (JSONObject) new JSONParser().parse(reader);
         JSONArray itemsArray = (JSONArray) root.get("items");
+        if(itemsArray.isEmpty())
+            return null;
         //JSONArray itemsArray = (JSONArray) new JSONParser().parse(reader);
 
         // Iterate through each user object in the JSON array
@@ -377,9 +400,19 @@ public class DataLoader {
         //InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
         //BufferedReader reader = new BufferedReader(inputStreamReader);
         BufferedReader reader = getReaderFromFile(wordFile, wordFileJunit);
+        String firstLine = reader.readLine();
+        if(firstLine == null || firstLine.trim().isEmpty()) {
+            System.out.println("\n\nreading empty file WORDS");
+            return words;
+        } else {
+            reader.close();
+            reader = getReaderFromFile(wordFile, wordFileJunit);
+        }
+
         JSONObject object = (JSONObject) new JSONParser().parse(reader);
         JSONArray wordsArray = (JSONArray) object.get("words");
-
+        if(wordsArray.isEmpty())
+            return null;
         // Iterate through each user object in the JSON array
         for (Object obj : wordsArray) {
             JSONObject wordJson = (JSONObject) obj;
@@ -424,9 +457,20 @@ public class DataLoader {
         //InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
         //BufferedReader reader = new BufferedReader(inputStreamReader);
         BufferedReader reader = getReaderFromFile(languageFile, languageFileJunit);
+        String firstLine = reader.readLine();
+        if(firstLine == null || firstLine.trim().isEmpty()) {
+            System.out.println("\n\nreading empty file LANGUAGES");
+            return languages;
+        } else {
+            reader.close();
+            reader = getReaderFromFile(languageFile, languageFileJunit);
+        }
+
         JSONObject root = (JSONObject) new JSONParser().parse(reader);
         // get the array from the object
         JSONArray list = (JSONArray) root.get("languages");
+        if(list.isEmpty())
+            return null;
         //JSONArray list = (JSONArray) new JSONParser().parse(reader);
 
         for (Object key : list) {
@@ -513,8 +557,19 @@ public class DataLoader {
         //InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
         //BufferedReader reader = new BufferedReader(inputStreamReader);
         BufferedReader reader = getReaderFromFile(dictionaryFile, dictionaryFileJunit);
+        String firstLine = reader.readLine();
+        if(firstLine == null || firstLine.trim().isEmpty()) {
+            System.out.println("\n\nreading empty file  DICTIONARY");
+            return dictionaries;
+        } else {
+            reader.close();
+            reader = getReaderFromFile(dictionaryFile, dictionaryFileJunit);
+        }
+
         JSONObject root = (JSONObject) new JSONParser().parse(reader);
         JSONArray dictionaryArray = (JSONArray) root.get("dictionaries");
+        if(dictionaryArray.isEmpty())
+            return null;
 
         for (Object o : dictionaryArray) {
             JSONObject obj = (JSONObject) o;
@@ -553,6 +608,69 @@ public class DataLoader {
         retDictionary.setID(id);
 
         return retDictionary;
+    }
+
+    public static ArrayList<Section> loadSections() throws IOException, org.json.simple.parser.ParseException {
+        ArrayList<Section> sections = new ArrayList<>();
+        //JSONParser jsonParser = new JSONParser();
+
+        // Parse the JSON file
+        //JSONObject jsonObject = (JSONObject) jsonParser.parse(new FileReader(file));
+        //JSONArray dictionaryArray = (JSONArray) jsonObject.get("dictionaries");
+
+        // NEW WAY TO WORK WITH JUNIT
+        //InputStream inputStream = DataLoader.class.getResourceAsStream(dictionaryFile);
+        //InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
+        //BufferedReader reader = new BufferedReader(inputStreamReader);
+        BufferedReader reader = getReaderFromFile(sectionFile, sectionFileJunit);
+        String firstLine = reader.readLine();
+        if(firstLine == null || firstLine.trim().isEmpty()) {
+            System.out.println("\n\nreading empty file SECTIONS");
+            return sections;
+        } else {
+            reader.close();
+            reader = getReaderFromFile(sectionFile, sectionFileJunit);
+        }
+
+        JSONObject root = (JSONObject) new JSONParser().parse(reader);
+        JSONArray sectionArray = (JSONArray) root.get("sections");
+
+        for (Object o : sectionArray) {
+            JSONObject obj = (JSONObject) o;
+            Section s = parseSection2(obj);
+            sections.add(s);
+        }
+        reader.close();
+        return sections;
+    }
+
+    public static Section parseSection2(JSONObject o) {
+        // make the section
+        Section s = new Section();
+        // set the name
+        s.setName((String) o.get("sectionName"));
+        s.setID(UUID.fromString((String) o.get("sectionID")));
+        // make an array of lessons to add to
+        JSONArray lessons = (JSONArray) o.get("lessons");
+        // parse lessons in the section
+        ArrayList<Lesson> lessArray = new ArrayList<>();
+        for(Object l : lessons) {
+            JSONObject obj = (JSONObject) l;
+            Lesson less = parseLesson2(obj);
+            lessArray.add(less);
+        }
+        // add the lessons to the section
+        s.setLessons(lessArray);
+        // return the section
+        return s;
+    }
+
+    public static Lesson parseLesson2(JSONObject o) {
+        Lesson l = new Lesson();
+        String id = (String) o.get("lessonUUID");
+        l.setLessonID(UUID.fromString(id));
+        l.setLessonName((String) o.get("lessonName"));
+        return l;
     }
 
     // Need to talk about this with team to get it sorted before reading

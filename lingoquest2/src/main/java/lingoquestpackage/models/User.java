@@ -65,6 +65,14 @@ public class User {
     }
 
     /**
+     * @author cade
+     * @return
+     */
+    public Lesson getCurrentLesson() {
+        return this.currentLesson;
+    }
+
+    /**
      * @author Wade Little
      * Pararamaterized constructor that throws an error if there isn't a
      * valid username or password
@@ -305,14 +313,17 @@ public class User {
      */
     public void addLanguage(Language l) {
         if (l == null) {
-            //System.out.println("null language sent to addLanguage.");
+            System.out.println("null language sent to addLanguage.");
             return;
         }
-        if(DictionaryManager.getInstance().getDictionaryByUser(this) == null) {
+        //if(DictionaryManager.getInstance().getDictionaryByUser(this) == null) {
              
-        }
+        //}
         this.languages.add(l.getLanguageID());
-        //this.currentLanguage = l;
+
+
+        // uncommented this in attempt to fix languages not being saved to users
+        this.currentLanguage = l;
     }
 
 
@@ -338,10 +349,14 @@ public class User {
 
     public void setCurrentLangauge(Language l) {
         if (l != null) {
-            this.currentLanguage = l;
-            this.currentLanguageID = l.getLanguageID();
+            
             if (this.languages.contains(l.getLanguageID()) != true)
                 this.languages.add(currentLanguageID);
+            else
+                System.out.println("\n\n\n\nLanguage is already in list" + this.languages.size() + "\n\n");
+
+            this.currentLanguage = l;
+            this.currentLanguageID = l.getLanguageID();
         }
     }
 

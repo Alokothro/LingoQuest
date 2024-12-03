@@ -4,6 +4,7 @@ lingoquestpackage/models/Dictionary.class
 lingoquestpackage/controllers/LoginController.class
 lingoquestpackage/models/TrueOrFalse.class
 lingoquestpackage/models/Languages.class
+lingoquestpackage/controllers/QuestionController.class
 lingoquestpackage/models/QuestionCreator.class
 lingoquestpackage/narriator/Narriator.class
 lingoquestpackage/controllers/PracticeController.class
@@ -34,5 +35,6 @@ lingoquestpackage/models/ItemShop.class
 lingoquestpackage/controllers/LeaderboardController.class
 lingoquestpackage/lingoquest/App.class
 lingoquestpackage/models/Lesson.class
+lingoquestpackage/controllers/MatchingController.class
 lingoquestpackage/models/PlacementTest.class
 lingoquestpackage/controllers/HomeController.class

@@ -193,4 +193,8 @@ public class Section {
         this.sectionComplete = complete;
     }
 
+    public String toString() {
+        return this.sectionName + " " + this.ID + " ";
+    }
+
 }

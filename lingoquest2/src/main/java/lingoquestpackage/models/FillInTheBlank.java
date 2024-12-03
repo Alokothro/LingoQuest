@@ -1,8 +1,5 @@
 package lingoquestpackage.models;
 
-import java.io.File;
-import java.util.ArrayList;
-
 /**
  * Represents a fill-in-the-blank question that tests a user's knowledge of word translations.
  */
@@ -30,6 +27,12 @@ public class FillInTheBlank extends Question {
     public String getLanguage() {
         return language;
         
+    }
+
+    // made this for the front end so that the page can be
+    // setup depending on the question type
+    public String getType() {
+        return "Fill In The Blank";
     }
 
     public void setLanguage(String language) {
