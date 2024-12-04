@@ -39,7 +39,7 @@
                   <Button id="loginAccountButton" fx:id="loginButton" layoutX="79.0" layoutY="208.0" mnemonicParsing="false" onAction="#handleLogin" stylesheets="@css/login.css" text="Login" />
                   <Button id="createAccountButton" layoutX="164.0" layoutY="208.0" mnemonicParsing="false" onAction="#goToCreateAccount" stylesheets="@css/login.css" text="Create Account" />
                   <Label fx:id="messageLabel" layoutX="150.0" layoutY="269.0" />
-                  <TextField layoutX="104.0" layoutY="104.0" promptText="Username" />
+                  <TextField fx:id="usernameField" layoutX="104.0" layoutY="104.0" promptText="Username" />
                </children>
             </AnchorPane>
          </items>

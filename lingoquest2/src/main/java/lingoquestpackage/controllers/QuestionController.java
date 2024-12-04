@@ -179,15 +179,19 @@ public class QuestionController implements Initializable {
             if(languageGame.getQuestions(number)) {
                 //System.out.println("question made");
                 if(this.user.getCurrentLesson().getCurrentQuestion() instanceof Matching) {
+                    System.out.println("Moving to matching question");
                     App.setRoot("/lingoquestpackage/matching");
                 }
                 if(this.user.getCurrentLesson().getCurrentQuestion() instanceof TrueOrFalse) {
+                    System.out.println("Moving to true or false question");
                     App.setRoot("/lingoquestpackage/trueOrFalse");
                 }
                 if(this.user.getCurrentLesson().getCurrentQuestion() instanceof FillInTheBlank) {
+                    System.out.println("Moving to fillintheblank question");
                     App.setRoot("/lingoquestpackage/fillInBlank");
                 }
                 if(this.user.getCurrentLesson().getCurrentQuestion() instanceof MultipleChoice) {
+                    System.out.println("Moving to Multiple choice question");
                     App.setRoot("/lingoquestpackage/multipleChoice");
                 }
             }

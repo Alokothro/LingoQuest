@@ -55,7 +55,7 @@
       <Label id="progressText" layoutX="238.0" layoutY="99.0" text="Lesson Progress" />
       <ProgressBar id="progressBar" fx:id="lessonProgress" layoutX="189.0" layoutY="127.0" prefHeight="45.0" prefWidth="252.0" progress="0.0" />
       <Label id="question" layoutX="179.0" layoutY="220.0" text="The Spanish word for car is ____" />
-      <TextField layoutX="222.0" layoutY="331.0" prefHeight="42.0" prefWidth="155.0" promptText="Please Enter" />
-      <Button id="submitButton" layoutX="371.0" layoutY="332.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="64.0" text="Submit" />
+      <TextField fx:id="answerField" layoutX="222.0" layoutY="331.0" prefHeight="42.0" prefWidth="155.0" promptText="Please Enter" />
+      <Button id="submitButton" fx:id="submitButton" layoutX="371.0" layoutY="332.0" mnemonicParsing="false" onAction="#handleSubmit" prefHeight="40.0" prefWidth="64.0" text="Submit" />
    </children>
 </AnchorPane>

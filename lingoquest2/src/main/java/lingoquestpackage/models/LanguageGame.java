@@ -2,7 +2,6 @@ package lingoquestpackage.models;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Scanner;
 import java.util.UUID;
 
 import org.json.simple.parser.ParseException;
@@ -585,13 +584,18 @@ public class LanguageGame {
     /**
      * Collects the user's answer from the console and checks if it is correct.
      * @param k The scanner to read the user's input.
-     */
-    public void answerQuestion(Scanner k) {
-        System.out.println("Please enter your answer");
-        String userAnswer = k.nextLine().toLowerCase().trim();
+    */
+    public boolean answerQuestion(String userAnswer) {
+        // we aren't working through the terminal anymore
+        //System.out.println("Please enter your answer");
+        //String userAnswer = k.nextLine().toLowerCase().trim();
+
+        // the given string is sent to the question object
         user.currentLesson.currentQuestion.setUserAnswer(userAnswer);
-        user.currentLesson.currentQuestion.isCorrect(user);
+        // check if it was correct and return
+        return user.currentLesson.currentQuestion.isCorrect(user);
     }
+
     /**
      * Displays the progress of the user for the current lesson. Shows the percentage of the lesson completed
      * and details about words learned.

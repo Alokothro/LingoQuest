@@ -9,6 +9,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import lingoquestpackage.lingoquest.App;
 import lingoquestpackage.models.LanguageGame;
 import lingoquestpackage.models.User;
@@ -30,7 +31,7 @@ public class FillInTheBlankController implements Initializable {
     @FXML
     private Label coinLabel;
 
-    // unused currently
+    // table is unused currently
     @FXML
     private TableView table;
 
@@ -39,6 +40,12 @@ public class FillInTheBlankController implements Initializable {
 
     @FXML
     private Button nextButton;
+
+    @FXML
+    private TextField answerField;
+
+    @FXML
+    private Button submitButton;
 
 
     // constructor
@@ -122,5 +129,23 @@ public class FillInTheBlankController implements Initializable {
         }
 
         
+    }
+
+    public void handleSubmit() throws Exception {
+        // make sure to have access to the facade
+        if(languageGame == null) {
+            languageGame = LanguageGame.getInstance();
+        }
+
+        // get the answer that was typed
+        String answer = answerField.getText().trim();
+        // answer the question and store if the answer was right
+        boolean correct = languageGame.answerQuestion(answer);
+
+        // go to either correct or incorrect screen
+        if(correct)
+            App.setRoot("/lingoquestpackage/correct");
+        else
+            App.setRoot("/lingoquestpackage/incorrect");
     }
 }
