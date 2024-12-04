@@ -1,0 +1,70 @@
+#overall {
+    -fx-background-color: #969191;
+}
+#header {
+    -fx-background-color: #002642;
+    
+}
+#sideMenu {
+    -fx-background-color: #002642;
+}
+/* Side Menu */
+#homeButton {
+    -fx-background-color: #fabd00;
+   -fx-padding: 10px;
+}
+#practiceButton {
+    -fx-background-color: #fabd00;
+    -fx-padding: 10px;
+}
+#leaderboardButton {
+    -fx-background-color: #fabd00;
+    -fx-padding: 10px;
+}
+#shopButton {
+    -fx-background-color: #fabd00;
+    -fx-padding: 10px;
+}
+#profileButton {
+    -fx-background-color: #fabd00;
+    -fx-padding: 10px;
+}
+#logoutButton {
+    -fx-background-color: #fabd00;
+    -fx-padding: 10px;
+}
+#lingoQuestHeader {
+    -fx-text-fill: #fabd00;
+    -fx-font-size: 30px;
+    -fx-family: 'Arial';	
+}
+#username {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 15px;
+}
+#coins {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 15px;
+}
+#answerStreak {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 15px;
+}
+#welcome {
+    -fx-font-size: 30px;
+}
+#usernameProfile {
+    -fx-font-size: 20px;
+}
+#friendsProfile {
+    -fx-font-size: 20px;
+}
+#coinsProfile {
+    -fx-font-size: 20px;
+}
+#pointsProfile {
+    -fx-font-size: 20px;
+}
+#answerStreakProfile {
+    -fx-font-size: 20px;
+}
