@@ -3,59 +3,90 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.shape.Rectangle?>
-<?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lingoquestpackage.controllers.ShopController">
+<AnchorPane id="overall" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="454.0" prefWidth="608.0" stylesheets="@css/shop.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lingoquestpackage.controllers.QuestionController">
    <children>
-      <VBox layoutX="-4.0" layoutY="-11.0" prefHeight="412.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="0.0">
+      <VBox id="sideMenu" layoutX="-2.0" layoutY="-11.0" prefHeight="454.0" prefWidth="103.0" stylesheets="@../practice.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="507.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Button mnemonicParsing="false" onAction="#goToHome" prefHeight="26.0" prefWidth="89.0" text="Home">
+            <Button id="homeButton" mnemonicParsing="false" onAction="#goToHome" prefHeight="26.0" prefWidth="89.0" text="Home">
                <VBox.margin>
                   <Insets left="5.0" top="70.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" onAction="#goToPractice" prefHeight="26.0" prefWidth="89.0" text="Practice">
+            <Button id="practiceButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="89.0" text="Practice">
                <VBox.margin>
                   <Insets left="5.0" top="30.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" onAction="#goToLeaderboard" prefHeight="26.0" prefWidth="89.0" text="Leaderboard">
+            <Button id="leaderboardButton" mnemonicParsing="false" onAction="#goToLeaderboard" prefHeight="26.0" prefWidth="89.0" text="Leaderboard">
                <VBox.margin>
                   <Insets left="5.0" top="30.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="89.0" text="Shop">
+            <Button id="shopButton" mnemonicParsing="false" onAction="#goToShop" prefHeight="26.0" prefWidth="89.0" text="Shop">
                <VBox.margin>
                   <Insets left="5.0" top="30.0" />
                </VBox.margin>
             </Button>
-            <Button fx:id="profile" layoutY="400.0" mnemonicParsing="false" onAction="#goToProfile" prefHeight="26.0" prefWidth="89.0" text="Profile">
+            <Button id="profileButton" fx:id="profile" layoutY="400.0" mnemonicParsing="false" onAction="#goToProfile" prefHeight="26.0" prefWidth="89.0" text="Profile">
                <VBox.margin>
                   <Insets left="5.0" top="30.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" onAction="#handleLogout" prefHeight="26.0" prefWidth="89.0" text="Logout">
+            <Button id="logoutButton" mnemonicParsing="false" onAction="#handleLogout" prefHeight="26.0" prefWidth="89.0" text="Logout">
                <VBox.margin>
                   <Insets left="5.0" top="30.0" />
                </VBox.margin>
             </Button>
          </children>
       </VBox>
-      <Pane layoutX="-6.0" layoutY="-6.0" prefHeight="66.0" prefWidth="614.0">
+      <Pane id="header" layoutX="-6.0" layoutY="-6.0" prefHeight="66.0" prefWidth="614.0" stylesheets="@../practice.css">
          <children>
-            <Label fx:id="usernameField" layoutX="245.0" layoutY="25.0" prefHeight="17.0" prefWidth="83.0" />
-            <Label fx:id="coinLabel" layoutX="345.0" layoutY="25.0" prefHeight="17.0" prefWidth="83.0" />
-            <Label fx:id="answerStreak" layoutX="447.0" layoutY="24.0" prefHeight="17.0" prefWidth="127.0" />
+            <Label id="lingoQuestHeader" fx:id="usernameField" layoutX="19.0" layoutY="10.0" prefHeight="45.0" prefWidth="157.0" text="LingoQuest" />
+            <Label id="username" fx:id="coinLabel" layoutX="194.0" layoutY="25.0" prefHeight="17.0" prefWidth="83.0" text="Username" />
+            <Label id="coins" fx:id="answerStreak" layoutX="295.0" layoutY="25.0" prefHeight="17.0" prefWidth="127.0" text="Coins:" />
+            <Label id="answerStreak" layoutX="400.0" layoutY="26.0" text="Answer Streak" />
          </children></Pane>
-      <ProgressBar fx:id="languageCompletion" layoutX="315.0" layoutY="62.0" prefHeight="20.0" prefWidth="120.0" progress="0.0" />
-      <Text layoutX="314.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Language Completion" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="94.0" layoutX="458.0" layoutY="57.0" stroke="BLACK" strokeType="INSIDE" width="117.0" />
-      <Button layoutX="488.0" layoutY="220.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="83.0" text="Equip Items" />
-      <Button layoutX="488.0" layoutY="254.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="83.0" text="Friends" />
+      <ImageView fitHeight="95.0" fitWidth="115.0" layoutX="187.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@data/images/stickfigure.jpg" />
+         </image>
+      </ImageView>
+      <Button id="characterButton" layoutX="187.0" layoutY="190.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="86.0" text="Character" />
+      <ImageView fitHeight="95.0" fitWidth="115.0" layoutX="298.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@data/images/tops.jpg" />
+         </image>
+      </ImageView>
+      <Button id="characterButton" layoutX="298.0" layoutY="190.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="95.0" text="Tops" />
+      <ImageView fitHeight="95.0" fitWidth="120.0" layoutX="418.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@data/images/pants.jpg" />
+         </image>
+      </ImageView>
+      <Button id="characterButton" layoutX="418.0" layoutY="190.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="102.0" text="Pants" />
+      <ImageView fitHeight="95.0" fitWidth="115.0" layoutX="169.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@data/images/shoes.jpg" />
+         </image>
+      </ImageView>
+      <Button id="characterButton" layoutX="169.0" layoutY="356.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="95.0" text="Shoes" />
+      <Button id="characterButton" layoutX="280.0" layoutY="356.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="148.0" text="Animations" />
+      <ImageView fitHeight="135.0" fitWidth="148.0" layoutX="280.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@data/images/animations.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="95.0" fitWidth="115.0" layoutX="445.0" layoutY="263.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@data/images/accessories.jpg" />
+         </image>
+      </ImageView>
+      <Button id="characterButton" layoutX="445.0" layoutY="356.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="95.0" text="Accessories" />
    </children>
 </AnchorPane>
