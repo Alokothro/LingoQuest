@@ -55,7 +55,6 @@
     -fx-text-fill: white;
     -fx-border-color: black;
     -fx-padding: 10px;
-    -fx-border-radius: 25px;
 }
 #positiveMessage {
     -fx-text-fill: #ffffff;

@@ -56,8 +56,3 @@
     -fx-border-color: black;
     -fx-padding: 10px;
 }
-#positiveMessage {
-    -fx-text-fill: #ffffff;
-    -fx-font-size: 25px;
-    -fx-font-weight: bold;
-}
