@@ -6,8 +6,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="overall" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="454.0" prefWidth="608.0" stylesheets="@../practice.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lingoquestpackage.controllers.QuestionController">
+<AnchorPane id="overall" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="454.0" prefWidth="608.0" stylesheets="@css/defaultQuestion.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lingoquestpackage.controllers.QuestionController">
    <children>
       <VBox id="sideMenu" layoutX="-2.0" layoutY="-11.0" prefHeight="454.0" prefWidth="103.0" stylesheets="@../practice.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="507.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -50,7 +51,16 @@
             <Label id="coins" fx:id="answerStreak" layoutX="295.0" layoutY="25.0" prefHeight="17.0" prefWidth="127.0" text="Coins:" />
             <Label id="answerStreak" layoutX="400.0" layoutY="26.0" text="Answer Streak" />
          </children></Pane>
-      <Button fx:id="nextButton" layoutX="253.0" layoutY="214.0" mnemonicParsing="false" onAction="#handleNextButton" prefHeight="26.0" prefWidth="103.0" />
-      <Label fx:id="lessonName" layoutX="226.0" layoutY="132.0" prefHeight="17.0" prefWidth="157.0" />
+      <Button id="beginButton" fx:id="nextButton" layoutX="288.0" layoutY="252.0" mnemonicParsing="false" onAction="#handleNextButton" prefHeight="26.0" prefWidth="103.0" text="Begin" />
+      <Label id="SectionName" fx:id="lessonName" layoutX="235.0" layoutY="134.0" prefHeight="30.0" prefWidth="278.0" text="Section: Section Selected">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label id="LessonName" layoutX="235.0" layoutY="181.0" text="Lesson: Lesson Selected">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button id="backToHomeButton" layoutX="288.0" layoutY="305.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="103.0" text="Back to Home" />
    </children>
 </AnchorPane>
