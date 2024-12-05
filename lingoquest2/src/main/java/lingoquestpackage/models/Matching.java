@@ -91,5 +91,11 @@ public class Matching extends Question {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'isCorrect'");
     }
+
+    @Override
+    public ArrayList<Word> getAnswerChoices() {
+        // current intuition is to send these, might need to change - cade December 5
+        return this.choices;
+    }
    
 }

@@ -597,6 +597,22 @@ public class LanguageGame {
     }
 
     /**
+     * @author cade
+     * @return the string to be shown in the gui
+     */
+    public String getCurrentQuestionString() {
+        return this.user.getCurrentLesson().getCurrentQuestion().toString();
+    }
+
+    /**
+     * @author cade
+     * @return the answer choices to be shown in the gui
+     */
+    public ArrayList<Word> getQuestionWords() {
+        return this.user.getCurrentLesson().getCurrentQuestion().getAnswerChoices();
+    }
+
+    /**
      * Displays the progress of the user for the current lesson. Shows the percentage of the lesson completed
      * and details about words learned.
      */
