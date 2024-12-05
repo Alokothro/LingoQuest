@@ -1,4 +1,7 @@
 package lingoquestpackage.models;
+
+import java.util.ArrayList;
+
 /**
  * Abstract class that serves as a base for different types of questions in a language learning application.
  * This class defines the structure and behaviors that all specific question types must implement.
@@ -29,6 +32,8 @@ abstract class Question {
   public Word getCorrectAnswer() {
     return this.correctAnswer;
   }
+
+  public abstract ArrayList<Word> getAnswerChoices();
 
   public abstract String getType();
 

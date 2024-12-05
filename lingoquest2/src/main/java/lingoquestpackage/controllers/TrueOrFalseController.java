@@ -6,9 +6,7 @@ import java.util.ResourceBundle;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.TableView;
 import lingoquestpackage.lingoquest.App;
 import lingoquestpackage.models.LanguageGame;
 import lingoquestpackage.models.User;
@@ -30,15 +28,11 @@ public class TrueOrFalseController implements Initializable {
     @FXML
     private Label coinLabel;
 
-    // unused currently
-    @FXML
-    private TableView table;
-
     @FXML
     private Label lessonName;
 
     @FXML
-    private Button nextButton;
+    private Label question;
 
 
     // constructor
@@ -121,6 +115,27 @@ public class TrueOrFalseController implements Initializable {
             return;
         }
 
-        
+        // set the text to display the current question
+        question.setText(languageGame.getCurrentQuestionString());
+    }
+
+    public void handleTrue() throws IOException {
+        // answer question and store result
+        boolean correct = languageGame.answerQuestion("true");
+        // go to correct or incorrect screen accordingly
+        if(correct)
+            App.setRoot("/lingoquestpackage/correct");
+        else
+            App.setRoot("/lingoquestpackage/incorrect");
+    }
+
+    public void handleFalse() throws IOException {
+        // answer question and store result
+        boolean correct = languageGame.answerQuestion("false");
+        // go to correct or incorrect screen accordingly
+        if(correct)
+            App.setRoot("/lingoquestpackage/correct");
+        else
+            App.setRoot("/lingoquestpackage/incorrect");
     }
 }

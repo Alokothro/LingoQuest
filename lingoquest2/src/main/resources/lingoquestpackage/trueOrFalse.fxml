@@ -4,7 +4,6 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ProgressBar?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
@@ -54,8 +53,8 @@
          </children></Pane>
       <Label id="progressText" layoutX="238.0" layoutY="99.0" text="Lesson Progress" />
       <ProgressBar id="progressBar" fx:id="lessonProgress" layoutX="189.0" layoutY="127.0" prefHeight="45.0" prefWidth="252.0" progress="0.0" />
-      <Label id="question" layoutX="159.0" layoutY="214.0" prefHeight="26.0" prefWidth="388.0" />
-      <TextField fx:id="answerField" layoutX="222.0" layoutY="331.0" prefHeight="42.0" prefWidth="155.0" promptText="Please Enter" />
-      <Button id="submitButton" fx:id="submitButton" layoutX="371.0" layoutY="332.0" mnemonicParsing="false" onAction="#handleSubmit" prefHeight="40.0" prefWidth="64.0" text="Submit" />
+      <Label id="question" fx:id="question" layoutX="159.0" layoutY="214.0" prefHeight="26.0" prefWidth="388.0" />
+      <Button id="submitButton" fx:id="trueButton" layoutX="189.0" layoutY="330.0" mnemonicParsing="false" onAction="#handleTrue" prefHeight="37.0" prefWidth="114.0" text="True" />
+      <Button fx:id="falseButton" layoutX="390.0" layoutY="330.0" mnemonicParsing="false" onAction="#handleFalse" prefHeight="37.0" prefWidth="103.0" text="False" />
    </children>
 </AnchorPane>

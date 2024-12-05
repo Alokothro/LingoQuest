@@ -39,7 +39,6 @@ public class MultipleChoice extends Question {
      *
      * @return The index (1-based) of the correct answer within the answer choices.
      */
-
     public int getCorrectAnswerIndexPlusOne() {
         for (int i = 0; i < answerChoices.size(); i++) {
             if (answerChoices.get(i).wordUUID.equals(correctAnswer.wordUUID)) {
@@ -68,14 +67,22 @@ public class MultipleChoice extends Question {
      *
      * @return A formatted string with the question and answer choices.
      */
-    @Override
+    /*@Override
     public String toString() {
         StringBuilder result = new StringBuilder("What is the spanish equivalent to " + correctAnswer.getEnglishVersion() + "\nPlease select your answer choice:\n");
         for (int i = 0; i < answerChoices.size(); i++) {
             result.append(i + 1).append(". ").append(answerChoices.get(i).getWordinLanguage()).append("\n");
         }
         return result.toString();
+    }*/
+
+    // made to work with gui
+    @Override
+    public String toString() {
+        StringBuilder result = new StringBuilder("What is the spanish equivalent to " + correctAnswer.getEnglishVersion());
+        return result.toString();
     }
+
     /**
      * Checks whether the user's answer is correct.
      * It converts the user's answer to an index and compares it against the correct answer's index.
@@ -96,5 +103,14 @@ public class MultipleChoice extends Question {
             user.getUserDictionary().getWordByUUID(correctAnswer.getWordUUID()).wordPresented(false);
             return false;
         }
+    }
+
+    /**
+     * @author cade
+     */
+    @Override
+    public ArrayList<Word> getAnswerChoices() {
+        // easy for multiple choice, just return the list of answer choices
+        return this.answerChoices;
     }
 }

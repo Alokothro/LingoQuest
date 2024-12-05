@@ -1,5 +1,7 @@
 package lingoquestpackage.models;
 
+import java.util.ArrayList;
+
 /**
  * Represents a fill-in-the-blank question that tests a user's knowledge of word translations.
  */
@@ -88,5 +90,18 @@ public class FillInTheBlank extends Question {
             user.getUserDictionary().getWordByUUID(correctAnswer.getWordUUID()).wordPresented(false);
             return false;
         }
+    }
+
+    /**
+     * @author cade
+     */
+    @Override
+    public ArrayList<Word> getAnswerChoices() {
+        // make an arraylist
+        ArrayList<Word> ret = new ArrayList<>();
+        // add the word that the question is based on
+        ret.add(correctAnswer);
+        // return it
+        return ret;
     }
 }

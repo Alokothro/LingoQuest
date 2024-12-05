@@ -1,5 +1,6 @@
 package lingoquestpackage.models;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 /**
@@ -29,6 +30,8 @@ public class TrueOrFalse extends Question {
         this.language = language;
 
         Random rand = new Random();
+        // if the answer will be true, then dislpay the english and spanish version
+        // of "aWord"
         if (rand.nextBoolean()) {
             this.displayedWord = aWord;
             this.correctWord = aWord;
@@ -44,6 +47,14 @@ public class TrueOrFalse extends Question {
     // setup depending on the question type
     public String getType() {
         return "True Or False";
+    }
+
+    /**
+     * @author cade
+     */
+    public ArrayList<Word> getAnswerChoices() {
+        // no need to return anything for true or false
+        return null;
     }
 
     /**
@@ -63,7 +74,7 @@ public class TrueOrFalse extends Question {
     @Override
     public String toString() {
         String s = ("Is " + displayedWord.getWordinLanguage() + " the " + "Spanish" + " word for "
-                + correctWord.getEnglishVersion() + "? (true/false)");
+                + correctWord.getEnglishVersion() + "?");
         return s;
     }
 

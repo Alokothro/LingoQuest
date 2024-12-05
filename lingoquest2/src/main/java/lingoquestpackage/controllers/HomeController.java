@@ -2,6 +2,7 @@ package lingoquestpackage.controllers;
 
 import java.io.IOException;
 import java.net.URL;
+import java.text.DecimalFormat;
 import java.util.List;
 import java.util.ResourceBundle;
 
@@ -39,6 +40,9 @@ public class HomeController implements Initializable {
 
     @FXML
     private ProgressBar languageCompletion;
+
+    @FXML
+    private Label completionLabel;
 
     // constructor
     public HomeController() {
@@ -106,10 +110,16 @@ public class HomeController implements Initializable {
         coinLabel.setText("Coins: "+ user.getCoinBalance());
         answerStreak.setText("Answer Streak: " + user.getCurrentLanguage().getAnswerStreak());
         double progress = user.getCurrentLanguageProgress();
+
+        // initialize
+        ProgressBar languageCompletion = new ProgressBar();
         if(progress > 0.0) {
             languageCompletion.setProgress(progress);
         }
 
+        // set the label to show percent completion
+        DecimalFormat df = new DecimalFormat("#.00");
+        completionLabel.setText(df.format(progress) + "% Language Completion");
 
         // Root container
         VBox root = new VBox(10);

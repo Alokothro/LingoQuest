@@ -2,20 +2,24 @@ package lingoquestpackage.controllers;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.TableView;
+import javafx.scene.control.ProgressBar;
 import lingoquestpackage.lingoquest.App;
 import lingoquestpackage.models.LanguageGame;
 import lingoquestpackage.models.User;
+import lingoquestpackage.models.Word;
 
 public class MultipleChoiceController implements Initializable {
 
     private User user;
     private LanguageGame languageGame;
+    private ArrayList<Word> choices;
 
     // need to figure out how to properly deal with this
     private int numberOfQuestions = 2;
@@ -29,9 +33,23 @@ public class MultipleChoiceController implements Initializable {
     @FXML
     private Label coinLabel;
 
-    // unused currently
     @FXML
-    private TableView table;
+    private Label questionLabel;
+
+    @FXML
+    private Button optionOne;
+
+    @FXML
+    private Button optionTwo;
+
+    @FXML
+    private Button optionThree;
+
+    @FXML
+    private Button optionFour;
+
+    @FXML
+    private ProgressBar progressBar;
 
     @FXML
     private Label lessonName;
@@ -94,15 +112,9 @@ public class MultipleChoiceController implements Initializable {
                 languageGame = LanguageGame.getInstance();
                 this.user = languageGame.getUser();
             } catch (Exception e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         }
-
-        // set the text on the top banner
-        usernameField.setText(user.getUsername());
-        coinLabel.setText("Coins: "+ user.getCoinBalance());
-        answerStreak.setText("Answer Streak: " + user.getCurrentLanguage().getAnswerStreak());
 
         // if a lesson isn't loaded, there can't be any questions
         if(this.user.getCurrentLesson() == null) {
@@ -117,6 +129,87 @@ public class MultipleChoiceController implements Initializable {
             return;
         }
 
-        
+        // get the progress percentage
+        double progress = user.getCurrentLanguageProgress();
+        // initialize the progress bar
+        ProgressBar languageCompletion = new ProgressBar();
+        if(progress > 0.0) {
+            // set the progress
+            languageCompletion.setProgress(progress);
+        }
+
+        // set the text on the top banner
+        usernameField.setText(user.getUsername());
+        coinLabel.setText("Coins: "+ user.getCoinBalance());
+        answerStreak.setText("Answer Streak: " + user.getCurrentLanguage().getAnswerStreak());
+
+        // set the string of the question
+        questionLabel.setText(languageGame.getCurrentQuestionString());
+
+        // initialize to be safe
+        this.choices = new ArrayList<>();
+        // get the answer choices
+        this.choices = languageGame.getQuestionWords();
+        // shuffle choices
+        //Collections.shuffle(choices); // REMOVED, DONT NEED TO SHUFFLE
+        // there should only be 4 answer choices for multiple choice
+        if(choices.size() > 4) {
+            System.out.println("More than 4 multiple choice answers in mc controller");
+            return;
+        }
+        // set each option button
+        optionOne.setText(choices.get(0).getWordinLanguage());
+        optionTwo.setText(choices.get(1).getWordinLanguage());
+        optionThree.setText(choices.get(2).getWordinLanguage());
+        optionFour.setText(choices.get(3).getWordinLanguage());
+    }
+
+    public void handleOne() throws Exception {
+        // make sure you have the facade
+        if(languageGame == null)
+            languageGame = LanguageGame.getInstance();
+        // answer the question and store if it was correct
+        boolean correct = languageGame.answerQuestion("1");
+        if(correct)
+            App.setRoot("/lingoquestpackage/correct");
+        else
+            App.setRoot("/lingoquestpackage/incorrect");
+    }
+
+    public void handleTwo() throws Exception {
+        // make sure you have the facade
+        if(languageGame == null)
+            languageGame = LanguageGame.getInstance();
+        // answer the question and store if it was correct
+        boolean correct = languageGame.answerQuestion("2");
+        if(correct)
+            App.setRoot("/lingoquestpackage/correct");
+        else
+            App.setRoot("/lingoquestpackage/incorrect");
+    }
+
+    public void handleThree() throws Exception {
+        // make sure you have the facade
+        if(languageGame == null)
+            languageGame = LanguageGame.getInstance();
+        // answer the question and store if it was correct
+        boolean correct = languageGame.answerQuestion("3");
+        if(correct)
+            App.setRoot("/lingoquestpackage/correct");
+        else
+            App.setRoot("/lingoquestpackage/incorrect");
+    }
+
+    public void handleFour() throws Exception {
+        // make sure you have the facade
+        if(languageGame == null)
+            languageGame = LanguageGame.getInstance();
+        // answer the question and store if it was correct
+        boolean correct = languageGame.answerQuestion("4");
+        // go to either correct or incorrect screen
+        if(correct)
+            App.setRoot("/lingoquestpackage/correct");
+        else
+            App.setRoot("/lingoquestpackage/incorrect");
     }
 }

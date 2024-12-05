@@ -7,7 +7,6 @@ import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
-import javafx.scene.control.TableView;
 import lingoquestpackage.lingoquest.App;
 import lingoquestpackage.models.LanguageGame;
 import lingoquestpackage.models.User;
@@ -29,9 +28,6 @@ public class MatchingController implements Initializable {
     @FXML
     private Label coinLabel;
 
-    // unused currently
-    @FXML
-    private TableView table;
 
     @FXML
     private Label lessonName;
