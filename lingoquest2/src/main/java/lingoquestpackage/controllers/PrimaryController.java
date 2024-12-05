@@ -6,7 +6,7 @@ import lingoquestpackage.lingoquest.*;
 import lingoquestpackage.narriator.*;
 
 public class PrimaryController {
-
+// plays sound
     @FXML
     private void switchToSecondary() throws IOException {
         Narriator.playSound("me llamo cade!");
