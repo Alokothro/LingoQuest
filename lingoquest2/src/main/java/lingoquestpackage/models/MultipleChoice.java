@@ -113,4 +113,18 @@ public class MultipleChoice extends Question {
         // easy for multiple choice, just return the list of answer choices
         return this.answerChoices;
     }
+
+    /**
+     * @author cade
+     * made to fix bug in incorrect screen
+     */
+    @Override
+    public Word getCorrectAnswer() {
+        if(this.correctAnswer == null) {
+            System.out.println("correct answer null in multiple choice");
+        } else {
+            System.out.println(correctAnswer.getEnglishVersion()+ "correctanswer not null in mult choice");
+        }
+        return this.correctAnswer;
+    }
 }

@@ -98,4 +98,8 @@ public class Matching extends Question {
         return this.choices;
     }
    
+
+    public Word getCorrectAnswer() {
+        return null;
+    }
 }

@@ -28,10 +28,10 @@ abstract class Question {
    * Retrieves the correct answer for the question.
    * 
    * @return The correct answer as a {@link Word} object.
+   * 
+   * changed to be abstract - cade december 5
    */
-  public Word getCorrectAnswer() {
-    return this.correctAnswer;
-  }
+  public abstract Word getCorrectAnswer();
 
   public abstract ArrayList<Word> getAnswerChoices();
 

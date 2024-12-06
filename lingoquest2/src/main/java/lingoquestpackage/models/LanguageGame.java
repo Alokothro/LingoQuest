@@ -2,6 +2,7 @@ package lingoquestpackage.models;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Random;
 import java.util.UUID;
 
 import org.json.simple.parser.ParseException;
@@ -570,16 +571,78 @@ public class LanguageGame {
         //System.out.println(question.toString());
 
         // advance to next question number
-        this.currentQuestionNumber ++;
+        // moved to answer question
+        //this.currentQuestionNumber ++;
 
         // save to the lesson's questions
         this.lessonQuestions.add(question);
+        System.out.println("adding: " + question.toString() + "\n\n\n\n");
 
         // will now handle speaking within the actual question
         //speak(question.toString());
+        for(int i = 0; i < lessonQuestions.size(); i++) {
+            System.out.println(lessonQuestions.get(i));
+        }
     }
 
+    /**
+     * @author cade
+     * @return the correct answer of the most recent question
+     * this will be used for incorrect and correct screens
+     */
+    public Word getMostRecentQuestionWord() {
+        // must have questions stored to get a question
+        if(this.lessonQuestions.isEmpty()) {
+            System.out.println("empty list of questions");
+            return null;
+        }
+        // get the most recently added question
+        //Question q = this.lessonQuestions.get(this.lessonQuestions.size()-1);
+        // TRYING THIS INSTEAD
+        //System.out.println("questions in langgame array = " + this.lessonQuestions.size()
+        //+ "     current question numb  = " + this.currentQuestionNumber);
+        
+        // changed from currentQuestionNumber -1 to currentQuestionNumber
+
+        // TODO fix this
+        Question q = this.lessonQuestions.get(this.lessonQuestions.size()-1);
+        System.out.println(q.toString() + "mostrecentquestionword\n\n\n");
+        // return the correct answer
+        System.out.println(q.getCorrectAnswer() + "\n\nCorrect answer");
+        return q.getCorrectAnswer();
+    }
+
+    /**
+     * @author cade
+     * @return random word from the user's dictionary
+     * used for word of the day
+     */
+    public Word getRandomWord() {
+        if(this.user == null || this.user.getUserDictionary() == null) {
+            System.out.println("returning null in getRandomWord bc user or dictionary is null");
+            return null;
+        }
+        // get the words to choose from
+        ArrayList<Word> words = this.user.getUserDictionary().getWords();
+        Random r = new Random();
+        // get a random index to pick from
+        int i = r.nextInt(words.size());
+        // use the index to get a word
+        Word ret = words.get(i);
+        // return the word
+        System.out.println("returning " + ret.getEnglishVersion() + " in get random word");
+        return ret;
+    }
     
+    /**
+     * @author cade
+     * @return the user's current section
+     */
+    public Section getCurrentSection() {
+        if(this.user.getCurrentLesson() == null)
+            return null;
+        return this.user.getCurrentSection();
+    }
 
     /**
      * Collects the user's answer from the console and checks if it is correct.
@@ -592,6 +655,8 @@ public class LanguageGame {
 
         // the given string is sent to the question object
         user.currentLesson.currentQuestion.setUserAnswer(userAnswer);
+        // increment question number
+        this.currentQuestionNumber++;
         // check if it was correct and return
         return user.currentLesson.currentQuestion.isCorrect(user);
     }

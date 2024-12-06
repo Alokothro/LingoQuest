@@ -23,10 +23,10 @@ public class QuestionController implements Initializable {
     private LanguageGame languageGame;
 
     // need to figure out how to properly deal with this
-    private int numberOfQuestions = 2;
+    private int numberOfQuestions = 5;
 
-    @FXML
-    private Label usernameField;
+    //@FXML
+    //private Label usernameField;
 
     @FXML
     private Label answerStreak;
@@ -40,6 +40,9 @@ public class QuestionController implements Initializable {
 
     @FXML
     private Label lessonName;
+
+    @FXML
+    private Label sectionName;
 
     @FXML
     private Button nextButton;
@@ -106,9 +109,13 @@ public class QuestionController implements Initializable {
                 e.printStackTrace();
             }
         }
+        // initialize
+        //nextButton = new Button();
 
         // set the text on the top banner
-        usernameField.setText(user.getUsername());
+        //usernameField.setText(user.getUsername());
+        //coinLabel = new Label();
+
         coinLabel.setText("Coins: "+ user.getCoinBalance());
         answerStreak.setText("Answer Streak: " + user.getCurrentLanguage().getAnswerStreak());
 
@@ -133,19 +140,29 @@ public class QuestionController implements Initializable {
 
         // set the text of the button based on the current question number
         if(languageGame.getCurrentQuestionNumber() == 0) {
+            System.out.println("current question number = " + languageGame.getCurrentQuestionNumber() + "\n\n\n");
             nextButton.setText("Begin");
         }
         // if its a positive number and is less than the # of questions desired
         else if(languageGame.getCurrentQuestionNumber() > 0 && languageGame.getCurrentQuestionNumber() < numberOfQuestions) {
+            System.out.println("current question number = " + languageGame.getCurrentQuestionNumber() + "\n\n\n");
             nextButton.setText("Next");
         }
         // else it must be >= # of questions
         else {
+            System.out.println("current question number = " + languageGame.getCurrentQuestionNumber() + "\n\n\n");
             nextButton.setText("Exit");
         }
 
+        // initialize to fix bug
+        //lessonName = new Label();
         // set the label to display the current question
-        lessonName.setText(this.user.getCurrentLesson().getLessonName());
+        lessonName.setText("Lesson - " + this.user.getCurrentLesson().getLessonName());
+
+        // initialize to fix bug
+        //sectionName = new Label();
+        // set the label to display the current question
+        sectionName.setText("Section - " + languageGame.getCurrentSection().getName());
     }
 
     public void handleNextButton() throws IOException {

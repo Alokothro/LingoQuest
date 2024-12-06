@@ -37,6 +37,8 @@ public class Lesson {
      */
     public void setTopicWords(User u) {
         this.topicWords = u.getUserDictionary().getWordsByTopicID(this.lessonUUID);
+        // goes through the words to figure out total points
+        this.getTotalPoints();
     }
     /**
      * Sets the topic words for the lesson from a specified list, filtering out words presented more than once.

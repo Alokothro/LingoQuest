@@ -9,7 +9,7 @@ import java.util.Random;
 public class TrueOrFalse extends Question {
     private String language;        // The language of the question.
     public Word displayedWord;     // The word displayed in the question.
-    public String answer;          // The correct answer ("true" or "false").
+    public String correctAnswer;          // The correct answer ("true" or "false").
     private Word correctWord;       // The word that is actually correct.
     private int coinValue = 100;    // The coin value awarded for a correct answer.
     private int pointValue = 100;   // The point value awarded for a correct answer.
@@ -35,11 +35,11 @@ public class TrueOrFalse extends Question {
         if (rand.nextBoolean()) {
             this.displayedWord = aWord;
             this.correctWord = aWord;
-            this.answer = "true";
+            this.correctAnswer = "true";
         } else {
             this.displayedWord = anotherWord;
             this.correctWord = aWord; // correct answer remains aWord
-            this.answer = "false";
+            this.correctAnswer = "false";
         }
     }
 
@@ -85,12 +85,23 @@ public class TrueOrFalse extends Question {
      * @return true if the user's answer matches the correct answer, otherwise false.
      */
     public boolean isCorrect(User user) {
-        if (userAnswer != null && userAnswer.toLowerCase().trim().equals(answer)) {
+        if (userAnswer != null && userAnswer.toLowerCase().trim().equals(correctAnswer)) {
             user.getUserDictionary().getWordByUUID(correctWord.getWordUUID()).wordPresented(true);
             return true;
         } else {
             user.getUserDictionary().getWordByUUID(correctWord.getWordUUID()).wordPresented(false);
             return false;
         }
+    }
+
+    /**
+     * @author cade
+     * made to fix bug in incorrect screen
+     */
+    @Override
+    public Word getCorrectAnswer() {
+        Word ret = new Word();
+        ret.setWord(this.correctAnswer);
+        return ret;
     }
 }

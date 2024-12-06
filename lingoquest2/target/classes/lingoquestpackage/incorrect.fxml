@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="overall" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="454.0" prefWidth="608.0" stylesheets="@css/incorrect.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lingoquestpackage.controllers.QuestionController">
+<AnchorPane id="overall" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="454.0" prefWidth="608.0" stylesheets="@css/incorrect.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lingoquestpackage.controllers.IncorrectController">
    <children>
       <VBox id="sideMenu" layoutX="-2.0" layoutY="-11.0" prefHeight="454.0" prefWidth="103.0" stylesheets="@../practice.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="507.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -48,10 +48,10 @@
       </VBox>
       <Pane id="header" layoutX="-6.0" layoutY="-6.0" prefHeight="66.0" prefWidth="614.0" stylesheets="@../practice.css">
          <children>
-            <Label id="lingoQuestHeader" fx:id="usernameField" layoutX="19.0" layoutY="10.0" prefHeight="45.0" prefWidth="157.0" text="LingoQuest" />
-            <Label id="username" fx:id="coinLabel" layoutX="194.0" layoutY="25.0" prefHeight="17.0" prefWidth="83.0" text="Username" />
-            <Label id="coins" fx:id="answerStreak" layoutX="295.0" layoutY="25.0" prefHeight="17.0" prefWidth="127.0" text="Coins:" />
-            <Label id="answerStreak" layoutX="400.0" layoutY="26.0" text="Answer Streak" />
+            <Label id="lingoQuestHeader" layoutX="19.0" layoutY="10.0" prefHeight="45.0" prefWidth="157.0" text="LingoQuest" />
+            <Label id="username" fx:id="usernameField" layoutX="194.0" layoutY="25.0" prefHeight="17.0" prefWidth="83.0" />
+            <Label id="coins" fx:id="coinLabel" layoutX="295.0" layoutY="25.0" prefHeight="17.0" prefWidth="127.0" />
+            <Label id="answerStreak" fx:id="answerStreak" layoutX="471.0" layoutY="25.0" />
          </children></Pane>
       <Label fx:id="lessonName" layoutX="226.0" layoutY="132.0" prefHeight="17.0" prefWidth="157.0" />
       <Button id="continueButton" fx:id="nextButton" layoutX="480.0" layoutY="388.0" mnemonicParsing="false" onAction="#handleNextButton" prefHeight="26.0" prefWidth="103.0" text="Continue" />
@@ -72,7 +72,7 @@
          </font>
       </Label>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ab1717" height="145.0" layoutX="198.0" layoutY="208.0" stroke="BLACK" strokeType="INSIDE" width="336.0" />
-      <Label id="corrrectAnswer" alignment="CENTER" contentDisplay="CENTER" layoutX="191.0" layoutY="227.0" prefHeight="30.0" prefWidth="336.0" text="The correct answer is _____. " textFill="WHITE">
+      <Label id="corrrectAnswer" fx:id="correctAnswer" alignment="CENTER" contentDisplay="CENTER" layoutX="219.0" layoutY="227.0" prefHeight="30.0" prefWidth="295.0" textFill="WHITE">
          <font>
             <Font size="20.0" />
          </font>

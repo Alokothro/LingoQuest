@@ -20,6 +20,7 @@ import lingoquestpackage.models.LanguageGame;
 import lingoquestpackage.models.Lesson;
 import lingoquestpackage.models.Section;
 import lingoquestpackage.models.User;
+import lingoquestpackage.models.Word;
 
 public class HomeController implements Initializable {
 
@@ -37,6 +38,9 @@ public class HomeController implements Initializable {
 
     @FXML
     private Label coinLabel;
+
+    @FXML
+    private Label wordOfDay;
 
     @FXML
     private ProgressBar languageCompletion;
@@ -185,6 +189,12 @@ public class HomeController implements Initializable {
             root.setPadding(new Insets(10));
             root.getChildren().add(sectionBox);
         }
+
+        // set the word of the day
+        Word w = languageGame.getRandomWord();
+        // initialize to be safe
+        wordOfDay.setText(w.getWordinLanguage() + "-" + w.getEnglishVersion());
+
     }
 
     /*private List<Section> getSections() {

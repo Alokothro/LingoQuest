@@ -26,6 +26,9 @@ public class FillInTheBlankController implements Initializable {
     private Label usernameField;
 
     @FXML
+    private Label question;
+
+    @FXML
     private Label answerStreak;
 
     @FXML
@@ -114,6 +117,9 @@ public class FillInTheBlankController implements Initializable {
         usernameField.setText(user.getUsername());
         coinLabel.setText("Coins: "+ user.getCoinBalance());
         answerStreak.setText("Answer Streak: " + user.getCurrentLanguage().getAnswerStreak());
+
+        // set the question text
+        question.setText(languageGame.getCurrentQuestionString());
 
         // if a lesson isn't loaded, there can't be any questions
         if(this.user.getCurrentLesson() == null) {

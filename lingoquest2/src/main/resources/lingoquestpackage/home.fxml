@@ -52,25 +52,25 @@
       </VBox>
       <Pane id="header" fx:id="goToFriends" layoutX="-6.0" layoutY="-6.0" prefHeight="66.0" prefWidth="614.0">
          <children>
-            <Label id="lingoQuestHeader" fx:id="usernameField" layoutX="24.0" layoutY="12.0" prefHeight="45.0" prefWidth="174.0" stylesheets="@css/home.css" text="LingoQuest" />
-            <Label id="username" fx:id="coinLabel" layoutX="224.0" layoutY="23.0" prefHeight="17.0" prefWidth="83.0" text="Username" />
-            <Label id="coins" fx:id="answerStreak" layoutX="324.0" layoutY="24.0" prefHeight="17.0" prefWidth="127.0" text="Coins:" />
-            <Label id="answerStreak" layoutX="430.0" layoutY="23.0" text="Answer Streak:" />
+            <Label id="lingoQuestHeader" layoutX="24.0" layoutY="12.0" prefHeight="45.0" prefWidth="174.0" stylesheets="@css/home.css" text="LingoQuest" />
+            <Label id="username" fx:id="usernameField" layoutX="224.0" layoutY="23.0" prefHeight="17.0" prefWidth="83.0" />
+            <Label id="coins" fx:id="coinLabel" layoutX="324.0" layoutY="24.0" prefHeight="17.0" prefWidth="127.0" />
+            <Label id="answerStreak" fx:id="answerStreak" layoutX="430.0" layoutY="23.0" />
          </children></Pane>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fabd00" height="94.0" layoutX="479.0" layoutY="91.0" stroke="BLACK" strokeType="INSIDE" width="117.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fabd00" height="94.0" layoutX="326.0" layoutY="303.0" stroke="BLACK" strokeType="INSIDE" width="117.0" />
       <Button id="equipItemsButton" layoutX="482.0" layoutY="279.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="98.0" text="Equip Items" />
       <Button id="friendsButton" fx:id="friendButton" layoutX="482.0" layoutY="380.0" mnemonicParsing="false" onAction="#goToFriends" prefHeight="39.0" prefWidth="98.0" text="Friends" />
-      <ScrollPane fx:id="scrollPane" layoutX="100.0" layoutY="59.0" prefHeight="754.0" prefWidth="200.0">
+      <ScrollPane fx:id="scrollPane" hbarPolicy="ALWAYS" layoutX="100.0" layoutY="59.0" prefHeight="754.0" prefWidth="200.0" vbarPolicy="ALWAYS">
          <content>
             <ScrollBar orientation="VERTICAL" prefHeight="394.0" prefWidth="15.0" />
          </content>
       </ScrollPane>
-      <Label layoutX="492.0" layoutY="99.0" text="Word of the Day:" />
-      <Label id="wordOfTheDay" layoutX="508.0" layoutY="134.0" text="Hola - Hello" />
+      <Label layoutX="339.0" layoutY="322.0" text="Word of the Day:" />
+      <Label id="wordOfTheDay" fx:id="wordOfDay" layoutX="352.0" layoutY="350.0" />
       <Button id="rightSidePracticeButton" layoutX="482.0" layoutY="330.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="98.0" text="Practice" />
       <Label layoutX="352.0" layoutY="75.0" text="Welcome Back" />
       <ProgressBar layoutX="306.0" layoutY="118.0" prefHeight="18.0" prefWidth="170.0" progress="0.0" />
       <Label id="welcomeBackUsername" layoutX="366.0" layoutY="93.0" text="username" />
-      <Label id="languageProgress" fx:id="completionLabel" layoutX="360.0" layoutY="149.0" />
+      <Label id="languageProgress" fx:id="completionLabel" layoutX="307.0" layoutY="149.0" prefHeight="17.0" prefWidth="170.0" />
    </children>
 </AnchorPane>

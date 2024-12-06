@@ -85,6 +85,7 @@ public class FillInTheBlank extends Question {
     public boolean isCorrect(User user) {
         if (userAnswer.toLowerCase().trim().equals(correctAnswer.getWordinLanguage().toLowerCase().trim())) {
             user.getUserDictionary().getWordByUUID(correctAnswer.getWordUUID()).wordPresented(true);
+            user.addCoins(coinValue);
             return true;
         } else {
             user.getUserDictionary().getWordByUUID(correctAnswer.getWordUUID()).wordPresented(false);
@@ -103,5 +104,14 @@ public class FillInTheBlank extends Question {
         ret.add(correctAnswer);
         // return it
         return ret;
+    }
+
+    /**
+     * @author cade
+     * made to fix bug in incorrect screen
+     */
+    @Override
+    public Word getCorrectAnswer() {
+        return this.correctAnswer;
     }
 }

@@ -12,7 +12,7 @@ import javafx.scene.control.ProgressBar;
 import lingoquestpackage.lingoquest.App;
 import lingoquestpackage.models.LanguageGame;
 
-public class IncorrectController implements Initializable{
+public class CorrectController implements Initializable{
 
     private LanguageGame languageGame;
 
@@ -31,11 +31,11 @@ public class IncorrectController implements Initializable{
     @FXML private Label lessonName;
     @FXML private Label pointsAdded;
     @FXML private Label coinsAdded;
-    @FXML private Label correctAnswer; // Note: "corrrectAnswer" matches FXML typo; correct it in the FXML if needed.
+    @FXML private Label corrrectAnswer; // Note: "corrrectAnswer" matches FXML typo; correct it in the FXML if needed.
 
     @FXML private ProgressBar progressBar;
 
-    public IncorrectController() throws Exception {
+    public CorrectController() throws Exception {
         this.languageGame = LanguageGame.getInstance();
     }
 
@@ -103,18 +103,6 @@ public class IncorrectController implements Initializable{
             // i want to animate, but will save for later TODO
             this.progressBar.setProgress(progress);
         }
-        // get the correct answer from the last question, then make it a string
-        String correctWord = languageGame.getMostRecentQuestionWord().getWordinLanguage();
-        StringBuilder builder = new StringBuilder();
-        builder.append("The correct answer was ");
-        builder.append(correctWord);
-        //System.out.println("Correct answer\n\n" + correctWord + " \n\n");
-        // set the text to display the word
-
-        // initialize to be safe
-        System.out.println(correctWord + " \n\n\n\n\n");
-        //correctAnswer = new Label(builder.toString());
-        correctAnswer.setText(builder.toString());
     }
 
     /**

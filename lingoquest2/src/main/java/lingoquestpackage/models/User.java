@@ -132,6 +132,16 @@ public class User {
 
     /**
      * @author cade
+     * @return the current section
+     */
+    public Section getCurrentSection() {
+        if(this.currentSection == null)
+            return null;
+        return this.currentSection;
+    }
+
+    /**
+     * @author cade
      * @return
      */
     public Dictionary getUserDictionary() {
