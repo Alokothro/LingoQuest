@@ -144,15 +144,19 @@ public class QuestionController implements Initializable {
             nextButton.setText("Begin");
         }
         // if its a positive number and is less than the # of questions desired
-        else if(languageGame.getCurrentQuestionNumber() > 0 && languageGame.getCurrentQuestionNumber() < numberOfQuestions) {
+        /*else if(languageGame.getCurrentQuestionNumber() > 0 && languageGame.getCurrentQuestionNumber() < numberOfQuestions) {
             System.out.println("current question number = " + languageGame.getCurrentQuestionNumber() + "\n\n\n");
             nextButton.setText("Next");
-        }
-        // else it must be >= # of questions
+        }*/
         else {
             System.out.println("current question number = " + languageGame.getCurrentQuestionNumber() + "\n\n\n");
-            nextButton.setText("Exit");
+            nextButton.setText("Continue");
         }
+        // else it must be >= # of questions
+        /*else {
+            System.out.println("current question number = " + languageGame.getCurrentQuestionNumber() + "\n\n\n");
+            nextButton.setText("Exit");
+        }*/
 
         // initialize to fix bug
         //lessonName = new Label();
@@ -174,7 +178,8 @@ public class QuestionController implements Initializable {
                 this.makeQuestion(numberOfQuestions);
                 break;
             }
-            case "Next": {
+            case "Continue": {
+                languageGame.prepareForQuestions();
                 this.makeQuestion(numberOfQuestions);
                 break;
             }

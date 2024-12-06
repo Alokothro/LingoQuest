@@ -17,7 +17,7 @@
                   <Insets left="5.0" top="70.0" />
                </VBox.margin>
             </Button>
-            <Button id="practiceButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="89.0" text="Practice">
+            <Button id="practiceButton" mnemonicParsing="false" onAction="#goToPractice" prefHeight="26.0" prefWidth="89.0" text="Practice">
                <VBox.margin>
                   <Insets left="5.0" top="30.0" />
                </VBox.margin>
@@ -53,7 +53,7 @@
          </children></Pane>
       <Label id="progressText" layoutX="268.0" layoutY="109.0" text="Lesson Progress" />
       <ProgressBar id="progressBar" fx:id="progressBar" layoutX="212.0" layoutY="135.0" prefHeight="45.0" prefWidth="252.0" progress="0.0" />
-      <Label id="question" fx:id="questionLabel" layoutX="201.0" layoutY="181.0" prefHeight="117.0" prefWidth="272.0" />
+      <Label id="question" fx:id="questionLabel" layoutX="201.0" layoutY="181.0" prefHeight="117.0" prefWidth="272.0" wrapText="true" />
       <Button id="optionTwo" fx:id="optionTwo" layoutX="398.0" layoutY="314.0" mnemonicParsing="false" onAction="#handleTwo" prefHeight="26.0" prefWidth="76.0" />
       <Button id="optionThree" fx:id="optionThree" layoutX="211.0" layoutY="368.0" mnemonicParsing="false" onAction="#handleThree" prefHeight="26.0" prefWidth="76.0" />
       <Button id="optionFour" fx:id="optionFour" layoutX="397.0" layoutY="365.0" mnemonicParsing="false" onAction="#handleFour" prefHeight="26.0" prefWidth="76.0" />

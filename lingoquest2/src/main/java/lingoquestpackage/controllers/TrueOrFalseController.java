@@ -7,6 +7,7 @@ import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.scene.control.ProgressBar;
 import lingoquestpackage.lingoquest.App;
 import lingoquestpackage.models.LanguageGame;
 import lingoquestpackage.models.User;
@@ -21,6 +22,9 @@ public class TrueOrFalseController implements Initializable {
 
     @FXML
     private Label usernameField;
+
+    @FXML
+    private ProgressBar lessonProgress;
 
     @FXML
     private Label answerStreak;
@@ -101,6 +105,11 @@ public class TrueOrFalseController implements Initializable {
         usernameField.setText(user.getUsername());
         coinLabel.setText("Coins: "+ user.getCoinBalance());
         answerStreak.setText("Answer Streak: " + user.getCurrentLanguage().getAnswerStreak());
+
+        // set the lesson progress
+        double lesProgress = this.user.getCurrentLesson().getLessonProgress() / 1000; // divide by 100 to fix
+        System.out.println(lesProgress + "les progress");
+        lessonProgress.setProgress(lesProgress);
 
         // if a lesson isn't loaded, there can't be any questions
         if(this.user.getCurrentLesson() == null) {

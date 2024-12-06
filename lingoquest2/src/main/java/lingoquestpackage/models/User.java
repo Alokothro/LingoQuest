@@ -122,7 +122,8 @@ public class User {
             }
             System.out.println("test in getlangprogress\n\n" + sum + " " + this.userDictionary.getNumberOfWords());
 
-            double ret =  sum / ((double)this.userDictionary.getNumberOfWords() * 10.0);
+            // changed to 4 instead of 10 as multiple
+            double ret =  sum / ((double)this.userDictionary.getNumberOfWords() * 4);
             System.out.println("returning " + ret);
             return ret;
         }

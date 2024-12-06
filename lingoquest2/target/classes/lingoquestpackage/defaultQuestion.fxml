@@ -61,6 +61,6 @@
             <Font size="20.0" />
          </font>
       </Label>
-      <Button id="backToHomeButton" layoutX="288.0" layoutY="305.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="103.0" text="Back to Home" />
+      <Button id="backToHomeButton" layoutX="288.0" layoutY="305.0" mnemonicParsing="false" onAction="#goToHome" prefHeight="25.0" prefWidth="103.0" text="Back to Home" />
    </children>
 </AnchorPane>
