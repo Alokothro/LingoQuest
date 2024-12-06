@@ -167,13 +167,16 @@ public class User {
     }
 
     public void acceptFriendRequest(UUID id) {
-        if (id == null || !this.friendRequests.contains(id) || id.equals(this.userID)) return;
+        if (id == null || !this.friendRequests.contains(id) || id.equals(this.userID)) 
+            return;
         
         User sender = Users.getInstance().getUserByUUID(id);
         if (sender != null && !this.friendsList.contains(id)) {
             this.friendRequests.remove(id);
             this.addFriend(id);
             sender.addFriend(this.userID);
+
+            System.out.println("sender:" + sender.toString()+ "\n\nReceiver:" + this.toString());
         }
     }
 

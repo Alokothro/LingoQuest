@@ -8,11 +8,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<<<<<<< HEAD
 <AnchorPane id="overall" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="454.0" prefWidth="608.0" stylesheets="@../practice.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lingoquestpackage.controllers.MatchingController">
-=======
-<AnchorPane id="overall" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="454.0" prefWidth="608.0" stylesheets="@css/matching.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lingoquestpackage.controllers.QuestionController">
->>>>>>> 179d3dc38aaa8a7d62f80cf445da205deac4529c
    <children>
       <VBox id="sideMenu" layoutX="-2.0" layoutY="-11.0" prefHeight="454.0" prefWidth="103.0" stylesheets="@../practice.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="507.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -51,24 +47,21 @@
       <Pane id="header" layoutX="-6.0" layoutY="-6.0" prefHeight="66.0" prefWidth="614.0" stylesheets="@../practice.css">
          <children>
             <Label id="lingoQuestHeader" fx:id="usernameField" layoutX="19.0" layoutY="10.0" prefHeight="45.0" prefWidth="157.0" text="LingoQuest" />
-            <Label id="username" fx:id="coinLabel" layoutX="194.0" layoutY="25.0" prefHeight="17.0" prefWidth="83.0" text="Username" />
-            <Label id="coins" fx:id="answerStreak" layoutX="295.0" layoutY="25.0" prefHeight="17.0" prefWidth="127.0" text="Coins:" />
-            <Label id="answerStreak" layoutX="400.0" layoutY="26.0" text="Answer Streak" />
+            <Label id="username" fx:id="usernameField" layoutX="176.0" layoutY="25.0" prefHeight="17.0" prefWidth="83.0" />
+            <Label id="coins" fx:id="coinLabel" layoutX="295.0" layoutY="25.0" prefHeight="17.0" prefWidth="127.0" />
+            <Label id="answerStreak" fx:id="answerStreak" layoutX="470.0" layoutY="24.0" prefHeight="17.0" prefWidth="104.0" />
          </children></Pane>
       <Label layoutX="254.0" layoutY="90.0" text="Type in the Matching Words" />
-      <Label id="optionOne" layoutX="206.0" layoutY="147.0" text="Word One" />
-      <Label id="optionTwo" layoutX="203.0" layoutY="194.0" text="Word Two" />
-      <Label id="optionThree" layoutX="202.0" layoutY="242.0" text="Word Three" />
-      <Label id="optionFour" layoutX="205.0" layoutY="286.0" text="Word Four" />
+      <Label id="optionOne" fx:id="wordOne" layoutX="163.0" layoutY="126.0" prefHeight="52.0" prefWidth="144.0" wrapText="true" />
+      <Label id="optionTwo" fx:id="wordTwo" layoutX="179.0" layoutY="193.0" prefHeight="17.0" prefWidth="112.0" />
+      <Label id="optionThree" fx:id="wordThree" layoutX="202.0" layoutY="242.0" prefHeight="17.0" prefWidth="104.0" />
+      <Label id="optionFour" fx:id="wordFour" layoutX="205.0" layoutY="286.0" prefHeight="17.0" prefWidth="83.0" />
       <Label layoutX="300.0" layoutY="350.0" text="Options:" />
-      <Label layoutX="215.0" layoutY="377.0" text="Word one, word two, word three, word four" />
-      <Button layoutX="446.0" layoutY="152.0" mnemonicParsing="false" text="Submit" />
+      <Label fx:id="options" layoutX="215.0" layoutY="377.0" prefHeight="17.0" prefWidth="228.0" />
       <TextField layoutX="326.0" layoutY="147.0" prefHeight="25.0" prefWidth="104.0" />
       <TextField layoutX="324.0" layoutY="197.0" prefHeight="25.0" prefWidth="104.0" />
       <TextField layoutX="323.0" layoutY="247.0" prefHeight="25.0" prefWidth="104.0" />
       <TextField layoutX="323.0" layoutY="291.0" prefHeight="25.0" prefWidth="104.0" />
-      <Button layoutX="447.0" layoutY="290.0" mnemonicParsing="false" text="Submit" />
-      <Button layoutX="447.0" layoutY="244.0" mnemonicParsing="false" text="Submit" />
-      <Button layoutX="446.0" layoutY="201.0" mnemonicParsing="false" text="Submit" />
+      <Button fx:id="submit" layoutX="492.0" layoutY="214.0" mnemonicParsing="false" onAction="#handleSubmit" text="Submit" />
    </children>
 </AnchorPane>

@@ -116,7 +116,9 @@ public class TrueOrFalseController implements Initializable {
         }
 
         // set the text to display the current question
-        question.setText(languageGame.getCurrentQuestionString());
+        String questionString = languageGame.getCurrentQuestionString();
+        question.setText(questionString);
+        languageGame.speak(questionString);
     }
 
     public void handleTrue() throws IOException {

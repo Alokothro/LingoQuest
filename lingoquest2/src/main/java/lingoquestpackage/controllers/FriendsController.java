@@ -10,6 +10,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import lingoquestpackage.lingoquest.App;
 import lingoquestpackage.models.LanguageGame;
@@ -32,6 +33,12 @@ public class FriendsController implements Initializable {
 
     @FXML
     private TableView table;
+
+    @FXML
+    private TextField friendName;
+
+    @FXML
+    private Label requestName;
 
     // constructor
     public FriendsController() {
@@ -120,6 +127,35 @@ public class FriendsController implements Initializable {
             table.getItems().add(u);
         }
 
+        if(languageGame.getUser().getFriendRequests().isEmpty() == false) {
+            UUID reqID = languageGame.getUser().getFriendRequests().get(0);
+            User u = Users.getInstance().getUserByUUID(reqID);
+            requestName.setText(u.getUsername());
+        }
+    }
+
+    @FXML
+    public void handleSend() {
+        String name = friendName.getText().trim();
+        // get the user by their name, find their uuid, then send a friend request
+        languageGame.getUser().sendFriendRequest(Users.getInstance().getUserByName(name).getUUID());
+    }
+
+    @FXML
+    public void handleAccept() {
+        if(languageGame.getUser().getFriendRequests().get(0) == null)
+            return;
+        // get the id of the requester
+        UUID requestID = languageGame.getUser().getFriendRequests().get(0);
+        languageGame.getUser().acceptFriendRequest(requestID);
+    }
+
+    @FXML
+    public void handleDeny() {
+        if(languageGame.getUser().getFriendRequests().get(0) == null)
+            return;
+        // remove the request
+        languageGame.getUser().getFriendRequests().remove(0);
     }
 }
 

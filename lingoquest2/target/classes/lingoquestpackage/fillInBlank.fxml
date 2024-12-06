@@ -18,7 +18,7 @@
                   <Insets left="5.0" top="70.0" />
                </VBox.margin>
             </Button>
-            <Button id="practiceButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="89.0" text="Practice">
+            <Button id="practiceButton" mnemonicParsing="false" onAction="#goToPractice" prefHeight="26.0" prefWidth="89.0" text="Practice">
                <VBox.margin>
                   <Insets left="5.0" top="30.0" />
                </VBox.margin>
@@ -47,14 +47,14 @@
       </VBox>
       <Pane id="header" layoutX="-6.0" layoutY="-6.0" prefHeight="66.0" prefWidth="614.0" stylesheets="@../practice.css">
          <children>
-            <Label id="lingoQuestHeader" fx:id="usernameField" layoutX="19.0" layoutY="10.0" prefHeight="45.0" prefWidth="157.0" text="LingoQuest" />
-            <Label id="username" fx:id="coinLabel" layoutX="194.0" layoutY="25.0" prefHeight="17.0" prefWidth="83.0" text="Username" />
-            <Label id="coins" fx:id="answerStreak" layoutX="295.0" layoutY="25.0" prefHeight="17.0" prefWidth="127.0" text="Coins:" />
-            <Label id="answerStreak" layoutX="400.0" layoutY="26.0" text="Answer Streak" />
+            <Label id="lingoQuestHeader" layoutX="19.0" layoutY="10.0" prefHeight="45.0" prefWidth="157.0" text="LingoQuest" />
+            <Label id="username" fx:id="usernameField" layoutX="194.0" layoutY="25.0" prefHeight="17.0" prefWidth="83.0" />
+            <Label id="coins" fx:id="coinLabel" layoutX="287.0" layoutY="25.0" prefHeight="17.0" prefWidth="127.0" />
+            <Label id="answerStreak" fx:id="answerStreak" layoutX="449.0" layoutY="25.0" prefHeight="19.0" prefWidth="139.0" />
          </children></Pane>
-      <Label id="progressText" layoutX="238.0" layoutY="99.0" text="Lesson Progress" />
+      <Label id="progressText" layoutX="246.0" layoutY="101.0" text="Lesson Progress" />
       <ProgressBar id="progressBar" fx:id="lessonProgress" layoutX="189.0" layoutY="127.0" prefHeight="45.0" prefWidth="252.0" progress="0.0" />
-      <Label id="question" fx:id="question" layoutX="130.0" layoutY="214.0" prefHeight="76.0" prefWidth="370.0" wrapText="true" />
+      <Label id="question" fx:id="question" layoutX="139.0" layoutY="193.0" prefHeight="123.0" prefWidth="353.0" wrapText="true" />
       <TextField fx:id="answerField" layoutX="222.0" layoutY="331.0" prefHeight="42.0" prefWidth="155.0" promptText="Please Enter" />
       <Button id="submitButton" fx:id="submitButton" layoutX="371.0" layoutY="332.0" mnemonicParsing="false" onAction="#handleSubmit" prefHeight="40.0" prefWidth="64.0" text="Submit" />
    </children>

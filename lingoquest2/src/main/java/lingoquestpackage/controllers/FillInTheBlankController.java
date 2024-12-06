@@ -119,7 +119,9 @@ public class FillInTheBlankController implements Initializable {
         answerStreak.setText("Answer Streak: " + user.getCurrentLanguage().getAnswerStreak());
 
         // set the question text
-        question.setText(languageGame.getCurrentQuestionString());
+        String questionString = languageGame.getCurrentQuestionString();
+        question.setText(questionString);
+        languageGame.speak(questionString);
 
         // if a lesson isn't loaded, there can't be any questions
         if(this.user.getCurrentLesson() == null) {

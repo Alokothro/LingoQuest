@@ -144,7 +144,9 @@ public class MultipleChoiceController implements Initializable {
         answerStreak.setText("Answer Streak: " + user.getCurrentLanguage().getAnswerStreak());
 
         // set the string of the question
-        questionLabel.setText(languageGame.getCurrentQuestionString());
+        String questionString = languageGame.getCurrentQuestionString();
+        questionLabel.setText(questionString);
+        languageGame.speak(questionString);
 
         // initialize to be safe
         this.choices = new ArrayList<>();

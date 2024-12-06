@@ -71,13 +71,13 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ab1717" height="145.0" layoutX="198.0" layoutY="208.0" stroke="BLACK" strokeType="INSIDE" width="336.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ab1717" height="145.0" layoutX="188.0" layoutY="214.0" stroke="BLACK" strokeType="INSIDE" width="336.0" />
       <Label id="corrrectAnswer" fx:id="correctAnswer" alignment="CENTER" contentDisplay="CENTER" layoutX="219.0" layoutY="227.0" prefHeight="30.0" prefWidth="295.0" textFill="WHITE">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label layoutX="226.0" layoutY="273.0" text="Keep going, you're doing great!" textFill="WHITE">
+      <Label layoutX="225.0" layoutY="307.0" text="Keep going, you're doing great!" textFill="WHITE">
          <font>
             <Font size="20.0" />
          </font>

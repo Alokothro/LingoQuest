@@ -2,6 +2,7 @@ package lingoquestpackage.controllers;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 import javafx.fxml.FXML;
@@ -10,6 +11,7 @@ import javafx.scene.control.Label;
 import lingoquestpackage.lingoquest.App;
 import lingoquestpackage.models.LanguageGame;
 import lingoquestpackage.models.User;
+import lingoquestpackage.models.Word;
 
 public class MatchingController implements Initializable {
 
@@ -17,7 +19,6 @@ public class MatchingController implements Initializable {
     private LanguageGame languageGame;
 
     // need to figure out how to properly deal with this
-    private int numberOfQuestions = 2;
 
     @FXML
     private Label usernameField;
@@ -32,7 +33,20 @@ public class MatchingController implements Initializable {
     @FXML
     private Label lessonName;
 
+    @FXML
+    private Label wordOne;
 
+    @FXML
+    private Label wordTwo;
+
+    @FXML
+    private Label wordThree;
+
+    @FXML
+    private Label wordFour;
+
+    @FXML
+    private Label options;
 
     // constructor
     public MatchingController() {
@@ -114,6 +128,9 @@ public class MatchingController implements Initializable {
             return;
         }
 
+        // make list to hold the words
+        ArrayList<Word> words = languageGame.getQuestionWords();
+        
 
     }
 }

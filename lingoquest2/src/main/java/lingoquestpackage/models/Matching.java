@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Random;
+
 /**
  * Represents a matching question where the user is asked to match a word with its translation or definition.
  * This class extends the abstract Question class and implements specific behaviors for matching questions.
@@ -21,7 +22,6 @@ public class Matching extends Question {
      * @param language The language for which the question is being created.
      * @param answerChoices A list of Word objects that are the possible choices for the question.
      */
-
     public Matching(String language, ArrayList<Word> answerChoices) {
         super(language);
         this.choices = answerChoices;
@@ -42,7 +42,6 @@ public class Matching extends Question {
     public String getType() {
         return "Matching";
     }
-
 
     public void setUserAnswer(Word userAnswer) {
         this.userAnswer = userAnswer;

@@ -48,6 +48,17 @@ public class Users {
         return null;
     }
 
+    public User getUserByName(String name) {
+        if(name == null)
+            return null;
+        for(User u : this.users) {
+            if(u.getUsername().equalsIgnoreCase(name))
+                return u;
+        }
+        // if user not found
+        return null;
+    }
+
     public boolean containsDictionary(UUID id) {
         for(User u : users) {
             if(u.getUserDictionaryID().equals(id))

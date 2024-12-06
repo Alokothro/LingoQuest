@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane id="overall" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="454.0" prefWidth="608.0" stylesheets="@../practice.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lingoquestpackage.controllers.MultipleChoiceController">
+<AnchorPane id="overall" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="454.0" prefWidth="608.0" stylesheets="@css/multipleChoice.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lingoquestpackage.controllers.MultipleChoiceController">
    <children>
       <VBox id="sideMenu" layoutX="-2.0" layoutY="-11.0" prefHeight="454.0" prefWidth="103.0" stylesheets="@../practice.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="507.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -46,14 +46,14 @@
       </VBox>
       <Pane id="header" layoutX="-6.0" layoutY="-6.0" prefHeight="66.0" prefWidth="614.0" stylesheets="@../practice.css">
          <children>
-            <Label id="lingoQuestHeader" fx:id="usernameField" layoutX="19.0" layoutY="10.0" prefHeight="45.0" prefWidth="157.0" text="LingoQuest" />
-            <Label id="username" fx:id="coinLabel" layoutX="194.0" layoutY="25.0" prefHeight="17.0" prefWidth="83.0" text="Username" />
-            <Label id="coins" fx:id="answerStreak" layoutX="295.0" layoutY="25.0" prefHeight="17.0" prefWidth="127.0" text="Coins:" />
-            <Label id="answerStreak" layoutX="400.0" layoutY="26.0" text="Answer Streak" />
+            <Label id="lingoQuestHeader" layoutX="19.0" layoutY="10.0" prefHeight="45.0" prefWidth="157.0" text="LingoQuest" />
+            <Label id="username" fx:id="usernameField" layoutX="188.0" layoutY="25.0" prefHeight="17.0" prefWidth="83.0" />
+            <Label id="coins" fx:id="coinLabel" layoutX="296.0" layoutY="25.0" prefHeight="17.0" prefWidth="127.0" />
+            <Label id="answerStreak" fx:id="answerStreak" layoutX="442.0" layoutY="25.0" />
          </children></Pane>
-      <Label id="progressText" layoutX="248.0" layoutY="109.0" text="Lesson Progress" />
-      <ProgressBar id="progressBar" fx:id="progressBar" layoutX="199.0" layoutY="137.0" prefHeight="26.0" prefWidth="252.0" progress="0.0" />
-      <Label id="question" fx:id="questionLabel" layoutX="189.0" layoutY="230.0" prefHeight="17.0" prefWidth="284.0" />
+      <Label id="progressText" layoutX="268.0" layoutY="109.0" text="Lesson Progress" />
+      <ProgressBar id="progressBar" fx:id="progressBar" layoutX="212.0" layoutY="135.0" prefHeight="45.0" prefWidth="252.0" progress="0.0" />
+      <Label id="question" fx:id="questionLabel" layoutX="201.0" layoutY="181.0" prefHeight="117.0" prefWidth="272.0" />
       <Button id="optionTwo" fx:id="optionTwo" layoutX="398.0" layoutY="314.0" mnemonicParsing="false" onAction="#handleTwo" prefHeight="26.0" prefWidth="76.0" />
       <Button id="optionThree" fx:id="optionThree" layoutX="211.0" layoutY="368.0" mnemonicParsing="false" onAction="#handleThree" prefHeight="26.0" prefWidth="76.0" />
       <Button id="optionFour" fx:id="optionFour" layoutX="397.0" layoutY="365.0" mnemonicParsing="false" onAction="#handleFour" prefHeight="26.0" prefWidth="76.0" />
