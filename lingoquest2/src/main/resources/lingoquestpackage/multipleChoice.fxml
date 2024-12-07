@@ -49,10 +49,10 @@
             <Label id="lingoQuestHeader" layoutX="19.0" layoutY="10.0" prefHeight="45.0" prefWidth="157.0" text="LingoQuest" />
             <Label id="username" fx:id="usernameField" layoutX="188.0" layoutY="25.0" prefHeight="17.0" prefWidth="83.0" />
             <Label id="coins" fx:id="coinLabel" layoutX="296.0" layoutY="25.0" prefHeight="17.0" prefWidth="127.0" />
-            <Label id="answerStreak" fx:id="answerStreak" layoutX="442.0" layoutY="25.0" />
+            <Label id="answerStreak" fx:id="answerStreak" layoutX="481.0" layoutY="23.0" prefHeight="21.0" prefWidth="89.0" />
          </children></Pane>
       <Label id="progressText" layoutX="268.0" layoutY="109.0" text="Lesson Progress" />
-      <ProgressBar id="progressBar" fx:id="progressBar" layoutX="212.0" layoutY="135.0" prefHeight="45.0" prefWidth="252.0" progress="0.0" />
+      <ProgressBar id="progressBar" fx:id="lessonProgress" layoutX="212.0" layoutY="135.0" prefHeight="45.0" prefWidth="252.0" progress="0.0" />
       <Label id="question" fx:id="questionLabel" layoutX="201.0" layoutY="181.0" prefHeight="117.0" prefWidth="272.0" wrapText="true" />
       <Button id="optionTwo" fx:id="optionTwo" layoutX="398.0" layoutY="314.0" mnemonicParsing="false" onAction="#handleTwo" prefHeight="26.0" prefWidth="76.0" />
       <Button id="optionThree" fx:id="optionThree" layoutX="211.0" layoutY="368.0" mnemonicParsing="false" onAction="#handleThree" prefHeight="26.0" prefWidth="76.0" />

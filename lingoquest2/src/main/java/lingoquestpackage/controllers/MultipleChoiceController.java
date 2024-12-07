@@ -49,7 +49,7 @@ public class MultipleChoiceController implements Initializable {
     private Button optionFour;
 
     @FXML
-    private ProgressBar progressBar;
+    private ProgressBar lessonProgress;
 
     @FXML
     private Label lessonName;
@@ -130,13 +130,9 @@ public class MultipleChoiceController implements Initializable {
         }
 
         // get the progress percentage
-        double progress = user.getCurrentLanguageProgress();
-        // initialize the progress bar
-        ProgressBar languageCompletion = new ProgressBar();
-        if(progress > 0.0) {
-            // set the progress
-            languageCompletion.setProgress(progress);
-        }
+        double lesProgress = this.user.getCurrentLesson().getLessonProgress() / 1000; // divide by 100 to fix
+        System.out.println(lesProgress + "les progress");
+        lessonProgress.setProgress(lesProgress);
 
         // set the text on the top banner
         usernameField.setText(user.getUsername());
