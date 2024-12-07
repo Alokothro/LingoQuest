@@ -72,6 +72,6 @@
          </font>
       </Label>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#169873" height="145.0" layoutX="188.0" layoutY="198.0" stroke="BLACK" strokeType="INSIDE" width="336.0" />
-      <Label id="positiveMessage" layoutX="230.0" layoutY="256.0" text="Very Good! Keep Going!" />
+      <Label id="positiveMessage" layoutX="214.0" layoutY="246.0" text="Very Good! Keep Going!" />
    </children>
 </AnchorPane>
