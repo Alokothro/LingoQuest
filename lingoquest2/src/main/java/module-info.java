@@ -12,6 +12,7 @@ module lingoquestpackage {
     requires org.slf4j.simple;
     requires software.amazon.awssdk.awscore;
     requires software.amazon.eventstream;
+    requires javafx.base;
 
     opens lingoquestpackage.controllers to javafx.fxml;
     exports lingoquestpackage.controllers;

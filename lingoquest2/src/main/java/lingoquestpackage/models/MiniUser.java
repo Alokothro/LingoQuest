@@ -1,19 +1,22 @@
 package lingoquestpackage.models;
 
+import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.property.SimpleStringProperty;
+
 public class MiniUser {
-    private int coinsEarned;
-    private String username;
+    private final SimpleStringProperty username;
+    private final SimpleIntegerProperty coinsEarned;
 
     public MiniUser(String username, int coinsEarned) {
-        this.username = username;
-        this.coinsEarned = coinsEarned;
+        this.username = new SimpleStringProperty(username);
+        this.coinsEarned = new SimpleIntegerProperty(coinsEarned);
     }
 
     public String getUsername() {
-        return this.username;
+        return username.get();
     }
 
     public int getCoinsEarned() {
-        return this.coinsEarned;
+        return coinsEarned.get();
     }
 }

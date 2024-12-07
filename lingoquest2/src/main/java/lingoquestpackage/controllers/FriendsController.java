@@ -25,7 +25,8 @@ public class FriendsController implements Initializable {
 
     @FXML
     private Label usernameField;
-
+    @FXML TableColumn usernameColumn;
+    @FXML TableColumn coinsColumn;
     @FXML
     private Label answerStreak;
 
@@ -106,33 +107,20 @@ public class FriendsController implements Initializable {
         coinLabel.setText("Coins: "+ user.getCoinBalance());
         answerStreak.setText("Answer Streak: " + user.getCurrentLanguage().getAnswerStreak());
 
-        // load the table
-        //System.out.println("Friends" + this.user.getFriendsList().get(0));
-        table.setPlaceholder(new Label("No friends to display"));
-        // make the columns
-        TableColumn<MiniUser,String> usernameColumn = new TableColumn<>("Username");
-        usernameColumn.setCellValueFactory(new PropertyValueFactory<MiniUser,String>("username"));
-        /*usernameColumn.setCellValueFactory(
-            new PropertyValueFactory<>("username")
-            );*/
-        TableColumn<User,String> coinsColumn = new TableColumn<>("Coins Earned");
-        usernameColumn.setCellValueFactory(new PropertyValueFactory<MiniUser,String>("coinsEarned"));
+           // Set up the columns
+    usernameColumn.setCellValueFactory(new PropertyValueFactory<>("username"));
+    coinsColumn.setCellValueFactory(new PropertyValueFactory<>("coinsEarned"));
 
-        /*usernameColumn.setCellValueFactory(
-            new PropertyValueFactory<>("coinsEarned")
-            );*/
-        table.getColumns().addAll(usernameColumn, coinsColumn);
+    // Set placeholder text
+    table.setPlaceholder(new Label("No friends to display"));
 
-        // data for the table
-        for(UUID id : this.user.getFriendsList()) {
-            // get the friend by their UUID
-            User u = Users.getInstance().getUserByUUID(id);
-            // add user, the factory should extract their info
-            // make a mini user for the table
-            MiniUser mU = new MiniUser(u.getUsername(), u.getCoinsEarned());
-            // add to table
-            table.getItems().add(mU);
-        }
+    // Populate the table
+    for (UUID id : user.getFriendsList()) {
+        User u = Users.getInstance().getUserByUUID(id);
+        MiniUser mU = new MiniUser(u.getUsername(), u.getCoinsEarned());
+        table.getItems().add(mU);
+    }
+       
 
         if(languageGame.getUser().getFriendRequests().isEmpty() == false) {
             UUID reqID = languageGame.getUser().getFriendRequests().get(0);

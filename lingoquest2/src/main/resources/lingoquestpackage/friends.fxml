@@ -52,7 +52,12 @@
             <Label id="coins" fx:id="coinLabel" layoutX="295.0" layoutY="25.0" prefHeight="17.0" prefWidth="127.0" />
             <Label id="answerStreak" fx:id="answerStreak" layoutX="456.0" layoutY="25.0" prefHeight="19.0" prefWidth="136.0" />
          </children></Pane>
-      <TableView fx:id="table" layoutX="142.0" layoutY="105.0" prefHeight="143.0" prefWidth="402.0" />
+      <TableView fx:id="table" layoutX="142.0" layoutY="105.0" prefHeight="143.0" prefWidth="402.0" >
+      <columns>
+        <TableColumn fx:id="usernameColumn" text="Username" />
+        <TableColumn fx:id="coinsColumn" text="Coins Earned" />
+    </columns>
+</TableView>
       <TextField fx:id="friendName" layoutX="156.0" layoutY="405.0" prefHeight="26.0" prefWidth="223.0" promptText="Username" />
       <Button layoutX="395.0" layoutY="405.0" mnemonicParsing="false" onAction="#handleSend" prefHeight="26.0" prefWidth="136.0" text="Send Friend Request" />
       <Label layoutX="292.0" layoutY="261.0" prefHeight="17.0" prefWidth="103.0" text="Pending Request:" />
