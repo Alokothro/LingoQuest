@@ -47,9 +47,9 @@
       <Pane id="header" layoutX="-6.0" layoutY="-6.0" prefHeight="66.0" prefWidth="683.0" stylesheets="@../practice.css">
          <children>
             <Label id="lingoQuestHeader" layoutX="19.0" layoutY="10.0" prefHeight="45.0" prefWidth="157.0" text="LingoQuest" />
-            <Label id="username" fx:id="usernameField" layoutX="188.0" layoutY="25.0" prefHeight="17.0" prefWidth="83.0" />
-            <Label id="coins" fx:id="coinLabel" layoutX="296.0" layoutY="25.0" prefHeight="17.0" prefWidth="127.0" />
-            <Label id="answerStreak" fx:id="answerStreak" layoutX="481.0" layoutY="23.0" prefHeight="21.0" prefWidth="89.0" />
+            <Label id="username" fx:id="usernameField" layoutX="188.0" layoutY="25.0" prefHeight="19.0" prefWidth="127.0" />
+            <Label id="coins" fx:id="coinLabel" layoutX="328.0" layoutY="25.0" prefHeight="17.0" prefWidth="127.0" />
+            <Label id="answerStreak" fx:id="answerStreak" layoutX="481.0" layoutY="23.0" prefHeight="21.0" prefWidth="127.0" />
          </children></Pane>
       <Label id="progressText" layoutX="268.0" layoutY="109.0" text="Lesson Progress" />
       <ProgressBar id="progressBar" fx:id="lessonProgress" layoutX="212.0" layoutY="135.0" prefHeight="45.0" prefWidth="252.0" progress="0.0" />

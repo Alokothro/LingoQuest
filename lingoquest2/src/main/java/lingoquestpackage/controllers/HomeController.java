@@ -193,7 +193,7 @@ public class HomeController implements Initializable {
         // set the word of the day
         Word w = languageGame.getRandomWord();
         // initialize to be safe
-        wordOfDay.setText(w.getWordinLanguage() + "\n\n" + w.getEnglishVersion());
+        wordOfDay.setText("Spanish Version: " + w.getWordinLanguage() + "\n\nEnglish Translation: " + w.getEnglishVersion());
 
     }
 

@@ -106,6 +106,11 @@ public class CorrectController implements Initializable{
         double lesProgress = this.user.getCurrentLesson().getLessonProgress() / 1000; // divide by 100 to fix
         System.out.println(lesProgress + "les progress");
         lessonProgress.setProgress(lesProgress);
+
+        // set the text on the top banner
+        usernameField.setText(user.getUsername());
+        coinLabel.setText("Coins: "+ user.getCoinBalance());
+        answerStreak.setText("Answer Streak: " + user.getCurrentLanguage().getAnswerStreak());
     }
 
     /**

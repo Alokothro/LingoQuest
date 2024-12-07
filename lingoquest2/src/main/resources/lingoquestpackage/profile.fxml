@@ -12,34 +12,34 @@
 
 <AnchorPane id="overall" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="600.0" stylesheets="@css/profile.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lingoquestpackage.controllers.ProfileController">
    <children>
-      <VBox id="sideMenu" layoutX="-4.0" layoutY="-11.0" prefHeight="412.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="0.0">
+      <VBox id="sideMenu" layoutX="-4.0" layoutY="-11.0" prefHeight="451.0" prefWidth="105.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="495.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Button id="homeButton" mnemonicParsing="false" onAction="#goToHome" prefHeight="26.0" prefWidth="89.0" text="Home">
+            <Button id="homeButton" mnemonicParsing="false" onAction="#goToHome" prefHeight="37.0" prefWidth="97.0" text="Home">
                <VBox.margin>
                   <Insets left="5.0" top="70.0" />
                </VBox.margin>
             </Button>
-            <Button id="practiceButton" mnemonicParsing="false" onAction="#goToPractice" prefHeight="26.0" prefWidth="89.0" text="Practice">
+            <Button id="practiceButton" mnemonicParsing="false" onAction="#goToPractice" prefHeight="37.0" prefWidth="97.0" text="Practice">
                <VBox.margin>
                   <Insets left="5.0" top="30.0" />
                </VBox.margin>
             </Button>
-            <Button id="leaderboardButton" fx:id="leaderboard" mnemonicParsing="false" onAction="#goToLeaderboard" prefHeight="26.0" prefWidth="89.0" text="Leaderboard">
+            <Button id="leaderboardButton" fx:id="leaderboard" mnemonicParsing="false" onAction="#goToLeaderboard" prefHeight="37.0" prefWidth="97.0" text="Leaderboard">
                <VBox.margin>
                   <Insets left="5.0" top="30.0" />
                </VBox.margin>
             </Button>
-            <Button id="shopButton" fx:id="shop" mnemonicParsing="false" onAction="#goToShop" prefHeight="26.0" prefWidth="89.0" text="Shop">
+            <Button id="shopButton" fx:id="shop" mnemonicParsing="false" onAction="#goToShop" prefHeight="37.0" prefWidth="97.0" text="Shop">
                <VBox.margin>
                   <Insets left="5.0" top="30.0" />
                </VBox.margin>
             </Button>
-            <Button id="profileButton" fx:id="profile" layoutY="400.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="89.0" text="Profile">
+            <Button id="profileButton" fx:id="profile" layoutY="400.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="97.0" text="Profile">
                <VBox.margin>
                   <Insets left="5.0" top="30.0" />
                </VBox.margin>
             </Button>
-            <Button id="logoutButton" fx:id="logout" mnemonicParsing="false" onAction="#handleLogout" prefHeight="26.0" prefWidth="89.0" text="Logout">
+            <Button id="logoutButton" fx:id="logout" mnemonicParsing="false" onAction="#handleLogout" prefHeight="37.0" prefWidth="97.0" text="Logout">
                <VBox.margin>
                   <Insets left="5.0" top="30.0" />
                </VBox.margin>
@@ -55,7 +55,7 @@
          </children>
       </Pane>
       <Label id="progress" fx:id="progressLabel" layoutX="215.0" layoutY="129.0" prefHeight="17.0" prefWidth="258.0" text="Current Language Progress: ProgressNUM" />
-      <Label id="usernameProfile" fx:id="usernameLabel2" layoutX="163.0" layoutY="209.0" prefHeight="30.0" prefWidth="100.0" text="Username" />
+      <Label id="usernameProfile" fx:id="usernameLabel2" layoutX="163.0" layoutY="209.0" prefHeight="30.0" prefWidth="166.0" text="Username" />
       <Label id="friendsProfile" fx:id="friendLabel" layoutX="162.0" layoutY="248.0" prefHeight="30.0" prefWidth="167.0" text="Friends: NUM" />
       <Label id="coinsProfile" fx:id="coinsEarnedLabel" layoutX="162.0" layoutY="283.0" prefHeight="30.0" prefWidth="184.0" text="Coins: Coin Count" />
       <Label id="pointsProfile" fx:id="pointLabel" layoutX="162.0" layoutY="327.0" prefHeight="30.0" prefWidth="192.0" text="Points: Point Count" />

@@ -117,6 +117,11 @@ public class IncorrectController implements Initializable{
         System.out.println(correctWord + " \n\n\n\n\n");
         //correctAnswer = new Label(builder.toString());
         correctAnswer.setText(builder.toString());
+
+        // set the text on the top banner
+        usernameField.setText(user.getUsername());
+        coinLabel.setText("Coins: "+ user.getCoinBalance());
+        answerStreak.setText("Answer Streak: " + user.getCurrentLanguage().getAnswerStreak());
     }
 
     /**

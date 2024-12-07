@@ -15,36 +15,36 @@
 
 <AnchorPane id="overall" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="455.0" prefWidth="600.0" stylesheets="@css/home.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lingoquestpackage.controllers.HomeController">
    <children>
-      <VBox id="sideMenu" layoutX="-4.0" layoutY="-11.0" prefHeight="455.0" prefWidth="98.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="502.0" AnchorPane.topAnchor="0.0">
+      <VBox id="sideMenu" layoutX="-4.0" layoutY="-11.0" prefHeight="455.0" prefWidth="108.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="492.0" AnchorPane.topAnchor="0.0">
          <children>
             
-            <Button id="homeButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="89.0" text="Home">
+            <Button id="homeButton" mnemonicParsing="false" prefHeight="37.0" prefWidth="97.0" text="Home">
                <VBox.margin>
                   <Insets left="5.0" top="70.0" />
                </VBox.margin>
             </Button>
-            <Button id="practiceButton" mnemonicParsing="false" onAction="#goToPractice" prefHeight="26.0" prefWidth="89.0" text="Practice">
+            <Button id="practiceButton" mnemonicParsing="false" onAction="#goToPractice" prefHeight="37.0" prefWidth="97.0" text="Practice">
                <VBox.margin>
                   <Insets left="5.0" top="30.0" />
                </VBox.margin>
             </Button>
-            <Button id="leaderboardButton" mnemonicParsing="false" onAction="#goToLeaderboard" prefHeight="26.0" prefWidth="89.0" text="Leaderboard">
+            <Button id="leaderboardButton" mnemonicParsing="false" onAction="#goToLeaderboard" prefHeight="37.0" prefWidth="97.0" text="Leaderboard">
                <VBox.margin>
                   <Insets left="5.0" top="30.0" />
                </VBox.margin>
             </Button>
             <Line endX="100.0" startX="-100.0" />
-            <Button id="shopButton" mnemonicParsing="false" onAction="#goToShop" prefHeight="26.0" prefWidth="89.0" text="Shop">
+            <Button id="shopButton" mnemonicParsing="false" onAction="#goToShop" prefHeight="37.0" prefWidth="97.0" text="Shop">
                <VBox.margin>
                   <Insets left="5.0" top="30.0" />
                </VBox.margin>
             </Button>
-            <Button id="profileButton" fx:id="profile" layoutY="400.0" mnemonicParsing="false" onAction="#goToProfile" prefHeight="26.0" prefWidth="89.0" text="Profile">
+            <Button id="profileButton" fx:id="profile" layoutY="400.0" mnemonicParsing="false" onAction="#goToProfile" prefHeight="37.0" prefWidth="97.0" text="Profile">
                <VBox.margin>
                   <Insets left="5.0" top="30.0" />
                </VBox.margin>
             </Button>
-            <Button id="logoutButton" mnemonicParsing="false" onAction="#handleLogout" prefHeight="26.0" prefWidth="89.0" text="Logout">
+            <Button id="logoutButton" mnemonicParsing="false" onAction="#handleLogout" prefHeight="37.0" prefWidth="97.0" text="Logout">
                <VBox.margin>
                   <Insets left="5.0" top="30.0" />
                </VBox.margin>
@@ -62,11 +62,12 @@
                   <Font size="14.0" />
                </font>
             </Label>
-         </children></Pane>
+         </children>
+      </Pane>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fabd00" height="200.0" layoutX="314.0" layoutY="199.0" stroke="BLACK" strokeType="INSIDE" width="146.0" />
       <Button id="equipItemsButton" layoutX="482.0" layoutY="240.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="98.0" text="Equip Items" />
       <Button id="friendsButton" fx:id="friendButton" layoutX="482.0" layoutY="309.0" mnemonicParsing="false" onAction="#goToFriends" prefHeight="39.0" prefWidth="98.0" text="Friends" />
-      <ScrollPane fx:id="scrollPane" hbarPolicy="ALWAYS" layoutX="98.0" layoutY="59.0" prefHeight="426.0" prefWidth="200.0" vbarPolicy="ALWAYS">
+      <ScrollPane fx:id="scrollPane" hbarPolicy="ALWAYS" layoutX="107.0" layoutY="60.0" prefHeight="426.0" prefWidth="200.0" vbarPolicy="ALWAYS">
          <content>
             <ScrollBar orientation="VERTICAL" prefHeight="394.0" prefWidth="15.0" />
          </content>

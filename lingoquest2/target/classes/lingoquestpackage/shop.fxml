@@ -11,46 +11,46 @@
 
 <AnchorPane id="overall" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="454.0" prefWidth="608.0" stylesheets="@css/shop.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lingoquestpackage.controllers.ShopController">
    <children>
-      <VBox id="sideMenu" layoutX="-2.0" layoutY="-11.0" prefHeight="454.0" prefWidth="103.0" stylesheets="@../practice.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="507.0" AnchorPane.topAnchor="0.0">
+      <VBox id="sideMenu" layoutX="-2.0" layoutY="-11.0" prefHeight="454.0" prefWidth="120.0" stylesheets="@../practice.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="490.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Button id="homeButton" mnemonicParsing="false" onAction="#goToHome" prefHeight="26.0" prefWidth="89.0" text="Home">
+            <Button id="homeButton" mnemonicParsing="false" onAction="#goToHome" prefHeight="37.0" prefWidth="97.0" text="Home">
                <VBox.margin>
                   <Insets left="5.0" top="70.0" />
                </VBox.margin>
             </Button>
-            <Button id="practiceButton" mnemonicParsing="false" onAction="#goToPractice" prefHeight="26.0" prefWidth="89.0" text="Practice">
+            <Button id="practiceButton" mnemonicParsing="false" onAction="#goToPractice" prefHeight="37.0" prefWidth="97.0" text="Practice">
                <VBox.margin>
                   <Insets left="5.0" top="30.0" />
                </VBox.margin>
             </Button>
-            <Button id="leaderboardButton" mnemonicParsing="false" onAction="#goToLeaderboard" prefHeight="26.0" prefWidth="89.0" text="Leaderboard">
+            <Button id="leaderboardButton" mnemonicParsing="false" onAction="#goToLeaderboard" prefHeight="37.0" prefWidth="97.0" text="Leaderboard">
                <VBox.margin>
                   <Insets left="5.0" top="30.0" />
                </VBox.margin>
             </Button>
-            <Button id="shopButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="89.0" text="Shop">
+            <Button id="shopButton" mnemonicParsing="false" prefHeight="37.0" prefWidth="97.0" text="Shop">
                <VBox.margin>
                   <Insets left="5.0" top="30.0" />
                </VBox.margin>
             </Button>
-            <Button id="profileButton" fx:id="profile" layoutY="400.0" mnemonicParsing="false" onAction="#goToProfile" prefHeight="26.0" prefWidth="89.0" text="Profile">
+            <Button id="profileButton" fx:id="profile" layoutY="400.0" mnemonicParsing="false" onAction="#goToProfile" prefHeight="37.0" prefWidth="97.0" text="Profile">
                <VBox.margin>
                   <Insets left="5.0" top="30.0" />
                </VBox.margin>
             </Button>
-            <Button id="logoutButton" mnemonicParsing="false" onAction="#handleLogout" prefHeight="26.0" prefWidth="89.0" text="Logout">
+            <Button id="logoutButton" mnemonicParsing="false" onAction="#handleLogout" prefHeight="37.0" prefWidth="97.0" text="Logout">
                <VBox.margin>
                   <Insets left="5.0" top="30.0" />
                </VBox.margin>
             </Button>
          </children>
       </VBox>
-      <Pane id="header" layoutX="-6.0" layoutY="-6.0" prefHeight="66.0" prefWidth="614.0" stylesheets="@../practice.css">
+      <Pane id="header" layoutX="-6.0" layoutY="-6.0" prefHeight="66.0" prefWidth="702.0" stylesheets="@../practice.css">
          <children>
             <Label id="lingoQuestHeader" layoutX="19.0" layoutY="10.0" prefHeight="45.0" prefWidth="157.0" text="LingoQuest" />
-            <Label id="username" fx:id="usernameField" layoutX="194.0" layoutY="25.0" prefHeight="17.0" prefWidth="83.0" text="Username" />
-            <Label id="coins" fx:id="coinLabel" layoutX="295.0" layoutY="25.0" prefHeight="17.0" prefWidth="127.0" text="Coins:" />
-            <Label id="answerStreak" fx:id="answerStreak" layoutX="455.0" layoutY="25.0" text="Answer Streak" />
+            <Label id="username" fx:id="usernameField" layoutX="185.0" layoutY="25.0" prefHeight="19.0" prefWidth="127.0" text="Username" />
+            <Label id="coins" fx:id="coinLabel" layoutX="337.0" layoutY="25.0" prefHeight="17.0" prefWidth="127.0" text="Coins:" />
+            <Label id="answerStreak" fx:id="answerStreak" layoutX="479.0" layoutY="25.0" prefHeight="19.0" prefWidth="127.0" text="Answer Streak" />
          </children></Pane>
       <ImageView fitHeight="95.0" fitWidth="115.0" layoutX="187.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
          <image>
