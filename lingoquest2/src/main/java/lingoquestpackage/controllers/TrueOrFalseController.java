@@ -150,3 +150,15 @@ public class TrueOrFalseController implements Initializable {
             App.setRoot("/lingoquestpackage/incorrect");
     }
 }
+// This code defines the TrueOrFalseController class, which serves as a controller for the "True or False" functionality in a JavaFX-based application. 
+// The class implements the Initializable interface, allowing it to set up and initialize data when the associated FXML file is loaded. 
+// The class manages interactions with the user interface components, including labels, progress bars, and navigation buttons.
+// It interacts with the application's backend logic via the LanguageGame and User models. 
+// The constructor initializes the LanguageGame instance (the backend logic facade) and retrieves the current user object. 
+// The initialize method sets up the initial state of the UI by populating fields like the username, coin balance, answer streak, lesson progress, and the current question. 
+// If a lesson is not loaded, it redirects the user back to the home page. 
+// The class also provides navigation methods (goToProfile, goToHome, etc.) that enable users to move between different views in the application. 
+// Additionally, the handleLogout method logs out the current user and redirects to the login page.
+// The handleTrue and handleFalse methods handle user responses to "True" or "False" questions. 
+// These methods use the backend to verify the correctness of the user's answer and redirect them to either a "correct" or "incorrect" screen based on the result. 
+// This class combines backend integration and user interaction to create a seamless and dynamic experience for users within the LingoQuest application.
