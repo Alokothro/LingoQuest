@@ -223,3 +223,15 @@ public class QuestionController implements Initializable {
         }
     }
 }
+// The QuestionController class serves as a controller for managing and navigating through questions in the LingoQuest application.
+// This class implements the Initializable interface, enabling it to set up and populate user interface components when the associated FXML file is loaded. 
+// It interacts with backend models, such as LanguageGame and User, to fetch data about the user, lessons, and questions, ensuring dynamic updates to the UI.
+// The controller initializes several UI elements, including labels for the username, answer streak, coin balance, lesson name, and section name, as well as a button for progressing through the questions. 
+// The initialize method retrieves the user and lesson data from the backend and sets the text of these labels accordingly. 
+// It also configures the "Next" button based on the current question's state, dynamically changing its label to "Begin," "Continue," or "Exit" based on the user's progress.
+// The class includes several navigation methods (goToProfile, goToHome, goToPractice, etc.) for transitioning between different sections of the application. 
+// The handleNextButton method determines the action of the "Next" button, which could involve preparing the next set of questions, continuing an existing session, or exiting to the home screen.
+// The makeQuestion method dynamically determines the type of question (e.g., Matching, TrueOrFalse, FillInTheBlank, or MultipleChoice) and transitions to the appropriate view for that question type.
+// This controller facilitates seamless interaction between the UI and backend logic, ensuring users can engage with lessons and answer questions effectively. 
+// It also incorporates error handling to gracefully manage exceptions, such as missing data or navigation errors. 
+// The QuestionController plays a central role in managing the question flow, enhancing the user experience in the LingoQuest application.

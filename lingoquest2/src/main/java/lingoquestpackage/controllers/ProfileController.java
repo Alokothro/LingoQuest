@@ -137,3 +137,14 @@ public class ProfileController implements Initializable{
     }
 
 }
+// The ProfileController class is a JavaFX controller for managing the profile view in the LingoQuest application. 
+// It implements the Initializable interface, allowing it to set up and initialize user interface components when the associated FXML file is loaded. 
+// This controller connects the application's backend, represented by the LanguageGame and User classes, with the user interface to dynamically display and update the user's profile data.
+// The class has several UI components linked to the FXML file, including labels to display the user's username, coins, answer streak, friends count, total coins earned, and points. 
+// It also features a ChoiceBox for displaying the user's current language and a ProgressBar to represent the user's progress in their current language. 
+// During initialization, the initialize method retrieves the user data from the backend and updates these UI elements with the user's profile information, such as username, language progress, and other statistics. 
+// The method also formats the language progress percentage for better readability.
+// The handleLogout method logs the user out using the backend and redirects them to the login page. 
+// Additionally, the class provides navigation methods (goToHome, goToPractice, goToLeaderboard, and goToShop) for transitioning between different sections of the application.
+// By linking the backend data to the user interface, the ProfileController ensures that the profile view provides an accurate and comprehensive representation of the user's progress and achievements. 
+// It enables seamless navigation and interaction, enhancing the overall user experience within the LingoQuest application.
