@@ -14,6 +14,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import lingoquestpackage.lingoquest.App;
 import lingoquestpackage.models.LanguageGame;
+import lingoquestpackage.models.MiniUser;
 import lingoquestpackage.models.User;
 import lingoquestpackage.models.Users;
 
@@ -109,14 +110,17 @@ public class FriendsController implements Initializable {
         //System.out.println("Friends" + this.user.getFriendsList().get(0));
         table.setPlaceholder(new Label("No friends to display"));
         // make the columns
-        TableColumn<User,String> usernameColumn = new TableColumn<>("Username");
-        usernameColumn.setCellValueFactory(
+        TableColumn<MiniUser,String> usernameColumn = new TableColumn<>("Username");
+        usernameColumn.setCellValueFactory(new PropertyValueFactory<MiniUser,String>("username"));
+        /*usernameColumn.setCellValueFactory(
             new PropertyValueFactory<>("username")
-            );
+            );*/
         TableColumn<User,String> coinsColumn = new TableColumn<>("Coins Earned");
-        usernameColumn.setCellValueFactory(
+        usernameColumn.setCellValueFactory(new PropertyValueFactory<MiniUser,String>("coinsEarned"));
+
+        /*usernameColumn.setCellValueFactory(
             new PropertyValueFactory<>("coinsEarned")
-            );
+            );*/
         table.getColumns().addAll(usernameColumn, coinsColumn);
 
         // data for the table
@@ -124,7 +128,10 @@ public class FriendsController implements Initializable {
             // get the friend by their UUID
             User u = Users.getInstance().getUserByUUID(id);
             // add user, the factory should extract their info
-            table.getItems().add(u);
+            // make a mini user for the table
+            MiniUser mU = new MiniUser(u.getUsername(), u.getCoinsEarned());
+            // add to table
+            table.getItems().add(mU);
         }
 
         if(languageGame.getUser().getFriendRequests().isEmpty() == false) {
@@ -139,6 +146,8 @@ public class FriendsController implements Initializable {
         String name = friendName.getText().trim();
         // get the user by their name, find their uuid, then send a friend request
         languageGame.getUser().sendFriendRequest(Users.getInstance().getUserByName(name).getUUID());
+        // empty out the text field
+        friendName.setText("");
     }
 
     @FXML
@@ -148,6 +157,8 @@ public class FriendsController implements Initializable {
         // get the id of the requester
         UUID requestID = languageGame.getUser().getFriendRequests().get(0);
         languageGame.getUser().acceptFriendRequest(requestID);
+        // empty the label
+        requestName.setText("");
     }
 
     @FXML
@@ -156,6 +167,7 @@ public class FriendsController implements Initializable {
             return;
         // remove the request
         languageGame.getUser().getFriendRequests().remove(0);
+        // empty the label
+        requestName.setText("");
     }
 }
-

@@ -44,7 +44,7 @@
             </Button>
          </children>
       </VBox>
-      <Pane id="header" layoutX="-6.0" layoutY="-6.0" prefHeight="66.0" prefWidth="614.0" stylesheets="@../practice.css">
+      <Pane id="header" layoutX="-6.0" layoutY="-6.0" prefHeight="66.0" prefWidth="696.0" stylesheets="@../practice.css">
          <children>
             <Label id="lingoQuestHeader" layoutX="19.0" layoutY="10.0" prefHeight="45.0" prefWidth="157.0" text="LingoQuest" />
             <Label id="username" fx:id="usernameField" layoutX="194.0" layoutY="25.0" prefHeight="17.0" prefWidth="83.0" text="Username" />
@@ -53,7 +53,7 @@
          </children></Pane>
       <Label id="progressText" layoutX="283.0" layoutY="108.0" text="Lesson Progress" />
       <ProgressBar id="progressBar" fx:id="lessonProgress" layoutX="226.0" layoutY="134.0" prefHeight="45.0" prefWidth="252.0" progress="0.0" />
-      <Label id="question" fx:id="question" layoutX="158.0" layoutY="189.0" prefHeight="111.0" prefWidth="388.0" textAlignment="CENTER" wrapText="true" />
+      <Label id="question" fx:id="question" layoutX="215.0" layoutY="189.0" prefHeight="111.0" prefWidth="331.0" textAlignment="CENTER" wrapText="true" />
       <Button id="submitButton" fx:id="trueButton" layoutX="189.0" layoutY="330.0" mnemonicParsing="false" onAction="#handleTrue" prefHeight="37.0" prefWidth="114.0" text="True" />
       <Button fx:id="falseButton" layoutX="390.0" layoutY="330.0" mnemonicParsing="false" onAction="#handleFalse" prefHeight="37.0" prefWidth="103.0" text="False" />
    </children>

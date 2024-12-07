@@ -85,10 +85,12 @@ public class FillInTheBlank extends Question {
     public boolean isCorrect(User user) {
         if (userAnswer.toLowerCase().trim().equals(correctAnswer.getWordinLanguage().toLowerCase().trim())) {
             user.getUserDictionary().getWordByUUID(correctAnswer.getWordUUID()).wordPresented(true);
+            user.getCurrentLanguage().increaseAnswerStreak();
             user.addCoins(coinValue);
             return true;
         } else {
             user.getUserDictionary().getWordByUUID(correctAnswer.getWordUUID()).wordPresented(false);
+            user.getCurrentLanguage().resetAnswerStreak();
             return false;
         }
     }

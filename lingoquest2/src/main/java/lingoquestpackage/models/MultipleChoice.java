@@ -97,10 +97,15 @@ public class MultipleChoice extends Question {
             boolean isCorrect = (userAnswerIndex == correctAnswerIndex);
 
             user.getUserDictionary().getWordByUUID(correctAnswer.getWordUUID()).wordPresented(isCorrect);
+            // increase answer streak
+            user.getCurrentLanguage().increaseAnswerStreak();
+            user.addCoins(coinValue);
             return isCorrect;
         } catch (NumberFormatException e) {
             // Handle invalid user input
             user.getUserDictionary().getWordByUUID(correctAnswer.getWordUUID()).wordPresented(false);
+            // answer streak 0
+            user.getCurrentLanguage().resetAnswerStreak();
             return false;
         }
     }

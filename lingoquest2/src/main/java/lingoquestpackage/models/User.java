@@ -114,6 +114,16 @@ public class User {
         //System.out.println("null dictionary attempted to be added setUserDictionary in User.java");
     }
 
+    /**
+     * @author cade
+     * @param ids
+     * attempt to fix dataloader
+     */
+    public void setFriendsListUUID(ArrayList<UUID> ids) {
+        if(ids != null)
+            this.friendsList = ids;
+    }
+
     public double getCurrentLanguageProgress() {
         if(this.userDictionary != null) {
             double sum = 0.0;

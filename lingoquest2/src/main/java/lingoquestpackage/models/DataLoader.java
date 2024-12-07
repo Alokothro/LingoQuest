@@ -300,7 +300,16 @@ public class DataLoader {
         user.setUserDictionaryID(UUID.fromString(dictionaryID));
 
         // want to change to work by uuid TODO
-        user.setFriendsList(friendsList);
+        //user.setFriendsList(friendsList);
+
+        // take the strings and turn them into uuids
+        ArrayList<UUID> ids = new ArrayList<>();
+        for(String s : friendsList) {
+            UUID id = UUID.fromString(s);
+            ids.add(id);
+        }
+        // set as the user's friends list
+        user.setFriendsListUUID(ids);
 
         // want to change this to load items by UUIDs TODO
         ArrayList<UUID> finalItems = new ArrayList();

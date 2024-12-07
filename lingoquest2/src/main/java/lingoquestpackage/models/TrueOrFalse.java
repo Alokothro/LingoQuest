@@ -87,9 +87,14 @@ public class TrueOrFalse extends Question {
     public boolean isCorrect(User user) {
         if (userAnswer != null && userAnswer.toLowerCase().trim().equals(correctAnswer)) {
             user.getUserDictionary().getWordByUUID(correctWord.getWordUUID()).wordPresented(true);
+            // increase their answer streak
+            user.getCurrentLanguage().increaseAnswerStreak();
+            user.addCoins(coinValue);
             return true;
         } else {
             user.getUserDictionary().getWordByUUID(correctWord.getWordUUID()).wordPresented(false);
+            // answer streak back to 0
+            user.getCurrentLanguage().resetAnswerStreak();
             return false;
         }
     }

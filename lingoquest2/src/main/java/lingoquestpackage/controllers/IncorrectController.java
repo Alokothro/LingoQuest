@@ -44,6 +44,7 @@ public class IncorrectController implements Initializable{
 
     public IncorrectController() throws Exception {
         this.languageGame = LanguageGame.getInstance();
+        this.user = languageGame.getUser();
     }
 
     // navigation buttons
