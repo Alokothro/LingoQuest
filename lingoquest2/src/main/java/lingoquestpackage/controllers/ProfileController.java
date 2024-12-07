@@ -90,8 +90,8 @@ public class ProfileController implements Initializable{
         pointLabel.setText("Points: " + user.getCurrentLanguage().getPointsEarned());
         answerStreak2.setText("Answer Streak: " + user.getCurrentLanguage().getAnswerStreak());
         currentLanguage.setText("Current Language: " + user.getCurrentLanguage().getLanguageName());
-        progressLabel.setText("Progress: " + user.getCurrentLanguageProgress() + "%");
-        progressBar.setProgress(user.getCurrentLanguageProgress());
+        progressLabel.setText("Current Language Progress: " + user.getCurrentLanguageProgress() + "%");
+        progressBar.setProgress(user.getCurrentLanguageProgress() / 1000);
     }
 
     @FXML
