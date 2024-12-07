@@ -25,8 +25,8 @@ public class QuestionController implements Initializable {
     // need to figure out how to properly deal with this
     private int numberOfQuestions = 5;
 
-    //@FXML
-    //private Label usernameField;
+    @FXML
+    private Label usernameField;
 
     @FXML
     private Label answerStreak;
@@ -113,7 +113,7 @@ public class QuestionController implements Initializable {
         //nextButton = new Button();
 
         // set the text on the top banner
-        //usernameField.setText(user.getUsername());
+        usernameField.setText(user.getUsername());
         //coinLabel = new Label();
 
         coinLabel.setText("Coins: "+ user.getCoinBalance());

@@ -17,7 +17,7 @@
                   <Insets left="5.0" top="70.0" />
                </VBox.margin>
             </Button>
-            <Button id="practiceButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="89.0" text="Practice">
+            <Button id="practiceButton" mnemonicParsing="false" onAction="#goToPractice" prefHeight="26.0" prefWidth="89.0" text="Practice">
                <VBox.margin>
                   <Insets left="5.0" top="30.0" />
                </VBox.margin>
@@ -44,12 +44,12 @@
             </Button>
          </children>
       </VBox>
-      <Pane id="header" layoutX="-6.0" layoutY="-6.0" prefHeight="66.0" prefWidth="687.0" stylesheets="@../practice.css">
+      <Pane id="header" layoutX="-6.0" layoutY="-6.0" prefHeight="66.0" prefWidth="615.0" stylesheets="@../practice.css">
          <children>
             <Label id="lingoQuestHeader" layoutX="19.0" layoutY="10.0" prefHeight="45.0" prefWidth="157.0" text="LingoQuest" />
-            <Label id="username" fx:id="coinLabel" layoutX="194.0" layoutY="25.0" prefHeight="17.0" prefWidth="83.0" />
-            <Label id="coins" fx:id="answerStreak" layoutX="295.0" layoutY="25.0" prefHeight="17.0" prefWidth="127.0" />
-            <Label id="answerStreak" fx:id="answerStreak" layoutX="415.0" layoutY="25.0" />
+            <Label id="username" fx:id="usernameField" layoutX="194.0" layoutY="25.0" prefHeight="17.0" prefWidth="83.0" />
+            <Label id="coins" fx:id="coinLabel" layoutX="295.0" layoutY="25.0" prefHeight="17.0" prefWidth="127.0" />
+            <Label id="answerStreak" fx:id="answerStreak" layoutX="486.0" layoutY="25.0" prefHeight="21.0" prefWidth="103.0" />
          </children></Pane>
       <Button id="beginButton" fx:id="nextButton" layoutX="288.0" layoutY="252.0" mnemonicParsing="false" onAction="#handleNextButton" prefHeight="26.0" prefWidth="103.0" />
       <Label id="SectionName" fx:id="sectionName" layoutX="235.0" layoutY="134.0" prefHeight="30.0" prefWidth="278.0">
