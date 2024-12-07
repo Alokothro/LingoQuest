@@ -47,6 +47,9 @@ public class MultipleChoice extends Question {
         }
         return -1;
     }
+    public void setCorrectAnswer(Word correctAnswer) {
+        this.correctAnswer = correctAnswer;
+    }
 
     // made this for the front end so that the page can be
     // setup depending on the question type
@@ -95,7 +98,9 @@ public class MultipleChoice extends Question {
         try {
             int userAnswerIndex = Integer.parseInt(userAnswer.trim());
             boolean isCorrect = (userAnswerIndex == correctAnswerIndex);
-
+            if(isCorrect) {
+                user.addCoins(coinValue);
+            }
             user.getUserDictionary().getWordByUUID(correctAnswer.getWordUUID()).wordPresented(isCorrect);
             return isCorrect;
         } catch (NumberFormatException e) {

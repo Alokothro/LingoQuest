@@ -42,6 +42,9 @@ public class TrueOrFalse extends Question {
             this.correctAnswer = "false";
         }
     }
+    public void setCorrectAnswer(Word correctAnswer) {
+        this.correctWord = correctAnswer;
+    }
 
     // made this for the front end so that the page can be
     // setup depending on the question type
@@ -87,6 +90,7 @@ public class TrueOrFalse extends Question {
     public boolean isCorrect(User user) {
         if (userAnswer != null && userAnswer.toLowerCase().trim().equals(correctAnswer)) {
             user.getUserDictionary().getWordByUUID(correctWord.getWordUUID()).wordPresented(true);
+            user.addCoins(coinValue);
             return true;
         } else {
             user.getUserDictionary().getWordByUUID(correctWord.getWordUUID()).wordPresented(false);
