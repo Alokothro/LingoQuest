@@ -232,3 +232,14 @@ public class MatchingController implements Initializable {
         }
     }
 }
+// The MatchingController class is a JavaFX controller for the matching question interface in the LingoQuest application. 
+// It integrates the backend logic, represented by the LanguageGame and User models, to dynamically populate and manage a matching game where users pair words in a target language with their English translations. 
+// The controller implements the Initializable interface, ensuring the user interface is set up correctly when the associated FXML file is loaded.
+// The controller includes several UI elements: labels to display the username, coins, answer streak, and lesson information; text fields for user inputs; buttons for submitting answers; and dynamically populated labels for displaying the words and their shuffled English translations. 
+// The initialize method retrieves the current lesson's question data and populates the UI with the target words and their randomized English options. 
+// It ensures the backend logic is properly connected and ready for user interaction.
+// The class defines methods (handleOne, handleTwo, handleThree, handleFour) for handling user submissions for each matching pair. 
+// These methods validate the user's input against the correct answer, updating the button color to green for correct answers and red for incorrect ones. 
+// The checkIfDone method determines if all answers are correct and transitions to the "correct" feedback page once the matching task is complete.
+// Additionally, the controller provides navigation methods (goToProfile, goToHome, goToPractice, etc.) for accessing other sections of the application and a handleLogout method for logging out the current user. 
+// By integrating backend data with dynamic UI elements, the MatchingController ensures an engaging and interactive experience for practicing vocabulary matching in the LingoQuest application.

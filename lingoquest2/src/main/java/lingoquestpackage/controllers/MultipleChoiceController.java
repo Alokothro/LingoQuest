@@ -211,3 +211,14 @@ public class MultipleChoiceController implements Initializable {
             App.setRoot("/lingoquestpackage/incorrect");
     }
 }
+// The MultipleChoiceController class is a JavaFX controller that manages the multiple-choice question interface in the LingoQuest application. 
+// It implements the Initializable interface to set up and populate the user interface components dynamically when the associated FXML file is loaded. 
+// The class integrates the backend logic, represented by the LanguageGame and User models, to provide interactive and data-driven multiple-choice questions for the user.
+// The controller uses several UI components to display the question, answer choices, and user statistics such as username, coin balance, and answer streak. 
+// It also includes a progress bar to show the user’s lesson progress. During initialization, the initialize method retrieves the current lesson, question, and available answer choices from the backend. 
+// The retrieved answer choices are assigned to the respective buttons (optionOne, optionTwo, optionThree, optionFour) to create a seamless and interactive multiple-choice interface.
+// The class provides methods (handleOne, handleTwo, handleThree, handleFour) to handle user selection for each of the four answer options. 
+// Each method communicates with the backend to verify if the selected answer is correct and then navigates to either a "correct" or "incorrect" feedback screen based on the result. 
+// Navigation methods (goToProfile, goToHome, goToPractice, etc.) are also included for transitioning between different sections of the application.
+// By dynamically setting up the UI with question data and providing interactive feedback, the MultipleChoiceController plays a critical role in engaging users in the language learning process. 
+// It ensures smooth integration of backend logic and a responsive frontend experience for answering multiple-choice questions.
