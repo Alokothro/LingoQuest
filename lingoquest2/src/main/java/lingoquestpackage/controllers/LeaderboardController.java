@@ -88,7 +88,8 @@ public class LeaderboardController implements Initializable {
 
         // Populate the table
         ArrayList<User> leaderboardUsers = languageGame.getLeaderBoard().getUsers();
-        for (User user : leaderboardUsers) {
+        for (int i = leaderboardUsers.size() - 1; i >= 0; i--) {
+            User user = leaderboardUsers.get(i);
             LeaderboardEntry entry = new LeaderboardEntry(user.getUsername(), user.getCoinsEarned());
             leaderboardTable.getItems().add(entry);
         }
