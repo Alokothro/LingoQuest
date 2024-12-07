@@ -60,7 +60,7 @@
       <Label id="firstPlace" fx:id="firstPlace" layoutX="295.0" layoutY="104.0" text="Username" />
       <Label id="secondPlace" fx:id="secondPlace" layoutX="369.0" layoutY="141.0" text="username" />
       <Label id="thirdPlace" fx:id="thirdPlace" layoutX="249.0" layoutY="177.0" text="username" />
-      <TableView fx:id="table" layoutX="217.0" layoutY="240.0" prefHeight="200.0" prefWidth="246.0">
+      <TableView fx:id="leaderboardTable" layoutX="217.0" layoutY="240.0" prefHeight="200.0" prefWidth="246.0">
         <columns>
           <TableColumn fx:id="usernameColumn" prefWidth="120.0" text="Username" />
           <TableColumn fx:id="coinsColumn" prefWidth="125.0" text="Coins Earned" />
