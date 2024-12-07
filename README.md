@@ -16,3 +16,5 @@ This project is a language learning platform that allows users to practice vario
 **Language Placement Test:** A placement test helps users start at the right level based on their current knowledge of the language.
 
 **Color Pallette:** #FAF9F9, #002642, #FABD00, #169873, #AD1519
+
+**GUI YOUTUBE VIDEO** https://youtu.be/NGEjiR2yx3U
