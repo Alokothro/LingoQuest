@@ -1,3 +1,4 @@
+/Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/controllers/CorrectController.java
 /Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/models/User.java
 /Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/models/TrueOrFalse.java
 /Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/models/Dictionary.java
@@ -6,6 +7,8 @@
 /Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/controllers/SignupController.java
 /Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/module-info.java
 /Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/controllers/ProfileController.java
+/Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/controllers/FillInTheBlankController.java
+/Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/controllers/IncorrectController.java
 /Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/lingoquest/App.java
 /Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/models/PlacementTest.java
 /Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/models/Word.java
@@ -16,6 +19,7 @@
 /Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/models/Users.java
 /Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/controllers/FriendsController.java
 /Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/models/Section.java
+/Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/controllers/MultipleChoiceController.java
 /Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/models/Language.java
 /Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/controllers/PracticeController.java
 /Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/models/DataLoader.java
@@ -33,6 +37,8 @@
 /Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/narriator/VoiceList.java
 /Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/controllers/ShopController.java
 /Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/models/Item.java
+/Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/controllers/TrueOrFalseController.java
+/Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/models/MiniUser.java
 /Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/models/Question.java
 /Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/controllers/HomeController.java
 /Users/cadestocker/Desktop/LingoQuest2/lingoquest2/src/main/java/lingoquestpackage/controllers/SecondaryController.java

@@ -6,6 +6,7 @@ import java.util.ResourceBundle;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
 import lingoquestpackage.lingoquest.App;
@@ -45,7 +46,7 @@ public class ProfileController implements Initializable{
     private Label answerStreak2;
 
     @FXML
-    private Label currentLanguage;
+    private ChoiceBox currentLanguage;
 
     @FXML
     private Label progressLabel;
@@ -89,7 +90,7 @@ public class ProfileController implements Initializable{
         coinsEarnedLabel.setText("Coins Earned: " + user.getCoinsEarned());
         pointLabel.setText("Points: " + user.getCurrentLanguage().getPointsEarned());
         answerStreak2.setText("Answer Streak: " + user.getCurrentLanguage().getAnswerStreak());
-        currentLanguage.setText("Current Language: " + user.getCurrentLanguage().getLanguageName());
+        currentLanguage.settext("Current Language: " + user.getCurrentLanguage().getLanguageName());
         progressLabel.setText("Current Language Progress: " + user.getCurrentLanguageProgress() + "%");
         progressBar.setProgress(user.getCurrentLanguageProgress() / 1000);
     }

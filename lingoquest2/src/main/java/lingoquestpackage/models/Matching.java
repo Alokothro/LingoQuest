@@ -97,6 +97,7 @@ public class Matching extends Question {
         if (userAnswer.toLowerCase().trim().equals(correctAnswer.getEnglishVersion().toLowerCase().trim())) {
             user.getUserDictionary().getWordByUUID(correctAnswer.getWordUUID()).wordPresented(true);
             user.addCoins(coinValue);
+            user.getCurrentLanguage().increaseAnswerStreak();
             return true;
         } else {
             user.getUserDictionary().getWordByUUID(correctAnswer.getWordUUID()).wordPresented(false);

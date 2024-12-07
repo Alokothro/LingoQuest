@@ -7,7 +7,6 @@ import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
-import javafx.scene.control.ProgressBar;
 import lingoquestpackage.lingoquest.App;
 import lingoquestpackage.models.LanguageGame;
 import lingoquestpackage.models.User;
@@ -25,9 +24,6 @@ public class ShopController implements Initializable {
 
     @FXML
     private Label coinLabel;
-
-    @FXML
-    private ProgressBar languageCompletion;
 
     // constructor
     public ShopController() {
@@ -88,6 +84,5 @@ public class ShopController implements Initializable {
         usernameField.setText(user.getUsername());
         coinLabel.setText("Coins: "+ user.getCoinBalance());
         answerStreak.setText("Answer Streak: " + user.getCurrentLanguage().getAnswerStreak());
-        languageCompletion.setProgress(user.getCurrentLanguageProgress());
     }
 }

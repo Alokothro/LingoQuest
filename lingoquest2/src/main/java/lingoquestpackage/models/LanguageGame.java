@@ -663,8 +663,10 @@ public class LanguageGame {
 
         // the given string is sent to the question object
         user.currentLesson.currentQuestion.setUserAnswer(userAnswer);
+        
         // increment question number
-        this.currentQuestionNumber++;
+        if(user.currentLesson.currentQuestion.getType().equals("Matching") == false)
+            this.currentQuestionNumber++;
         // check if it was correct and return
         return user.currentLesson.currentQuestion.isCorrect(user);
     }

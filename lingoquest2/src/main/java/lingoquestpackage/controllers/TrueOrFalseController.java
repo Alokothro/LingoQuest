@@ -18,7 +18,7 @@ public class TrueOrFalseController implements Initializable {
     private LanguageGame languageGame;
 
     // need to figure out how to properly deal with this
-    private int numberOfQuestions = 2;
+    //private int numberOfQuestions = 2;
 
     @FXML
     private Label usernameField;
