@@ -102,12 +102,12 @@ public class FriendsController implements Initializable {
                 e.printStackTrace();
             }
         }
-        // set the text on the top banner
-        usernameField.setText(user.getUsername());
-        coinLabel.setText("Coins: "+ user.getCoinBalance());
-        answerStreak.setText("Answer Streak: " + user.getCurrentLanguage().getAnswerStreak());
+    // set the text on the top banner
+    usernameField.setText(user.getUsername());
+    coinLabel.setText("Coins: "+ user.getCoinBalance());
+    answerStreak.setText("Answer Streak: " + user.getCurrentLanguage().getAnswerStreak());
 
-           // Set up the columns
+    // Set up the columns
     usernameColumn.setCellValueFactory(new PropertyValueFactory<>("username"));
     coinsColumn.setCellValueFactory(new PropertyValueFactory<>("coinsEarned"));
 

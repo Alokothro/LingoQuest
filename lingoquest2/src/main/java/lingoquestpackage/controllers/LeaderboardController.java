@@ -3,7 +3,6 @@ package lingoquestpackage.controllers;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.ResourceBundle;
 
 import javafx.fxml.FXML;
@@ -84,15 +83,15 @@ public class LeaderboardController implements Initializable {
          usernameColumn.setCellValueFactory(new PropertyValueFactory<>("username"));
          coinsColumn.setCellValueFactory(new PropertyValueFactory<>("coins"));
 
-    // Set placeholder text
-    leaderboardTable.setPlaceholder(new Label("No leaderboard data to display"));
+        // Set placeholder text
+        leaderboardTable.setPlaceholder(new Label("No leaderboard data to display"));
 
-    // Populate the table
-    ArrayList<User> leaderboardUsers = languageGame.getLeaderBoard().getUsers();
-    for (User user : leaderboardUsers) {
-        LeaderboardEntry entry = new LeaderboardEntry(user.getUsername(), user.getCoinsEarned());
-        leaderboardTable.getItems().add(entry);
-    }
+        // Populate the table
+        ArrayList<User> leaderboardUsers = languageGame.getLeaderBoard().getUsers();
+        for (User user : leaderboardUsers) {
+            LeaderboardEntry entry = new LeaderboardEntry(user.getUsername(), user.getCoinsEarned());
+            leaderboardTable.getItems().add(entry);
+        }
     }
 
     // navigation buttons
