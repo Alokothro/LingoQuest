@@ -46,20 +46,20 @@
             </Button>
          </children>
       </VBox>
-      <Pane id="header" layoutX="-6.0" layoutY="-6.0" prefHeight="66.0" prefWidth="607.0">
+      <Pane id="header" layoutX="-6.0" layoutY="-6.0" prefHeight="66.0" prefWidth="685.0">
          <children>
-            <Label id="username" fx:id="usernameField" layoutX="245.0" layoutY="25.0" prefHeight="17.0" prefWidth="83.0" text="username" />
+            <Label id="username" fx:id="usernameField" layoutX="196.0" layoutY="25.0" prefHeight="19.0" prefWidth="132.0" text="username" />
             <Label id="coins" fx:id="coinLabel" layoutX="345.0" layoutY="25.0" prefHeight="17.0" prefWidth="83.0" text="Coins" />
             <Label id="answerStreak" fx:id="answerStreak" layoutX="447.0" layoutY="24.0" prefHeight="17.0" prefWidth="127.0" text="Answer Streak" />
             <Label id="lingoQuestHeader" layoutX="32.0" layoutY="12.0" prefHeight="45.0" prefWidth="200.0" text="LingoQuest" />
          </children>
       </Pane>
       <Label id="progress" fx:id="progressLabel" layoutX="215.0" layoutY="129.0" prefHeight="17.0" prefWidth="258.0" text="Current Language Progress: ProgressNUM" />
-      <Label id="usernameProfile" fx:id="usernameLabel2" layoutX="131.0" layoutY="211.0" prefHeight="30.0" prefWidth="100.0" text="Username" />
-      <Label id="friendsProfile" fx:id="friendLabel" layoutX="130.0" layoutY="250.0" prefHeight="30.0" prefWidth="167.0" text="Friends: NUM" />
-      <Label id="coinsProfile" fx:id="coinsEarnedLabel" layoutX="130.0" layoutY="285.0" prefHeight="30.0" prefWidth="184.0" text="Coins: Coin Count" />
-      <Label id="pointsProfile" fx:id="pointLabel" layoutX="130.0" layoutY="329.0" prefHeight="30.0" prefWidth="192.0" text="Points: Point Count" />
-      <Label id="answerStreakProfile" fx:id="answerStreak2" layoutX="130.0" layoutY="367.0" prefHeight="30.0" prefWidth="208.0" text="Answer Streak: Streak" />
+      <Label id="usernameProfile" fx:id="usernameLabel2" layoutX="163.0" layoutY="209.0" prefHeight="30.0" prefWidth="100.0" text="Username" />
+      <Label id="friendsProfile" fx:id="friendLabel" layoutX="162.0" layoutY="248.0" prefHeight="30.0" prefWidth="167.0" text="Friends: NUM" />
+      <Label id="coinsProfile" fx:id="coinsEarnedLabel" layoutX="162.0" layoutY="283.0" prefHeight="30.0" prefWidth="184.0" text="Coins: Coin Count" />
+      <Label id="pointsProfile" fx:id="pointLabel" layoutX="162.0" layoutY="327.0" prefHeight="30.0" prefWidth="192.0" text="Points: Point Count" />
+      <Label id="answerStreakProfile" fx:id="answerStreak2" layoutX="162.0" layoutY="365.0" prefHeight="30.0" prefWidth="208.0" text="Answer Streak: Streak" />
       <ProgressBar id="progressBar" fx:id="progressBar" layoutX="167.0" layoutY="156.0" prefHeight="20.0" prefWidth="354.0" progress="0.0" />
       <ChoiceBox id="languagesDropDown" fx:id="currentLanguage" layoutX="432.0" layoutY="273.0" prefWidth="150.0" />
       <Label layoutX="427.0" layoutY="235.0" text="Current Language">
@@ -67,6 +67,6 @@
             <Font size="20.0" />
          </font>
       </Label>
-      <Label id="welcome" layoutX="176.0" layoutY="78.0" text="Welcome Back Username" />
+      <Label id="welcome" fx:id="welcomeLabel" layoutX="176.0" layoutY="78.0" text="Welcome Back Username" />
    </children>
 </AnchorPane>

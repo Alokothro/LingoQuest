@@ -25,6 +25,9 @@ public class ProfileController implements Initializable{
     private Label usernameField;
 
     @FXML
+    private Label welcomeLabel;
+
+    @FXML
     private Label answerStreak;
 
     @FXML
@@ -86,12 +89,16 @@ public class ProfileController implements Initializable{
 
         // set the labels for the page
         usernameLabel2.setText(user.getUsername());
+        welcomeLabel.setText("Welcome Back, " + user.getUsername());
         friendLabel.setText("Friends: " + user.getFriendsList().size());
         coinsEarnedLabel.setText("Coins Earned: " + user.getCoinsEarned());
         pointLabel.setText("Points: " + user.getCurrentLanguage().getPointsEarned());
         answerStreak2.setText("Answer Streak: " + user.getCurrentLanguage().getAnswerStreak());
-        currentLanguage.setValue("Current Language: " + user.getCurrentLanguage().getLanguageName());
-        progressLabel.setText("Current Language Progress: " + user.getCurrentLanguageProgress() + "%");
+        currentLanguage.setValue(user.getCurrentLanguage().getLanguageName());
+        //progressLabel.setText("Current Language Progress: " + user.getCurrentLanguageProgress() + "%");
+        double progressPercentage = user.getCurrentLanguageProgress();
+        String formattedProgress = String.format("Current Language Progress: %.2f%%", progressPercentage);
+        progressLabel.setText(formattedProgress);
         progressBar.setProgress(user.getCurrentLanguageProgress() / 1000);
     }
 
