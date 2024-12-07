@@ -31,7 +31,7 @@ public class IncorrectController implements Initializable{
     @FXML private Button profile;
     @FXML private Button logoutButton;
     @FXML private Button nextButton;
-
+    @FXML private ProgressBar lessonProgress;
     @FXML private Label usernameField;
     @FXML private Label coinLabel;
     @FXML private Label answerStreak;
@@ -101,17 +101,9 @@ public class IncorrectController implements Initializable{
                 e.printStackTrace();
             }
         // initialize progress bar
-        progressBar = new ProgressBar();
-        // make sure there's a lesson to access
-        if(languageGame.getUser().getCurrentLesson() == null)
-            return;
-        // get the lesson progress
-        double progress = languageGame.getLessonProgress(languageGame.getUser().getCurrentLesson());
-        // if it's above zero, animate the bar going down (incorrect answer)
-        if(progress > 0.0) {
-            // i want to animate, but will save for later TODO
-            this.progressBar.setProgress(progress);
-        }
+        double lesProgress = this.user.getCurrentLesson().getLessonProgress() / 1000; // divide by 100 to fix
+        System.out.println(lesProgress + "les progress");
+        lessonProgress.setProgress(lesProgress);
         // get the correct answer from the last question, then make it a string
         String correctWord = languageGame.getMostRecentQuestionWord().getWordinLanguage();
         StringBuilder builder = new StringBuilder();
