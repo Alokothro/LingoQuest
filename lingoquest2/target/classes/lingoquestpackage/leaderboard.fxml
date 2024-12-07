@@ -62,8 +62,8 @@
       <Label id="thirdPlace" fx:id="thirdPlace" layoutX="249.0" layoutY="177.0" text="username" />
       <TableView fx:id="table" layoutX="217.0" layoutY="240.0" prefHeight="200.0" prefWidth="246.0">
         <columns>
-          <TableColumn fx:id="username" prefWidth="120.0" text="Username" />
-          <TableColumn fx:id="coins" prefWidth="125.0" text="Coins Earned" />
+          <TableColumn fx:id="usernameColumn" prefWidth="120.0" text="Username" />
+          <TableColumn fx:id="coinsColumn" prefWidth="125.0" text="Coins Earned" />
         </columns>
       </TableView>
    </children>
