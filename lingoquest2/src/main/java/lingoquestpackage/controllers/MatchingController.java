@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.List;
 import java.util.ResourceBundle;
 
 import javafx.fxml.FXML;
@@ -156,7 +155,8 @@ public class MatchingController implements Initializable {
     shuffledWords.add(word);
     }
     Collections.shuffle(shuffledWords);
-        options.setText("" + shuffledWords.get(0).getEnglishVersion() + "\n" + shuffledWords.get(1).getEnglishVersion() + "\n" + shuffledWords.get(2).getEnglishVersion() + "\n" + shuffledWords.get(3).getEnglishVersion());
+        options.setText("" + shuffledWords.get(0).getEnglishVersion() + ", " + shuffledWords.get(1).getEnglishVersion() +
+         ", " + shuffledWords.get(2).getEnglishVersion() + ", " + shuffledWords.get(3).getEnglishVersion());
     }
 
     public void handleOne() throws Exception {
@@ -210,5 +210,9 @@ public class MatchingController implements Initializable {
         } else {
             submit4.setStyle("-fx-background-color: red");
         }
+    }
+
+    public boolean checkIfDone() {
+        
     }
 }
