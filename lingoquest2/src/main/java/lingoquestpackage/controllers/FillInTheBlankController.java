@@ -8,6 +8,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.ProgressBar;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import lingoquestpackage.lingoquest.App;
@@ -24,7 +25,7 @@ public class FillInTheBlankController implements Initializable {
 
     @FXML
     private Label usernameField;
-
+    @FXML ProgressBar lessonProgress;
     @FXML
     private Label question;
 
@@ -117,6 +118,11 @@ public class FillInTheBlankController implements Initializable {
         usernameField.setText(user.getUsername());
         coinLabel.setText("Coins: "+ user.getCoinBalance());
         answerStreak.setText("Answer Streak: " + user.getCurrentLanguage().getAnswerStreak());
+
+
+        double lesProgress = this.user.getCurrentLesson().getLessonProgress() / 1000; // divide by 100 to fix
+        System.out.println(lesProgress + "les progress");
+        lessonProgress.setProgress(lesProgress);
 
         // set the question text
         String questionString = languageGame.getCurrentQuestionString();
