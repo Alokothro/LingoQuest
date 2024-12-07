@@ -212,5 +212,17 @@ public class LanguageManager {
         System.out.println("Current section is not set or has no lessons.");
         return null;
     }
+
+
+    public Section sectionByID(UUID sectionID) {
+        for(Language l : languages) {
+            for(Section s : l.getSections()) {
+                if(s.getID().equals(sectionID)) {
+                    return s;
+                }
+            }
+        }
+        return null;
+    }
 }
 

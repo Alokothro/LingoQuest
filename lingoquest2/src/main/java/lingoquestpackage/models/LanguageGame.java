@@ -504,6 +504,14 @@ public class LanguageGame {
         System.out.println("You switched to section " + user.currentSection.getName());
     }
     /**
+     * Selects a lesson for the user based on a UUID. 
+     * @param sectionUUID   The UUID of the section 
+     * @return   The section object
+     */
+    public Section getSectionByUUID(UUID sectionUUID) {
+        return languageManager.sectionByID(sectionUUID);
+    }
+    /**
      * Selects a lesson for the user based on a UUID. Updates the user's current lesson.
      * @param lessonUUID The UUID of the lesson to be set as the current lesson.
      */
@@ -693,5 +701,7 @@ public class LanguageGame {
         }
         //System.out.println("\n\nCurrent Language Progress: " + user.getCurrentLanguageProgress());
     }
+
+    
 
 }

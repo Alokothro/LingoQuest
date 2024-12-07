@@ -47,10 +47,10 @@
       </VBox>
       <Pane id="header" layoutX="-6.0" layoutY="-6.0" prefHeight="66.0" prefWidth="614.0" stylesheets="@../practice.css">
          <children>
-            <Label id="lingoQuestHeader" fx:id="usernameField" layoutX="19.0" layoutY="10.0" prefHeight="45.0" prefWidth="157.0" text="LingoQuest" />
-            <Label id="username" fx:id="coinLabel" layoutX="194.0" layoutY="25.0" prefHeight="17.0" prefWidth="83.0" text="Username" />
-            <Label id="coins" fx:id="answerStreak" layoutX="295.0" layoutY="25.0" prefHeight="17.0" prefWidth="127.0" text="Coins:" />
-            <Label id="answerStreak" layoutX="400.0" layoutY="26.0" text="Answer Streak" />
+            <Label id="lingoQuestHeader" layoutX="19.0" layoutY="10.0" prefHeight="45.0" prefWidth="157.0" text="LingoQuest" />
+            <Label id="username" fx:id="usernameField" layoutX="194.0" layoutY="25.0" prefHeight="17.0" prefWidth="83.0" text="Username" />
+            <Label id="coins" fx:id="coinLabel" layoutX="295.0" layoutY="25.0" prefHeight="17.0" prefWidth="127.0" text="Coins:" />
+            <Label id="answerStreak" fx:id="answerStreak" layoutX="400.0" layoutY="26.0" text="Answer Streak" />
          </children></Pane>
       <Text layoutX="260.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pick a Section to Complete" />
       <Label layoutX="201.0" layoutY="168.0" text="Food" />
@@ -58,10 +58,10 @@
       <Label layoutX="201.0" layoutY="259.0" text="Colors" />
       <Label layoutX="444.0" layoutY="256.0" text="Animals" />
       <Label layoutX="286.0" layoutY="322.0" text="Communication" />
-      <ProgressBar id="transportationProgress" layoutX="361.0" layoutY="195.0" prefWidth="200.0" progress="0.0" />
-      <ProgressBar id="animalsProgress" layoutX="365.0" layoutY="286.0" prefWidth="200.0" progress="0.0" />
-      <ProgressBar id="communicationProgress" layoutX="227.0" layoutY="344.0" prefWidth="200.0" progress="0.0" />
-      <ProgressBar id="foodProgress" layoutX="114.0" layoutY="194.0" prefWidth="200.0" progress="0.0" />
-      <ProgressBar id="colorsProgress" layoutX="120.0" layoutY="288.0" prefWidth="200.0" progress="0.0" />
+      <ProgressBar id="transportationProgress" fx:id="transportationProgress" layoutX="361.0" layoutY="195.0" prefWidth="200.0" progress="0.0" />
+      <ProgressBar id="animalsProgress" fx:id="animalsProgress" layoutX="365.0" layoutY="286.0" prefWidth="200.0" progress="0.0" />
+      <ProgressBar id="communicationProgress" fx:id="communicationProgress" layoutX="227.0" layoutY="344.0" prefWidth="200.0" progress="0.0" />
+      <ProgressBar id="foodProgress" fx:id="foodProgress" layoutX="114.0" layoutY="194.0" prefWidth="200.0" progress="0.0" />
+      <ProgressBar id="colorsProgress" fx:id="colorsProgress" layoutX="120.0" layoutY="288.0" prefWidth="200.0" progress="0.0" />
    </children>
 </AnchorPane>
