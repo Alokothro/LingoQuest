@@ -669,6 +669,10 @@ public class LanguageGame {
         return user.currentLesson.currentQuestion.isCorrect(user);
     }
 
+    public void setCorrectAnswer(Word correctAnswer) {
+        user.currentLesson.currentQuestion.setCorrectAnswer(correctAnswer);
+    }
+
     /**
      * @author cade
      * @return the string to be shown in the gui
@@ -684,6 +688,8 @@ public class LanguageGame {
     public ArrayList<Word> getQuestionWords() {
         return this.user.getCurrentLesson().getCurrentQuestion().getAnswerChoices();
     }
+
+    
 
     /**
      * Displays the progress of the user for the current lesson. Shows the percentage of the lesson completed

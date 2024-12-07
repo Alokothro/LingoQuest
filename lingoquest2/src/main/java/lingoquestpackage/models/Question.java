@@ -37,6 +37,8 @@ abstract class Question {
 
   public abstract String getType();
 
+  public abstract void setCorrectAnswer(Word correctAnswer);
+
   /**
    * Sets the user's answer to this question.
    * 

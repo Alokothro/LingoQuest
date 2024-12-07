@@ -14,7 +14,10 @@ public class Matching extends Question {
     //private HashMap<Word,Word> answerMap;
     private ArrayList<Word> choices;
     private ArrayList<Word> shuffledChoices;
-    private Word userAnswer;
+    private Word correctAnswer;
+    private String userAnswer;
+    private int coinValue = 100;
+    private int pointValue = 100;
    
     /**
      * Constructs a Matching question with a specific language and a list of possible answer choices.
@@ -25,7 +28,10 @@ public class Matching extends Question {
     public Matching(String language, ArrayList<Word> answerChoices) {
         super(language);
         this.choices = answerChoices;
-        shuffledChoices = shuffle(answerChoices);
+        
+    }
+    public void setCorrectAnswer(Word correctAnswer) {
+        this.correctAnswer = correctAnswer;
     }
    
     private ArrayList<Word> shuffle(ArrayList<Word> answerChoices) {
@@ -34,6 +40,7 @@ public class Matching extends Question {
             shuffledChoices.add(w);
         }
         Collections.shuffle(shuffledChoices);
+        shuffledChoices = shuffle(answerChoices);
         return shuffledChoices;
     }
 
@@ -43,7 +50,7 @@ public class Matching extends Question {
         return "Matching";
     }
 
-    public void setUserAnswer(Word userAnswer) {
+    public void setUserAnswer(String userAnswer) {
         this.userAnswer = userAnswer;
     }
 
@@ -87,14 +94,24 @@ public class Matching extends Question {
 
     @Override
     public boolean isCorrect(User user) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'isCorrect'");
+        if (userAnswer.toLowerCase().trim().equals(correctAnswer.getEnglishVersion().toLowerCase().trim())) {
+            user.getUserDictionary().getWordByUUID(correctAnswer.getWordUUID()).wordPresented(true);
+            user.addCoins(coinValue);
+            return true;
+        } else {
+            user.getUserDictionary().getWordByUUID(correctAnswer.getWordUUID()).wordPresented(false);
+            return false;
+        }
     }
 
     @Override
     public ArrayList<Word> getAnswerChoices() {
         // current intuition is to send these, might need to change - cade December 5
         return this.choices;
+    }
+
+    public ArrayList<Word> getShuffledChoices() {
+        return this.shuffledChoices;
     }
    
 

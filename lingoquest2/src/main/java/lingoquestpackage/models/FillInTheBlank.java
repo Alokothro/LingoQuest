@@ -30,6 +30,10 @@ public class FillInTheBlank extends Question {
         return language;
         
     }
+    public void setCorrectAnswer(Word correctAnswer) {
+        this.correctAnswer = correctAnswer;
+        
+    }
 
     // made this for the front end so that the page can be
     // setup depending on the question type

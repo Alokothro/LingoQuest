@@ -3,11 +3,15 @@ package lingoquestpackage.controllers;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.ResourceBundle;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import lingoquestpackage.lingoquest.App;
 import lingoquestpackage.models.LanguageGame;
 import lingoquestpackage.models.User;
@@ -25,10 +29,17 @@ public class MatchingController implements Initializable {
 
     @FXML
     private Label answerStreak;
-
+    @FXML TextField answerOne;
+    @FXML TextField answerTwo;
+    @FXML TextField answerThree;
+    @FXML TextField answerFour;
     @FXML
     private Label coinLabel;
-
+    @FXML Button submit1;
+    @FXML Button submit2;
+    @FXML Button submit3;
+    @FXML Button submit4;
+    
 
     @FXML
     private Label lessonName;
@@ -47,6 +58,8 @@ public class MatchingController implements Initializable {
 
     @FXML
     private Label options;
+
+    private ArrayList<Word> words;
 
     // constructor
     public MatchingController() {
@@ -127,10 +140,75 @@ public class MatchingController implements Initializable {
             }
             return;
         }
-
+        words = languageGame.getQuestionWords();
         // make list to hold the words
         ArrayList<Word> words = languageGame.getQuestionWords();
-        
 
+        
+        wordOne.setText(words.get(0).getWordinLanguage());
+        wordTwo.setText(words.get(1).getWordinLanguage());
+        wordThree.setText(words.get(2).getWordinLanguage());
+        wordFour.setText(words.get(3).getWordinLanguage());
+
+        //options
+        ArrayList<Word> shuffledWords = new ArrayList<>();
+        for (Word word : words) {
+    shuffledWords.add(word);
+    }
+    Collections.shuffle(shuffledWords);
+        options.setText("" + shuffledWords.get(0).getEnglishVersion() + "\n" + shuffledWords.get(1).getEnglishVersion() + "\n" + shuffledWords.get(2).getEnglishVersion() + "\n" + shuffledWords.get(3).getEnglishVersion());
+    }
+
+    public void handleOne() throws Exception {
+        if(languageGame == null) {
+            languageGame = LanguageGame.getInstance();
+        }
+        languageGame.setCorrectAnswer(words.get(0));
+        boolean isCorrect =  languageGame.answerQuestion(answerOne.getText());
+
+        if(isCorrect) {
+            submit1.setStyle("-fx-background-color: green");
+        } else {
+            submit2.setStyle("-fx-background-color: red");
+        }
+    }
+    public void handleTwo() throws Exception {
+        if(languageGame == null) {
+            languageGame = LanguageGame.getInstance();
+        }
+        languageGame.setCorrectAnswer(words.get(1));
+        boolean isCorrect =  languageGame.answerQuestion(answerTwo.getText());
+
+        if(isCorrect) {
+            submit2.setStyle("-fx-background-color: green");
+        } else {
+            submit2.setStyle("-fx-background-color: red");
+        }
+    }
+    public void handleThree() throws Exception {
+        if(languageGame == null) {
+            languageGame = LanguageGame.getInstance();
+        }
+        languageGame.setCorrectAnswer(words.get(2));
+        boolean isCorrect =  languageGame.answerQuestion(answerThree.getText());
+
+        if(isCorrect) {
+            submit3.setStyle("-fx-background-color: green");
+        } else {
+            submit3.setStyle("-fx-background-color: red");
+        }
+    }
+    public void handleFour() throws Exception {
+        if(languageGame == null) {
+            languageGame = LanguageGame.getInstance();
+        }
+        languageGame.setCorrectAnswer(words.get(3));
+        boolean isCorrect =  languageGame.answerQuestion(answerFour.getText());
+
+        if(isCorrect) {
+            submit4.setStyle("-fx-background-color: green");
+        } else {
+            submit4.setStyle("-fx-background-color: red");
+        }
     }
 }
