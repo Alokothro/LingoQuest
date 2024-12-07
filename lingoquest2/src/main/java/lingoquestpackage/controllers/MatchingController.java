@@ -171,6 +171,7 @@ public class MatchingController implements Initializable {
         } else {
             submit2.setStyle("-fx-background-color: red");
         }
+        checkIfDone();
     }
     public void handleTwo() throws Exception {
         if(languageGame == null) {
@@ -184,6 +185,7 @@ public class MatchingController implements Initializable {
         } else {
             submit2.setStyle("-fx-background-color: red");
         }
+        checkIfDone();
     }
     public void handleThree() throws Exception {
         if(languageGame == null) {
@@ -197,6 +199,7 @@ public class MatchingController implements Initializable {
         } else {
             submit3.setStyle("-fx-background-color: red");
         }
+        checkIfDone();
     }
     public void handleFour() throws Exception {
         if(languageGame == null) {
@@ -210,9 +213,22 @@ public class MatchingController implements Initializable {
         } else {
             submit4.setStyle("-fx-background-color: red");
         }
+        checkIfDone();
     }
 
-    public boolean checkIfDone() {
-        
+    public void checkIfDone() {
+        if(submit1.getStyle().equals("-fx-background-color: green") && submit2.getStyle().equals("-fx-background-color: green") && submit3.getStyle().equals("-fx-background-color: green") && submit4.getStyle().equals("-fx-background-color: green")) {
+            // go to the correct page
+            try {
+                App.setRoot("/lingoquestpackage/correct");
+            } catch (IOException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+
+        }
+        else {
+            return;
+        }
     }
 }
