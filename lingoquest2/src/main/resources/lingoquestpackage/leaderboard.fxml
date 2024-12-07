@@ -57,13 +57,13 @@
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fabd00" height="103.0" layoutX="309.0" layoutY="134.0" stroke="BLACK" strokeType="INSIDE" width="60.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fabd00" height="37.0" layoutX="249.0" layoutY="200.0" stroke="BLACK" strokeType="INSIDE" width="60.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fabd00" height="66.0" layoutX="369.0" layoutY="171.0" stroke="BLACK" strokeType="INSIDE" width="60.0" />
-      <Label id="firstPlace" layoutX="295.0" layoutY="104.0" text="Username" />
-      <Label id="secondPlace" layoutX="369.0" layoutY="141.0" text="username" />
-      <Label id="thirdPlace" layoutX="249.0" layoutY="177.0" text="username" />
-      <TableView layoutX="217.0" layoutY="240.0" prefHeight="200.0" prefWidth="246.0">
+      <Label id="firstPlace" fx:id="firstPlace" layoutX="295.0" layoutY="104.0" text="Username" />
+      <Label id="secondPlace" fx:id="secondPlace" layoutX="369.0" layoutY="141.0" text="username" />
+      <Label id="thirdPlace" fx:id="thirdPlace" layoutX="249.0" layoutY="177.0" text="username" />
+      <TableView fx:id="table" layoutX="217.0" layoutY="240.0" prefHeight="200.0" prefWidth="246.0">
         <columns>
-          <TableColumn prefWidth="120.0" text="Username" />
-          <TableColumn prefWidth="125.0" text="Coins Earned" />
+          <TableColumn fx:id="username" prefWidth="120.0" text="Username" />
+          <TableColumn fx:id="coins" prefWidth="125.0" text="Coins Earned" />
         </columns>
       </TableView>
    </children>
