@@ -86,3 +86,13 @@ public class ShopController implements Initializable {
         answerStreak.setText("Answer Streak: " + user.getCurrentLanguage().getAnswerStreak());
     }
 }
+// The ShopController class serves as the controller for the shop functionality in the LingoQuest application. 
+// It implements the Initializable interface, enabling it to set up and initialize data and UI components when the associated FXML file is loaded. 
+// This controller integrates the application's backend logic, represented by the LanguageGame and User classes, with the user interface elements to display and manage shop-related information.
+// The class has three primary UI components bound to the FXML file: usernameField (to display the username), answerStreak (to show the user's current answer streak), and coinLabel (to display the user's coin balance). 
+// These labels are updated during the initialize method, which sets their values using data retrieved from the User and LanguageGame instances. 
+// The backend is initialized in the constructor to ensure seamless data retrieval and interaction.
+// The class also includes navigation methods (goToProfile, goToPractice, goToLeaderboard, and goToHome) that allow users to move between different sections of the application. 
+// The handleLogout method logs the user out via the backend and redirects them to the login page.
+// By connecting the backend logic to the UI, the ShopController ensures that users can view their shop-related statistics, such as coins and streaks, while also providing navigation options to access other parts of the application. 
+// This controller plays a key role in maintaining a dynamic and user-friendly experience within the shop section of the LingoQuest application.
