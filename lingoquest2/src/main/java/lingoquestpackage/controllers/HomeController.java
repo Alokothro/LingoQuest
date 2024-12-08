@@ -217,3 +217,16 @@ public class HomeController implements Initializable {
     //}
     
 }
+// The HomeController class is a JavaFX controller that manages the main dashboard or home screen of the LingoQuest application. 
+// It integrates with the backend logic provided by the LanguageGame and User models to dynamically display user progress, available lessons, and sections, while also showcasing features like the "Word of the Day." 
+// The controller is responsible for initializing the home screen, providing navigation, and enabling lesson interactions.
+// During initialization, the initialize method populates the home screen with user-specific information, such as username, coin balance, answer streak, and overall language completion progress. 
+// The language completion is displayed both as a percentage and a progress bar, providing a clear visual representation of the user's progress. 
+// Additionally, the "Word of the Day" is fetched from the backend and displayed with its English translation, offering users a quick learning opportunity upon logging in.
+// The home screen dynamically loads the available sections and lessons from the backend. Each section is displayed as a labeled container (VBox), and its lessons are represented as buttons arranged in a horizontal box (HBox). 
+// Completed lessons are styled with a green color, while incomplete lessons are styled in black, providing a clear visual distinction. 
+// Clicking on a lesson button triggers a transition to the corresponding lesson, preparing the backend and navigating to the default question interface.
+// The controller includes navigation methods such as goToProfile, goToPractice, goToLeaderboard, goToShop, and goToFriends, allowing users to move seamlessly between different sections of the application. 
+// It also includes a handleLogout method to log out the user and return to the login page.
+// By dynamically generating the content and providing intuitive navigation, the HomeController creates a personalized and engaging home screen experience for users. 
+// It facilitates smooth transitions to lessons and other sections of the application, making it a central hub for users to track progress and explore learning opportunities within LingoQuest.

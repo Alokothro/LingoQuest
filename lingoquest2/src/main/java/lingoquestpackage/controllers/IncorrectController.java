@@ -191,4 +191,12 @@ public class IncorrectController implements Initializable{
         }
     }
 }
-
+// The IncorrectController class is a JavaFX controller responsible for managing the user interface displayed when a user answers a question incorrectly in the LingoQuest application. 
+// This class integrates the backend logic, represented by the LanguageGame and User models, to provide feedback about the correct answer, update progress indicators, and allow the user to continue with the lesson or navigate to other sections of the application.
+// During initialization, the initialize method retrieves data from the backend to populate the user interface. This includes displaying the user's username, coin balance, answer streak, and the correct answer to the previous question. 
+// The correct answer is fetched dynamically using the getMostRecentQuestionWord method and displayed as part of the feedback. Additionally, the lesson progress bar is updated based on the user's current progress in the lesson.
+// The controller includes several navigation methods, such as goToHome, goToLeaderboard, and goToPractice, which allow users to seamlessly move between different sections of the application. 
+// The handleLogout method enables users to log out of their accounts and redirects them to the login screen. 
+// The handleNextButton method prepares the next question by invoking the makeQuestion method, which determines the type of question (e.g., matching, true/false, fill-in-the-blank, or multiple-choice) and navigates to the appropriate view based on the current lesson's structure.
+// By dynamically generating feedback and facilitating smooth navigation, the IncorrectController ensures an engaging and informative user experience. 
+// It plays a vital role in maintaining the flow of the lesson while helping users learn from their mistakes and continue progressing through the application.
