@@ -181,4 +181,19 @@ public class CorrectController implements Initializable{
         }
     }
 }
+// The CorrectController class is a JavaFX controller that manages the interface displayed when a user answers a question correctly in the LingoQuest application. 
+// It integrates with the backend logic via the LanguageGame and User models to provide feedback, update progress indicators, and allow the user to proceed to the next question or navigate to other sections of the application.
+// During initialization, the initialize method sets up the user interface by displaying relevant user data, such as the username, coin balance, answer streak, and lesson progress. 
+// The lesson progress is displayed using a progress bar that dynamically reflects the user's advancement. 
+// The controller prepares the interface to show the user’s success and motivate continued participation.
+// The handleNextButton method enables the user to proceed to the next question in the lesson. 
+// It uses the makeQuestion method to determine the type of the next question (e.g., matching, true/false, fill-in-the-blank, or multiple-choice) and navigates to the appropriate interface. 
+// This dynamic question handling ensures seamless progression through the lesson.
+// Navigation methods such as goToHome, goToLeaderboard, and goToPractice allow users to move between different sections of the application, while handleLogout logs the user out and redirects them to the login page. 
+// The controller ensures smooth navigation and feedback, keeping users engaged and motivated.
+// By providing immediate feedback on correct answers and integrating navigation and progression functionality, the CorrectController supports a positive and engaging learning experience. 
+// Its seamless integration with the backend ensures accurate tracking and smooth transitions, making it an essential component of the LingoQuest application's lesson flow.
+
+
+
 

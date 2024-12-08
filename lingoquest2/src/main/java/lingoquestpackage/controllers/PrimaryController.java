@@ -20,3 +20,5 @@ public class PrimaryController {
 // After playing the sound, the method uses App.setRoot to change the scene to the secondary view by loading the secondary.fxml file.
 // The PrimaryController is simple yet functional, combining multimedia feedback with scene transitions to enhance user interactivity and engagement in the application.
 // It demonstrates how controllers can extend beyond basic navigation to provide a richer user experience.
+
+

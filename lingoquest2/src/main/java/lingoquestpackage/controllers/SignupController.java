@@ -92,3 +92,8 @@ public class SignupController implements Initializable{
 // If the input passes validation, the method calls the backend to create a new user, updates the message label to indicate success, and redirects the user to the home page.
 // Additionally, the goToLogin method allows users to navigate to the login page if they already have an account. 
 // Overall, the SignupController ensures seamless integration of user account creation with proper validation and navigation within the application.
+
+
+
+
+

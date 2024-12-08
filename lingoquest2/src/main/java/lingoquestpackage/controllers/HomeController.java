@@ -230,3 +230,5 @@ public class HomeController implements Initializable {
 // It also includes a handleLogout method to log out the user and return to the login page.
 // By dynamically generating the content and providing intuitive navigation, the HomeController creates a personalized and engaging home screen experience for users. 
 // It facilitates smooth transitions to lessons and other sections of the application, making it a central hub for users to track progress and explore learning opportunities within LingoQuest.
+
+

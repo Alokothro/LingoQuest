@@ -163,3 +163,17 @@ public class FillInTheBlankController implements Initializable {
             App.setRoot("/lingoquestpackage/incorrect");
     }
 }
+// The FillInTheBlankController class is a JavaFX controller for managing the "Fill in the Blank" question interface in the LingoQuest application. 
+// It integrates with the backend logic via the LanguageGame and User models to present questions, accept user input, and provide feedback on whether the user's answers are correct.
+// During initialization, the initialize method sets up the user interface by populating labels with the current user's information, such as their username, coin balance, and answer streak. 
+// The lesson progress is displayed as a progress bar, and the current question is retrieved from the backend and displayed in the question label. 
+// The method also uses the languageGame.speak method to audibly present the question for an enhanced learning experience. 
+// If no lesson is loaded, the user is redirected to the home page.
+// The user submits their answer through the handleSubmit method, which retrieves the input from the answerField text field. 
+// The input is validated by the backend, and based on whether the answer is correct, the user is redirected to either the "correct" or "incorrect" feedback page. 
+// This functionality ensures immediate feedback, enhancing the learning process.
+// The controller also includes navigation methods (goToProfile, goToHome, goToPractice, etc.) that allow users to seamlessly move between different sections of the application. 
+// The handleLogout method logs out the current user and redirects them to the login page.
+// By dynamically setting up the UI and providing immediate feedback on user input, the FillInTheBlankController supports an interactive and engaging learning experience. 
+// Its integration with the backend ensures accurate validation and smooth navigation, making it an essential component of the LingoQuest application.
+

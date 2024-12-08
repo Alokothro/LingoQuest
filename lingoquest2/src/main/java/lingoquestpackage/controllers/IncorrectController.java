@@ -200,3 +200,5 @@ public class IncorrectController implements Initializable{
 // The handleNextButton method prepares the next question by invoking the makeQuestion method, which determines the type of question (e.g., matching, true/false, fill-in-the-blank, or multiple-choice) and navigates to the appropriate view based on the current lesson's structure.
 // By dynamically generating feedback and facilitating smooth navigation, the IncorrectController ensures an engaging and informative user experience. 
 // It plays a vital role in maintaining the flow of the lesson while helping users learn from their mistakes and continue progressing through the application.
+
+

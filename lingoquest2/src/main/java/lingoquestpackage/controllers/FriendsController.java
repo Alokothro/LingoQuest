@@ -159,3 +159,16 @@ public class FriendsController implements Initializable {
         requestName.setText("");
     }
 }
+// The FriendsController class is a JavaFX controller for managing the friends list and friend requests in the LingoQuest application. 
+// This controller integrates with the backend logic, represented by the LanguageGame and User models, to allow users to view their friends, send friend requests, and manage incoming requests. 
+// It dynamically populates the user interface with data and provides navigation and interaction functionality.
+// The class initializes the user interface in the initialize method, which retrieves the current user's data and populates the friends table with their friends' usernames and earned coins. 
+// The usernameColumn and coinsColumn in the TableView are dynamically populated using the MiniUser model, which holds essential information about each friend. 
+// If the user has no friends, a placeholder message is displayed.
+// The controller also handles incoming friend requests. If a friend request exists, the requester's username is displayed in a label. 
+// The user can accept the request using the handleAccept method, which adds the requester to the user's friends list, or deny it using the handleDeny method, which removes the request from the list.
+// The handleSend method allows the user to send a friend request by entering another user's username in the text field.
+// The method retrieves the corresponding UUID and sends the request via the backend.
+// Additionally, the class provides navigation methods (goToProfile, goToHome, goToPractice, etc.) for transitioning between different sections of the application and a handleLogout method for logging out the user and returning to the login page.
+// The FriendsController enhances the social functionality of the LingoQuest application, providing a user-friendly interface for managing friendships and engaging with other users. 
+// By dynamically updating the UI and integrating seamless navigation, it fosters interaction and community building within the app.

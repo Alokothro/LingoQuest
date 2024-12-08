@@ -235,3 +235,5 @@ public class QuestionController implements Initializable {
 // This controller facilitates seamless interaction between the UI and backend logic, ensuring users can engage with lessons and answer questions effectively. 
 // It also incorporates error handling to gracefully manage exceptions, such as missing data or navigation errors. 
 // The QuestionController plays a central role in managing the question flow, enhancing the user experience in the LingoQuest application.
+
+

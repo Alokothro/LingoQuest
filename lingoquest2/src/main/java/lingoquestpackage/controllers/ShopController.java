@@ -96,3 +96,4 @@ public class ShopController implements Initializable {
 // The handleLogout method logs the user out via the backend and redirects them to the login page.
 // By connecting the backend logic to the UI, the ShopController ensures that users can view their shop-related statistics, such as coins and streaks, while also providing navigation options to access other parts of the application. 
 // This controller plays a key role in maintaining a dynamic and user-friendly experience within the shop section of the LingoQuest application.
+
