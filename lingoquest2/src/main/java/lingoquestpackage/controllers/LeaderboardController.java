@@ -116,3 +116,14 @@ public class LeaderboardController implements Initializable {
         App.setRoot("/lingoquestpackage/practice");
     }
 }
+// The LeaderboardController class is a JavaFX controller for managing and displaying the leaderboard interface in the LingoQuest application. 
+// This controller integrates the backend logic, represented by the LanguageGame and User models, to fetch and display leaderboard data, allowing users to see their rankings and compare their progress with others.
+// The class features several UI components, including labels to display the current user's username, coin balance, answer streak, and the top three leaderboard positions (first, second, and third). 
+// A TableView with columns for usernames and coin counts is used to present a detailed leaderboard. 
+// The initialize method populates these components with data retrieved from the backend.
+// During initialization, the method sets the current user's information at the top of the screen and retrieves the leaderboard data. 
+// The top three users are displayed in dedicated labels (firstPlace, secondPlace, and thirdPlace). 
+// The TableView is populated dynamically by iterating through the leaderboard data, creating LeaderboardEntry objects for each user, and adding them to the table.
+// The controller includes navigation methods (goToShop, goToHome, goToProfile, goToPractice) for transitioning to different sections of the application and a handleLogout method for logging out the user and returning to the login page. 
+// If no leaderboard data is available, a placeholder message is displayed in the table.
+// The LeaderboardController provides a user-friendly and dynamic interface for viewing the leaderboard, enhancing the competitive and social aspects of the LingoQuest application by showcasing user achievements and rankings.

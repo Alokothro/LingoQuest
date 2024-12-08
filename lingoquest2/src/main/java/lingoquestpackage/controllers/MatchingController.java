@@ -243,3 +243,7 @@ public class MatchingController implements Initializable {
 // The checkIfDone method determines if all answers are correct and transitions to the "correct" feedback page once the matching task is complete.
 // Additionally, the controller provides navigation methods (goToProfile, goToHome, goToPractice, etc.) for accessing other sections of the application and a handleLogout method for logging out the current user. 
 // By integrating backend data with dynamic UI elements, the MatchingController ensures an engaging and interactive experience for practicing vocabulary matching in the LingoQuest application.
+
+
+
+
