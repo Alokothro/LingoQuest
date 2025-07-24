@@ -8,6 +8,7 @@ lingoquestpackage/models/Languages.class
 lingoquestpackage/controllers/QuestionController.class
 lingoquestpackage/models/QuestionCreator.class
 lingoquestpackage/narriator/Narriator.class
+lingoquestpackage/models/LeaderboardEntry.class
 lingoquestpackage/controllers/PracticeController.class
 lingoquestpackage/models/DictionaryManager.class
 lingoquestpackage/controllers/TrueOrFalseController.class
