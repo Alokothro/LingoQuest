@@ -1,20 +1,216 @@
-# LingoQuest2
-This project is a language learning platform that allows users to practice various languages through interactive lessons, quizzes, and games. Users can progress through sections that include multiple lessons, earning points and coins as they complete activities and improve their language skills. The platform offers different question types such as multiple choice, fill-in-the-blank, and matching games, all while incorporating media elements like audio, video, and picture books to enhance learning.
+# 🌟 LingoQuest2 - Interactive Language Learning Platform
 
-# The project includes features such as:
+[![Java](https://img.shields.io/badge/Java-17-orange.svg)](https://www.oracle.com/java/)
+[![JavaFX](https://img.shields.io/badge/JavaFX-21-blue.svg)](https://openjfx.io/)
+[![AWS](https://img.shields.io/badge/AWS-Polly-orange.svg)](https://aws.amazon.com/polly/)
+[![Maven](https://img.shields.io/badge/Maven-3.9-red.svg)](https://maven.apache.org/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-**Sections and Lessons:** Users progress through sections containing lessons that teach different language topics.
+A comprehensive, enterprise-grade language learning platform built with JavaFX, featuring AWS Polly text-to-speech integration, real-time multiplayer functionality, and an advanced progression system.
 
-**Question Types:** Interactive exercises like multiple-choice questions, matching games, and fill-in-the-blank tasks.
+## 🎥 Demo Video
+[Watch the Full Application Demo](https://www.youtube.com/watch?v=NGEjiR2yx3U)
 
-**Media Integration:** Lessons are supplemented with audio, video, and picture books to provide a rich learning experience.
+## ✨ Key Features
 
-**User Progress Tracking:** Tracks user progress, including points earned, streaks, and coins collected, which can be used to purchase items in the item shop.
+### 🎯 **Interactive Learning System**
+- **4 Question Types**: True/False, Multiple Choice, Fill-in-the-Blank, and Matching exercises
+- **Progressive Difficulty**: Adaptive questioning based on user performance
+- **Real-time Audio**: AWS Polly text-to-speech for pronunciation assistance
+- **Answer Streak Tracking**: Gamified learning with streak counters and rewards
 
-**Leaderboard and Social Features:** Users can compete on leaderboards and connect with friends to compare their progress.
+### 👥 **Social Learning Platform**
+- **Friend System**: Send, accept, and manage friend requests
+- **Live Leaderboard**: Real-time competitive rankings with points and coins
+- **Progress Sharing**: View friends' achievements and language completion rates
+- **Multiplayer Engagement**: Social features to enhance motivation
 
-**Language Placement Test:** A placement test helps users start at the right level based on their current knowledge of the language.
+### 📊 **Advanced Progress Tracking**
+- **Language Completion Percentage**: Visual progress indicators
+- **Coins & Points System**: Reward-based learning with virtual currency
+- **Section-based Learning**: Organized curriculum with targeted practice
+- **Performance Analytics**: Detailed tracking of strengths and areas for improvement
 
-**Color Pallette:** #FAF9F9, #002642, #FABD00, #169873, #AD1519
+### 🎨 **Professional User Experience**
+- **Intuitive Navigation**: Clean, modern JavaFX interface
+- **Dynamic Word Display**: New vocabulary introduced on each homepage visit
+- **Responsive Design**: Optimized for various screen sizes
+- **Color-coded Feedback**: Green/red visual indicators for correct/incorrect answers
 
-**GUI YOUTUBE VIDEO** https://youtu.be/NGEjiR2yx3U
+## 🏗️ Technical Architecture
+
+### **Frontend**
+- **JavaFX 21**: Modern desktop GUI framework
+- **FXML**: Declarative UI design with MVC architecture
+- **CSS Styling**: Custom themes and responsive layouts
+- **15+ Specialized Controllers**: Modular, maintainable codebase
+
+### **Backend Integration**
+- **AWS Polly**: Cloud-based text-to-speech synthesis
+- **JSON Data Processing**: Structured data management
+- **Singleton Pattern**: Efficient resource management
+- **Real-time Updates**: Live leaderboard and friend system synchronization
+
+### **Build System**
+- **Maven**: Professional dependency management and build automation
+- **Java Module System (JPMS)**: Modern modular architecture
+- **Cross-platform Support**: ARM64 and x86_64 compatibility
+- **Automated Testing**: JUnit integration for reliability
+
+## 🚀 Installation & Setup
+
+### **Prerequisites**
+- Java 17 or higher
+- Maven 3.6+
+- Git
+
+### **Quick Start**
+```bash
+# Clone the repository
+git clone https://github.com/Alokothro/LingoQuest.git
+cd LingoQuest/lingoquest2
+
+# Build and run with Maven
+mvn clean javafx:run
+```
+
+### **Apple Silicon Mac Setup**
+The project includes optimized configuration for Apple Silicon Macs:
+```bash
+# Clear any cached JavaFX libraries
+rm -rf ~/.openjfx/cache
+
+# Run with Maven (automatically handles ARM64 compatibility)
+mvn clean javafx:run
+```
+
+## 📁 Project Structure
+
+```
+lingoquest2/
+├── src/main/java/
+│   ├── lingoquestpackage/
+│   │   ├── controllers/          # 15+ UI Controllers
+│   │   │   ├── LoginController.java
+│   │   │   ├── HomeController.java
+│   │   │   ├── LeaderboardController.java
+│   │   │   ├── FriendsController.java
+│   │   │   └── ...
+│   │   ├── models/               # Data Models & Business Logic
+│   │   │   ├── LanguageGame.java
+│   │   │   ├── DictionaryManager.java
+│   │   │   └── DataLoader.java
+│   │   ├── narriator/           # AWS Polly Integration
+│   │   └── lingoquest/          # Main Application
+│   ├── module-info.java          # Java Module Configuration
+│   └── resources/
+│       └── lingoquestpackage/    # FXML Files & Assets
+├── pom.xml                       # Maven Configuration
+└── README.md
+```
+
+## 🎮 How to Use
+
+### **Getting Started**
+1. **Create Account**: Register with username and password
+2. **Choose Language**: Select your target language (Spanish, etc.)
+3. **Take Placement Test**: Determine your starting level
+4. **Start Learning**: Begin with lessons suited to your level
+
+### **Learning Features**
+- **Answer Questions**: Engage with 4 different question types
+- **Hear Pronunciation**: Click play buttons for AWS Polly audio
+- **Track Progress**: Monitor completion percentage and streaks
+- **Earn Rewards**: Collect coins and points for correct answers
+
+### **Social Features**
+- **Add Friends**: Send requests to other learners
+- **Compete**: Check your ranking on the live leaderboard
+- **Share Progress**: View friends' achievements and progress
+
+## 🛠️ Development
+
+### **Technologies Used**
+- **Language**: Java 17
+- **GUI Framework**: JavaFX 21
+- **Cloud Services**: AWS Polly (Text-to-Speech)
+- **Build Tool**: Maven 3.9
+- **Module System**: Java Platform Module System (JPMS)
+- **Testing**: JUnit 4 & 5
+- **Data Format**: JSON
+- **Audio**: JLayer for audio processing
+
+### **Key Dependencies**
+```xml
+<dependencies>
+    <dependency>
+        <groupId>org.openjfx</groupId>
+        <artifactId>javafx-controls</artifactId>
+        <version>21</version>
+    </dependency>
+    <dependency>
+        <groupId>software.amazon.awssdk</groupId>
+        <artifactId>polly</artifactId>
+        <version>2.29.12</version>
+    </dependency>
+    <!-- Additional dependencies in pom.xml -->
+</dependencies>
+```
+
+## 🏆 Highlights
+
+### **Technical Achievements**
+- ✅ **Enterprise Architecture**: Professional MVC design with modular components
+- ✅ **Cloud Integration**: Seamless AWS Polly text-to-speech implementation
+- ✅ **Cross-platform Deployment**: Apple Silicon and Intel Mac compatibility
+- ✅ **Modern Java**: Java Module System with proper encapsulation
+- ✅ **Professional Build System**: Maven-based development workflow
+
+### **User Experience**
+- ✅ **Gamification**: Points, coins, streaks, and leaderboards
+- ✅ **Social Learning**: Real-time friend system and competition
+- ✅ **Adaptive Learning**: Progressive difficulty and personalized content
+- ✅ **Multimedia Integration**: Audio pronunciation with visual feedback
+
+## 👥 Contributors
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/CadeStocker">
+        <img src="https://github.com/CadeStocker.png" width="100px;" alt=""/>
+        <br /><sub><b>Cade Stocker</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Alokothro">
+        <img src="https://github.com/Alokothro.png" width="100px;" alt=""/>
+        <br /><sub><b>Alok Patel</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <b>Wade Little</b>
+    </td>
+    <td align="center">
+      <b>Preston Willis</b>
+    </td>
+  </tr>
+</table>
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🔗 Links
+
+- **Repository**: [GitHub - LingoQuest](https://github.com/Alokothro/LingoQuest)
+- **Demo Video**: [YouTube Demo](https://www.youtube.com/watch?v=NGEjiR2yx3U)
+- **JavaFX Documentation**: [OpenJFX](https://openjfx.io/)
+- **AWS Polly**: [Amazon Polly](https://aws.amazon.com/polly/)
+
+---
+
+<div align="center">
+  <p><strong>Built with ❤️ by the LingoQuest Team</strong></p>
+  <p>🌟 Star this repository if you found it helpful!</p>
+</div>
