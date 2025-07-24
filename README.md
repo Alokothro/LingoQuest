@@ -175,8 +175,8 @@ lingoquest2/
 ## 👥 Contributors
 
 **Team Members:**
-- **Cade Stocker** - [@CadeStocker](https://github.com/CadeStocker) - Project Lead & Core Development
-- **Alok Patel** - [@Alokothro](https://github.com/Alokothro) - Maven Build System & Cross-Platform Deployment
+- **Cade Stocker** - Project Lead & Core Development
+- **Alok Patel** - DevOps Architecture & Java Module System Implementation
 - **Wade Little** - UI/UX Design & Frontend Development
 - **Preston Willis** - Backend Logic & Data Management
 
