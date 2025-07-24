@@ -1,4 +1,4 @@
-# 🌟 LingoQuest - Interactive Language Learning Platform
+# 🌟 LingoQuest2 - Interactive Language Learning Platform
 
 [![Java](https://img.shields.io/badge/Java-17-orange.svg)](https://www.oracle.com/java/)
 [![JavaFX](https://img.shields.io/badge/JavaFX-21-blue.svg)](https://openjfx.io/)
@@ -174,32 +174,11 @@ lingoquest2/
 
 ## 👥 Contributors
 
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/CadeStocker">
-        <img src="https://github.com/CadeStocker.png" width="100px;" alt=""/>
-        <br /><sub><b>Cade Stocker</b></sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/Alokothro">
-        <img src="https://github.com/Alokothro.png" width="100px;" alt=""/>
-        <br /><sub><b>Alok Patel</b></sub>
-      </a>
-    </td>
-    <td align="center">
-      <b>Wade Little</b>
-    </td>
-    <td align="center">
-      <b>Preston Willis</b>
-    </td>
-  </tr>
-</table>
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+**Team Members:**
+- **Cade Stocker** - [@CadeStocker](https://github.com/CadeStocker) - Project Lead & Core Development
+- **Alok Patel** - [@Alokothro](https://github.com/Alokothro) - Maven Build System & Cross-Platform Deployment
+- **Wade Little** - UI/UX Design & Frontend Development
+- **Preston Willis** - Backend Logic & Data Management
 
 ## 🔗 Links
 
