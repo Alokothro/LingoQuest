@@ -1,4 +1,4 @@
-# 🌟 LingoQuest2 - Interactive Language Learning Platform
+# 🌟 LingoQuest - Interactive Language Learning Platform
 
 [![Java](https://img.shields.io/badge/Java-17-orange.svg)](https://www.oracle.com/java/)
 [![JavaFX](https://img.shields.io/badge/JavaFX-21-blue.svg)](https://openjfx.io/)
