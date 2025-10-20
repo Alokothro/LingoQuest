@@ -19,20 +19,20 @@ public class DataLoader {
     public final static ItemShop itemShop = ItemShop.getInstance();
     public final static Users userList = Users.getInstance();
     public final static LanguageManager languageManager = LanguageManager.getInstance();
-    public static String userFileJunit = "/data/Users.json";
+    public static String userFileJunit = "/lingoquestpackage/data/Users.json";
     public static String userFile = "lingoquest2/src/main/resources/lingoquestpackage/data/Users.json";
-    public static String itemFileJunit = "/data/ItemShop.json";
+    public static String itemFileJunit = "/lingoquestpackage/data/ItemShop.json";
     public static String itemFile = "lingoquest2/src/main/resources/lingoquestpackage/data/ItemShop.json";
-    public static String placementFileJunit = "/data/PlacementTest.json";
+    public static String placementFileJunit = "/lingoquestpackage/data/PlacementTest.json";
     public static String placementFile = "lingoquest2/src/main/resources/lingoquestpackage/data/PlacementTest.json";
-    public static String wordFileJunit = "/data/Word.json";
+    public static String wordFileJunit = "/lingoquestpackage/data/Word.json";
     public static String wordFile = "lingoquest2/src/main/resources/lingoquestpackage/data/Word.json";
-    public static String dictionaryFileJunit = "/data/Dictionaries.json";
+    public static String dictionaryFileJunit = "/lingoquestpackage/data/Dictionaries.json";
     public static String dictionaryFile = "lingoquest2/src/main/resources/lingoquestpackage/data/Dictionaries.json";
-    public static String languageFileJunit = "/data/Languages2.json";
+    public static String languageFileJunit = "/lingoquestpackage/data/Languages2.json";
     public static String languageFile = "lingoquest2/src/main/resources/lingoquestpackage/data/Languages2.json";
     public static String sectionFile = "lingoquest2/src/main/resources/lingoquestpackage/data/Sections.json";
-    public static String sectionFileJunit = "/data/Sections.json";
+    public static String sectionFileJunit = "/lingoquestpackage/data/Sections.json";
 
     public static boolean isJUnitTest() {
         for(StackTraceElement element : Thread.currentThread().getStackTrace()) {
@@ -45,6 +45,28 @@ public class DataLoader {
 
     private static BufferedReader getReaderFromFile(String fileName, String jsonFileName) {
         try{
+            // Always use getResourceAsStream for packaged resources
+            InputStream inputStream = DataLoader.class.getResourceAsStream(jsonFileName);
+            if(inputStream == null) {
+                System.out.println("Can't load: " + jsonFileName);
+                return null;
+            }
+            InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
+            BufferedReader ret = new BufferedReader(inputStreamReader);
+            if(ret == null) {
+                System.out.println("Invalid file");
+                return null;
+            }
+            return ret;
+        } catch(Exception e) {
+            System.out.println("Can't load: " + e.getMessage());
+            return null;
+        }
+    }
+
+    /* Old file path approach - doesn't work with packaged apps
+    private static BufferedReader getReaderFromFileOld(String fileName, String jsonFileName) {
+        try{
             if(isJUnitTest()) {
                 InputStream inputStream = DataLoader.class.getResourceAsStream(jsonFileName);
                 InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
@@ -54,7 +76,6 @@ public class DataLoader {
                     return null;
                 }
                 return ret;
-                //return new BufferedReader(inputStreamReader);
             }
             else {
                 FileReader reader = new FileReader(fileName);
@@ -64,13 +85,13 @@ public class DataLoader {
                     return null;
                 }
                 return ret;
-                //return new BufferedReader(reader);
             }
         } catch(Exception e) {
             System.out.println("Can't load");
             return null;
         }
     }
+    */
 
     /**
      * @author cade

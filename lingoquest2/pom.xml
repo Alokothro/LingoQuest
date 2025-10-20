@@ -148,7 +148,7 @@
                 <configuration>
                     <jlinkImageName>hellofx</jlinkImageName>
                     <launcher>launcher</launcher>
-                    <mainClass>hellofx/org.openjfx.hellofx.App</mainClass>
+                    <mainClass>lingoquestpackage/lingoquestpackage.lingoquest.App</mainClass>
                 </configuration>
             </plugin>
         </plugins>
