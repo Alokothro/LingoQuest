@@ -78,11 +78,26 @@ A comprehensive, enterprise-grade language learning platform built with JavaFX, 
 ```bash
 # Clone the repository
 git clone https://github.com/Alokothro/LingoQuest.git
-cd LingoQuest2/lingoquest2
+cd LingoQuest/lingoquest2
 
 # Build and run with Maven
 mvn clean javafx:run
 ```
+
+### AWS Polly Setup
+
+Pronunciation audio requires AWS credentials with Polly access (region `eu-west-3`). Configure credentials using one of:
+
+```bash
+# Option 1: AWS CLI
+aws configure
+
+# Option 2: Environment variables
+export AWS_ACCESS_KEY_ID=your_access_key
+export AWS_SECRET_ACCESS_KEY=your_secret_key
+```
+
+Without valid credentials, the app will still run but audio playback will throw an error when requested.
 
 ### Apple Silicon Mac Setup
 
